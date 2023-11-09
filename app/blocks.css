@@ -1,0 +1,14 @@
+.button-gradient {
+    border-radius: 10px;
+    background: linear-gradient(180deg, #6C3DD1 0%, #D281BC 100%);
+}
+
+.button-dark {
+    border-radius: 10px;
+    background: #282828;
+    border: 1.4px solid var(--Bg_Black);
+}
+
+.button-dark:hover {
+    border: 1.4px solid var(--Gradient, #6C3DD1);
+}

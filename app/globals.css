@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --Bg_Black: #0d0d0d;
+  --ellipse1-color: #d281bc33;
+  --ellipse2-color: #6c3dd14d;
+  --white: #ffffff;
+  --purple-gradient-color: #6c3dd1;
+
+  --left-gap: 80px;
+  --right-gap: 80px;
+  --top-gap: 24px;
+  --bottom-gap: 24px;
+}
+
+body {
+  color: rgb(255, 255, 255);
+  background: var(--Bg_Black, #0d0d0d);
+  position: relative;
+}
+
+.ellipse-2 {
+  width: 324px;
+  height: 324px;
+  flex-shrink: 0;
+  position: absolute;
+  top: -55px;
+  right: 11px;
+  z-index: -1;
+  border-radius: 444px;
+  background: var(--ellipse2-color);
+  filter: blur(100px);
+}
+
+.ellipse-1 {
+  width: 324px;
+  height: 324px;
+  position: absolute;
+  top: 62px;
+  left: 111px;
+  z-index: -1;
+  border-radius: 324px;
+  background: var(--ellipse1-color);
+  filter: blur(100px);
+}
+
+.container {
+  padding-left: var(--left-gap);
+  padding-right: var(--right-gap);
+  padding-top: var(--top-gap);
+  padding-bottom: var(--bottom-gap);
+}
+
+.vertical-gradient-line {
+  width: 1px;
+  opacity: 0.2;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    #fff 52.6%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.horizontal-gradient-line {
+  height: 1px;
+  opacity: 0.2;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    #fff 52.6%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}

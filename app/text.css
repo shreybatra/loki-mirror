@@ -1,0 +1,19 @@
+:root {
+    --muted-color: #B5B5B6;
+    --primary-pink: #D281BC;
+}
+
+.text-muted {
+    color: var(--muted-color);
+}
+
+.text-gradient {
+    background: var(--Gradient, linear-gradient(180deg, #6C3DD1 0%, #D281BC 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-primary-pink {
+    color: var(--primary-pink);
+}
