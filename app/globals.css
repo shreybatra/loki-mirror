@@ -74,3 +74,32 @@ body {
     rgba(255, 255, 255, 0) 100%
   );
 }
+
+.video-thumbnail-container {
+  border-radius: 10px;
+  border: 0.5px solid #8d8d8d;
+  background: linear-gradient(
+    260deg,
+    rgba(40, 40, 40, 0.77) 0%,
+    rgba(40, 40, 40, 0.19) 100%
+  );
+  backdrop-filter: blur(15px);
+}
+
+
+.video-play-button {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.testimonial-card {
+  border-radius: 10px;
+  background: rgba(40, 40, 40, 0.40);
+  backdrop-filter: blur(20px);
+  width: 360px;
+  padding: 20px;
+}
