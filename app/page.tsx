@@ -6,7 +6,7 @@ import {
   OutOfTheBox,
   Partners,
   ProductionFlow,
-  Security,
+  SecurityComplianceCheck,
   Testimonials,
 } from "@/components/Landing";
 
@@ -21,7 +21,7 @@ export default function Page() {
         <Features />
         <OutOfTheBox />
         <Testimonials />
-        <Security />
+        <SecurityComplianceCheck />
         <GetStarted />
       </div>
     </main>

@@ -5,5 +5,5 @@ export * from "./GetStarted/GetStarted";
 export * from "./OutOfTheBox/OutOfTheBox";
 export * from "./Partners/Partners";
 export * from "./ProductionFlow/ProductionFlow";
-export * from "./Security/Security";
+export * from "./SecurityComplianceCheck/Security";
 export * from "./Testimonials/Testimonials";
