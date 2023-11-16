@@ -8,11 +8,6 @@
   --ellipse2-color: #6c3dd14d;
   --white: #ffffff;
   --purple-gradient-color: #6c3dd1;
-
-  --left-gap: 80px;
-  --right-gap: 80px;
-  --top-gap: 24px;
-  --bottom-gap: 24px;
 }
 
 body {
@@ -44,13 +39,6 @@ body {
   border-radius: 324px;
   background: var(--ellipse1-color);
   filter: blur(100px);
-}
-
-.container {
-  padding-left: var(--left-gap);
-  padding-right: var(--right-gap);
-  padding-top: var(--top-gap);
-  padding-bottom: var(--bottom-gap);
 }
 
 .vertical-gradient-line {
@@ -118,7 +106,7 @@ body {
   cursor: pointer;
 }
 
-.production-flow-card .product-image img{
+.production-flow-card .product-image img {
   width: 100%;
   border-radius: 10px;
   display: none;
@@ -137,15 +125,15 @@ body {
     )
   );
   box-shadow: 0px 4px 42px 3px rgba(0, 0, 0, 0.7);
+}
 
-  .product-image img {
-    display: block;
-  }
+.production-flow-card:hover .product-image img {
+  display: block;
+}
 
-  p {
-    text-overflow: ellipsis;
-    overflow: hidden;
-  }
+.production-flow-card:hover p {
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .pipeline-flow {
@@ -159,6 +147,6 @@ body {
 .line-clamp {
   display: -webkit-box;
   -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;  
+  -webkit-box-orient: vertical;
   overflow: hidden;
 }

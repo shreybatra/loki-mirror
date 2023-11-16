@@ -37,7 +37,7 @@ export const ProductionFlow = () => {
         </h3>
         <h2 className="text-[32px] font-[700]">Feature pipeline flow</h2>
       </div>
-      <div className="relative h-[600px]">
+      <div className="hidden lg:block relative h-[600px]">
         <Image src={PipelineFlowImage} alt="Pipeline" />
         <div className="absolute top-0 h-full w-full flex flex-col justify-center gap-[52px]">
           <div className="flex gap-[300px] h-1/2 mb-[50px] items-end">
