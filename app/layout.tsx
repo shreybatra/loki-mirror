@@ -27,8 +27,8 @@ export default function RootLayout({
           <div className="ellipse-1"></div>
           <div className="ellipse-2"></div>
           {children}
-          <Footer />
         </div>
+        <Footer />
       </body>
     </html>
   );
