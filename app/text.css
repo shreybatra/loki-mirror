@@ -1,19 +1,34 @@
 :root {
-    --muted-color: #B5B5B6;
-    --primary-pink: #D281BC;
+  --muted-color: #b5b5b6;
+  --primary-pink: #d281bc;
+  --description-color: rgba(255, 255, 255, 0.7);
 }
 
 .text-muted {
-    color: var(--muted-color);
+  color: var(--muted-color);
 }
 
 .text-gradient {
-    background: var(--Gradient, linear-gradient(180deg, #6C3DD1 0%, #D281BC 100%));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: var(
+    --Gradient,
+    linear-gradient(180deg, #6c3dd1 0%, #d281bc 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-2 {
+  background: linear-gradient(270deg, #6c3dd1 28.83%, #d281bc 71.17%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .text-primary-pink {
-    color: var(--primary-pink);
+  color: var(--primary-pink);
+}
+
+.text-description {
+  color: var(--description-color);
 }

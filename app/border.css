@@ -1,0 +1,17 @@
+.border-image {
+  border: 1px solid var(--purple-gradient-color);
+  background: linear-gradient(
+    264deg,
+    rgba(40, 40, 40, 0.77) 0%,
+    rgba(40, 40, 40, 0.19) 99.15%
+  );
+}
+
+.border-primary {
+    border-color: var(--purple-gradient-color);
+}
+
+.border-gradient {
+  border-image: linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0%, #FFF 52.6%, rgba(255, 255, 255, 0.00) 100%) 9;
+  border-style: solid;
+}

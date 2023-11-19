@@ -8,7 +8,9 @@ import Frame3Img from '@/assets/png/frame3.png';
 
 export const Home = () => {
   return (
-    <div className="flex flex-col gap-[56px]">
+    <div className="flex flex-col gap-[56px] relative">
+      <div className="ellipse-1"></div>
+      <div className="ellipse-2"></div>
       <div className="flex flex-col items-center gap-[24px] w-full">
         <div className="text-[22px] md:text-[32px] lg:text-[48px] font-[700]">
           <h2 className="text-center">Full Featured, <span className="text-gradient font-[800]">NO CODE</span></h2>

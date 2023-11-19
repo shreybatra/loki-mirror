@@ -1,7 +1,6 @@
 "use client";
 import { TestimonialsData } from "@/constants/Testimonials";
 import React, { useEffect, useRef } from "react";
-import { MotionConfig, motion } from "framer-motion";
 import { HorizontalScroller } from "@/blocks";
 import { TestimonialCard } from "./TestimonialCard";
 

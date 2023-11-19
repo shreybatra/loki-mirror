@@ -1,0 +1,110 @@
+.motto-section {
+  background: url("../../assets/png/about_us_background.png");
+}
+
+.about-question::before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  background-color: var(--purple-gradient-color);
+  position: absolute;
+  left: -30px;
+  top: 0px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px var(--purple-gradient-color);
+}
+
+.leader-card-bg {
+  background: url("../../assets/png/leader-card-bg.png");
+  background-size: contain;
+}
+
+.leader-card {
+  border-radius: 10px;
+  border: 0.5px solid var(--gray-color);
+  background: linear-gradient(
+    260deg,
+    rgba(40, 40, 40, 0.77) 0%,
+    rgba(40, 40, 40, 0.19) 100%
+  );
+  backdrop-filter: blur(15px);
+  cursor: pointer;
+}
+
+.leader-card:hover {
+  border-radius: 10px;
+  border: 1px solid var(--purple-gradient-color);
+  background: linear-gradient(
+    264deg,
+    rgba(40, 40, 40, 0.77) 0%,
+    rgba(40, 40, 40, 0.19) 99.15%
+  );
+}
+
+.strip-played {
+  background: #5c5c5c;
+}
+
+.strip-unplayed {
+  background: var(--purple-gradient-color);
+}
+
+.ideation-dot::after {
+  content: "";
+  background: var(--purple-gradient-color);
+  position: absolute;
+  right: -2px;
+  top: -2px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.ideation-image-box {
+  border-radius: 10px;
+  border: 1px solid #6c3dd1;
+  background: linear-gradient(
+    194deg,
+    rgba(108, 61, 209, 0.2) 3.83%,
+    rgba(210, 129, 188, 0.2) 98.44%
+  );
+}
+
+.investor-card {
+  border-radius: 10px;
+  border: 0.5px solid var(--gray-color);
+  background: linear-gradient(
+    260deg,
+    rgba(40, 40, 40, 0.77) 0%,
+    rgba(40, 40, 40, 0.19) 100%
+  );
+  backdrop-filter: blur(15px);
+  cursor: pointer;
+}
+
+.angel-investor-card-bg {
+  background: url("../../assets/png/leader-card-bg.png");
+  background-size: contain;
+}
+
+.angel-investor-card {
+  border-radius: 10px;
+  border: 0.5px solid var(--gray-color);
+  background: linear-gradient(
+    260deg,
+    rgba(40, 40, 40, 0.77) 0%,
+    rgba(40, 40, 40, 0.19) 100%
+  );
+  backdrop-filter: blur(15px);
+  cursor: pointer;
+}
+
+.angel-investor-card:hover {
+  border-radius: 10px;
+  border: 1px solid var(--purple-gradient-color);
+  background: linear-gradient(
+    264deg,
+    rgba(40, 40, 40, 0.77) 0%,
+    rgba(40, 40, 40, 0.19) 99.15%
+  );
+}

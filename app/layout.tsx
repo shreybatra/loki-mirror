@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import "./blocks.css";
 import "./text.css";
+import "./border.css";
 import "./components.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
@@ -22,10 +23,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="max-w-[1280px] mx-auto flex flex-col gap-[32px] md:gap-0">
+        <div className="max-w-[1280px] mx-auto flex flex-col gap-[32px] md:gap-0 overflow-hidden">
           <Navbar />
-          <div className="ellipse-1"></div>
-          <div className="ellipse-2"></div>
           {children}
         </div>
         <Footer />
