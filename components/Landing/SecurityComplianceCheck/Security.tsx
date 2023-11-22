@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export const SecurityComplianceCheck = () => {
   return (
-    <div className="security-compliance-container w-screen p-[16px] md:px-[80px] md:py-[110px] flex flex-col md:flex-row gap-[40px] items-center">
+    <div className="security-compliance-container w-full p-[16px] md:px-[80px] md:py-[110px] flex flex-col md:flex-row gap-[40px] items-center">
       <div className="flex flex-col gap-[24px]">
         <h3 className="text-primary-pink uppercase tracking-[5px]">
           Security Compliance Check

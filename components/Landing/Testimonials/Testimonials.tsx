@@ -12,14 +12,14 @@ export const Testimonials = () => {
   }, []);
 
   return (
-    <div className="flex flex-col gap-[24px]">
+    <div className="flex flex-col gap-[24px] w-full">
       <div className="flex flex-col items-center justify-center">
         <h3 className="text-[28px] font-[700]">Don’t take our word for it</h3>
         <h2 className="text-gradient text-[32px] font-[700]">
           Trust our Customers
         </h2>
       </div>
-      <div className="flex overflow-hidden gap-[24px]">
+      <div className="w-full flex gap-[24px]">
         <HorizontalScroller direction="left" speed="slow">
           {TestimonialsData.map((testimonial, testimonialsIndex) => {
             return (

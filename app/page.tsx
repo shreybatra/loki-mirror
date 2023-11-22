@@ -12,7 +12,7 @@ import {
 
 export default function Page() {
   return (
-    <main className="flex flex-col items-center">
+    <main className="flex flex-col items-center gap-[120px] md:gap-[190px]">
       <div className="flex flex-col items-center gap-[120px] w-[90%] md:gap-[190px]">
         <Home />
         <Client />
@@ -20,8 +20,12 @@ export default function Page() {
         <Partners />
         <Features />
         <OutOfTheBox />
+      </div>
+      <div className="flex flex-col items-center gap-[120px] w-[100%] md:gap-[190px]">
         <Testimonials />
         <SecurityComplianceCheck />
+      </div>
+      <div className="flex flex-col items-center gap-[120px] w-[90%] md:gap-[190px]">
         <GetStarted />
       </div>
     </main>
