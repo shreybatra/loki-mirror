@@ -37,31 +37,31 @@ export const ProductionFlow = () => {
         </h3>
         <h2 className="text-[32px] font-[700]">Feature pipeline flow</h2>
       </div>
-      <div className="hidden lg:block relative h-[600px]">
+      <div className="hidden md:block relative  lg:h-[600px]">
         <Image src={PipelineFlowImage} alt="Pipeline" />
-        <div className="absolute top-0 h-full w-full flex flex-col justify-center gap-[52px]">
-          <div className="flex gap-[300px] h-1/2 mb-[50px] items-end">
-            <div className=" ">
+        <div className="absolute md:top-[10px] lg:top-0 h-full w-full flex flex-col justify-center gap-[52px]">
+          <div className="absolute top-[-15px] lg:top-[-16%] flex h-1/2 mb-[50px] items-end w-full">
+            <div className="absolute left-[9%] lg:left-[1%]">
               <ProductionFlowCard
                 title={ProductionFlowData[0].title}
                 description={ProductionFlowData[0].description}
               />
             </div>
-            <div className="">
+            <div className="absolute left-[50%] lg:left-[42%] lg:bottom-[10px]">
               <ProductionFlowCard
                 title={ProductionFlowData[1].title}
                 description={ProductionFlowData[1].description}
               />
             </div>
           </div>
-          <div className="flex justify-end gap-[300px] h-1/2 mt-[50px]">
-            <div className="">
+          <div className="absolute bottom-[-20px] lg:bottom-0 flex h-1/2  w-full">
+            <div className="absolute right-[45%] top-[10px] lg:top-[-25px]">
               <ProductionFlowCard
                 title={ProductionFlowData[2].title}
                 description={ProductionFlowData[2].description}
               />
             </div>
-            <div className=" ">
+            <div className="absolute right-[9%] lg:right-[1%] lg:top-[-30px]">
               <ProductionFlowCard
                 title={ProductionFlowData[3].title}
                 description={ProductionFlowData[3].description}
@@ -69,6 +69,30 @@ export const ProductionFlow = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="md:hidden relative">
+        <div className="flex flex-col items-center gap-[52px]">
+          <ProductionFlowCard
+            title={ProductionFlowData[0].title}
+            description={ProductionFlowData[0].description}
+          />
+
+          <ProductionFlowCard
+            title={ProductionFlowData[1].title}
+            description={ProductionFlowData[1].description}
+          />
+
+          <ProductionFlowCard
+            title={ProductionFlowData[2].title}
+            description={ProductionFlowData[2].description}
+          />
+
+          <ProductionFlowCard
+            title={ProductionFlowData[3].title}
+            description={ProductionFlowData[3].description}
+          />
+        </div>
+        <div className="w-[850px] production-flow-border "></div>
       </div>
     </div>
   );

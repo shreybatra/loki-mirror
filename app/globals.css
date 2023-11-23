@@ -104,6 +104,20 @@ body {
   border-radius: 10px;
   border: 1.5px solid inherit;
   cursor: pointer;
+  position: relative;
+  transition: 2s;
+}
+
+.production-flow-card:before {
+  display: block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #6c3dd1;
+  position: absolute;
+  top: 25%;
+  z-index: 10;
+  left: -14%;
 }
 
 .production-flow-card .product-image img {
