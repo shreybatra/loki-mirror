@@ -1,9 +1,10 @@
 "use client";
-import React from "react";
-import { MdChevronRight } from "react-icons/md";
+
 import CosmocloudFullLogo from "@/assets/svg/cosmocloud-logo-full-dark.svg";
 import Image from "next/image";
 import Link from "next/link";
+import { MdChevronRight } from "react-icons/md";
+import React from "react";
 
 export const GetStarted = () => {
   return (
@@ -25,10 +26,16 @@ export const GetStarted = () => {
             Let&apos;s get started
           </div>
         </Link>
-        {/* <div className="cursor-pointer flex justify-center gap-2 items-center text-muted p-[16px] w-full">
-          <p>Book a demo</p>
-          <MdChevronRight />
-        </div> */}
+        <div className="cursor-pointer text-muted flex flex-col gap-2 items-center p-[16px] w-full">
+          <Link href={"/contactUs"}>
+            <p className="flex felx-col items-center">
+              Book a demo{" "}
+              <span>
+                <MdChevronRight />
+              </span>{" "}
+            </p>
+          </Link>
+        </div>
       </div>
     </div>
   );

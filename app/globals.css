@@ -19,6 +19,7 @@ body {
   background-image: url('../assets/svg/background.svg');
   background-repeat: repeat-y;
   background-color: #0d0d0d;
+  overflow-x: hidden;
 }
 
 .vertical-gradient-line {
