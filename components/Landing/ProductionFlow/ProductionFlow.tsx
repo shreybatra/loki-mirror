@@ -30,7 +30,7 @@ export const ProductionFlow = () => {
   ];
 
   return (
-    <div className="flex flex-col gap-[96px]">
+    <div className="flex flex-col gap-[96px] relative w-full">
       <div className="flex flex-col gap-[12px] items-center">
         <h3 className="text-primary-pink uppercase tracking-[5px]">
           Production Flow
@@ -71,28 +71,35 @@ export const ProductionFlow = () => {
         </div>
       </div>
       <div className="md:hidden relative">
-        <div className="flex flex-col items-center gap-[52px]">
+        <div className="flex flex-col items-center gap-[52px] relative">
+          <div className="absolute flex flex-col w-[290px] md:w-[170px] lg:w-[280px] h-full">
+            <div className="w-[700px] production-flow-border left-[-132.5%] sm:left-[-132%] md:hidden"></div>
+          </div>
+
           <ProductionFlowCard
             title={ProductionFlowData[0].title}
             description={ProductionFlowData[0].description}
+            type="pink"
+            // showBorder={true}
           />
-
           <ProductionFlowCard
             title={ProductionFlowData[1].title}
             description={ProductionFlowData[1].description}
+            type="pink"
           />
 
           <ProductionFlowCard
             title={ProductionFlowData[2].title}
             description={ProductionFlowData[2].description}
+            type="purple"
           />
 
           <ProductionFlowCard
             title={ProductionFlowData[3].title}
             description={ProductionFlowData[3].description}
+            type="purple"
           />
         </div>
-        <div className="w-[850px] production-flow-border "></div>
       </div>
     </div>
   );

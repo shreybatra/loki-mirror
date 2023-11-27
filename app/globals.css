@@ -116,8 +116,16 @@ body {
   background-color: #6c3dd1;
   position: absolute;
   top: 25%;
-  z-index: 10;
-  left: -14%;
+  z-index: 14;
+  left: -13.4%;
+}
+
+.production-flow-card[data-color="pink"]::before {
+  background-color: #d281bc;
+}
+
+.production-flow-card[data-color="purple"]::before {
+  background-color: #6c3dd1;
 }
 
 .production-flow-card .product-image img {

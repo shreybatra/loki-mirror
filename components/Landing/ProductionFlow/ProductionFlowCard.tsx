@@ -5,11 +5,24 @@ import ProductImage from "@/assets/png/sde.png";
 interface ProductionFlowCardProps {
   title: string;
   description: string;
+  type?: "pink" | "purple";
+  showBorder?: boolean;
 }
 
-export const ProductionFlowCard = ({title, description}: ProductionFlowCardProps) => {
+export const ProductionFlowCard = ({
+  title,
+  description,
+  type,
+  showBorder,
+}: ProductionFlowCardProps) => {
   return (
-    <div className="production-flow-card flex flex-col w-[170px] lg:w-[280px] h-full before:content-[''] md:before:content-none">
+    <div
+      data-color={type}
+      className="production-flow-card flex flex-col w-[290px] md:w-[170px] lg:w-[280px] h-full before:content-[''] md:before:content-none"
+    >
+      {showBorder && (
+        <div className="w-[700px] production-flow-border md:hidden"></div>
+      )}
       <div className="product-image">
         <Image src={ProductImage} alt="image" />
       </div>

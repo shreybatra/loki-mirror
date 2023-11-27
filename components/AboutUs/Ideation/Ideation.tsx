@@ -24,8 +24,8 @@ export const Ideation = () => {
           </p>
         </div>
       </div>
-      <div className="flex flex-col gap-[8px]">
-        <div className="flex flex-col gap-[8px]">
+      <div className="flex flex-col gap-[8px] md:-rotate-90">
+        <div className="flex flex-col gap-[8px] ">
           {years.map((year) => {
             return (
               <div key={year} className="flex gap-[8px]">
@@ -53,9 +53,9 @@ export const Ideation = () => {
           </div>
           <div className="flex flex-col gap-[24px]">
             <div className="flex relative">
-              <div className="ideation-image-box p-[8px] w-[118px] relative">
-                <Image src={CosmocloudImg} alt="Cosmocloud logo" />
-                <div className="absolute top-[50%] right-[-40px]">
+              <div className="ideation-image-box p-[8px] w-[118px] relative md:rotate-90">
+                <Image className="" src={CosmocloudImg} alt="Cosmocloud logo" />
+                <div className="absolute top-[50%] right-[-40px] md:-rotate-90 md:right-[20%] md:top-[-110%]">
                   <Image
                     className="w-[36px] h-[36px]"
                     src={CircularArrow1}
@@ -64,7 +64,7 @@ export const Ideation = () => {
                 </div>
               </div>
             </div>
-            <div className="ideation-image-box p-[8px] w-full md:w-2/3">
+            <div className="ideation-image-box p-[8px] w-full md:rotate-90">
               <Image src={IdeationImage} alt="Ideation Image" />
             </div>
           </div>

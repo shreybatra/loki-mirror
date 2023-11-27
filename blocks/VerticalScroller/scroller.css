@@ -1,0 +1,53 @@
+.v-scroller {
+  max-width: 99vw;
+}
+.v-scroller__inner {
+  padding-block: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.v-scroller[data-animated="true"] {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(
+    0deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+  mask: linear-gradient(0deg, transparent, white 20%, white 80%, transparent);
+}
+
+.v-scroller[data-animated="true"] .v-scroller__inner {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: v-scroll var(--_animation-duration, 40s)
+    var(--_animation-direction, forwards) linear infinite;
+}
+
+.v-scroller[data-direction="down"] {
+  --_animation-direction: reverse;
+}
+
+.v-scroller[data-direction="up"] {
+  --_animation-direction: forwards;
+}
+
+.v-scroller[data-speed="fast"] {
+  --_animation-duration: 20s;
+}
+
+.v-scroller[data-speed="slow"] {
+  --_animation-duration: 60s;
+}
+
+@keyframes v-scroll {
+  to {
+    transform: translate(0, calc(-50% - 10px));
+  }
+}
+
+
