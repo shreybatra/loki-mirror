@@ -90,6 +90,16 @@ body {
   width: 360px;
   padding: 20px;
 }
+@media screen and (max-width: 768px)
+  {
+    .testimonial-card
+    {
+      width: 286px;
+      height: 175px;
+      font-size: 12px;
+      padding:12px
+    }
+  }
 
 .security-compliance-container {
   background: linear-gradient(
@@ -102,7 +112,7 @@ body {
 
 .production-flow-card {
   border-radius: 10px;
-  border: 1.5px solid inherit;
+  border: none;
   cursor: pointer;
   position: relative;
   transition: 2s;
@@ -133,6 +143,10 @@ body {
   border-radius: 10px;
   display: none;
   transition: all 2s;
+}
+
+.product-image-md {
+  display: block !important;
 }
 
 .production-flow-card:hover {

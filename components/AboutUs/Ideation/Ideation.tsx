@@ -1,9 +1,10 @@
 "use client";
+
+import CircularArrow1 from "@/assets/png/curve_arrow-1.png";
+import CosmocloudImg from "@/assets/svg/CosmocloudLogo.svg";
+import IdeationImage from "@/assets/png/ideation.png";
 import Image from "next/image";
 import React from "react";
-import CosmocloudImg from "@/assets/svg/CosmocloudLogo.svg";
-import CircularArrow1 from "@/assets/png/curve_arrow-1.png";
-import IdeationImage from "@/assets/png/ideation.png";
 
 export const Ideation = () => {
   const years = [2016, 2017, 2018, 2019, 2020, 2021, 2022];
@@ -15,10 +16,10 @@ export const Ideation = () => {
           Prepared the ground for a future
         </h2>
         <div className="flex flex-col gap-[8px] items-center">
-          <h1 className="text-center text-[20px] font-[700]">
+          <h1 className="text-center text-[44px] font-[700]">
             2023 a cultivating year
           </h1>
-          <p className="text-[12px] text-muted font-[400] text-center">
+          <p className="text-[16px] text-muted font-[400] text-center">
             Giving rise to new idea, new partnerships, new connections, new
             experience
           </p>

@@ -23,6 +23,6 @@
   min-width: 100%;
   z-index: 15;
   height: 3px;
-  background: linear-gradient(to right, #D281BC 0%,#D281BC 50%,#6C3DD1 51%,#6C3DD1 100%);
+  background: linear-gradient(90deg, #D281BC,#6C3DD1);
   transform: rotate(90deg);
 }

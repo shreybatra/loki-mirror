@@ -1,5 +1,7 @@
 "use client";
+
 import Image, { StaticImageData } from "next/image";
+
 import LinkedinLogo from "@/assets/svg/linkedin-logo.svg";
 import React from "react";
 

@@ -1,9 +1,9 @@
 "use client";
-import { HorizontalScroller } from "@/blocks";
-import React from "react";
 
 import CultureImage from "@/assets/png/culture.png";
+import { HorizontalScroller } from "@/blocks";
 import Image from "next/image";
+import React from "react";
 import { VerticalScroller } from "@/blocks/VerticalScroller";
 
 export const WorkCulture = () => {
@@ -11,8 +11,8 @@ export const WorkCulture = () => {
   return (
     <div className="flex flex-col gap-[16px] lg:gap-[130px] md:flex-row overflow-hidden md:h-[300px] relative">
       <div className="flex flex-col gap-[16px]">
-        <h1 className="text-[16px] font-[700]">Culture and Work Environment</h1>
-        <p className="text-[12px] font-[400] max-w-[630px]">
+        <h1 className="text-[32px] font-[700]">Culture and Work Environment</h1>
+        <p className="text-[16px] font-[400] max-w-[630px]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut

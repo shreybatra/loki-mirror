@@ -1,14 +1,14 @@
 "use client";
-import Image from "next/image";
-import React from "react";
 
 import Frame1Img from '@/assets/png/frame1.png';
 import Frame2Img from '@/assets/png/frame2.png';
 import Frame3Img from '@/assets/png/frame3.png';
+import Image from "next/image";
+import React from "react";
 
 export const Home = () => {
   return (
-    <div className="flex flex-col gap-[56px] relative">
+    <div className="flex flex-col gap-[56px] relative mt-[80px]">
       <div className="ellipse-1"></div>
       <div className="ellipse-2"></div>
       <div className="flex flex-col items-center gap-[24px] w-full">
@@ -22,8 +22,8 @@ export const Home = () => {
         </p>
       </div>
       <div className="flex justify-center gap-[16px]">
-        <button className="button-dark px-[18px] py-[9px]  md:py-[12px] md:px-[24px]">Let{"'"}s get started</button>
-        <button className="button-dark px-[18px] py-[9px] md:py-[12px] md:px-[24px]">Know more</button>
+        <button className="button-dark px-[18px] py-[9px]  md:py-[12px] md:px-[24px]" onClick={()=>window.location.href = "https://dashboard.cosmocloud.io/sign-up"}>Let{"'"}s get started</button>
+        <button className="button-dark px-[18px] py-[9px] md:py-[12px] md:px-[24px]" onClick={()=>window.location.href = "https://docs.cosmocloud.io"}>Know more</button>
       </div>
       <div className="relative h-full w-full">
         <div className="absolute right-[-3%] md:right-[-5%] lg:right-[-15%] top-[-7%] aspect-[129/228] w-[36%]">

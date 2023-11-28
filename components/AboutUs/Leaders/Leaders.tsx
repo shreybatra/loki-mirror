@@ -1,7 +1,8 @@
 "use client";
+
+import { LeaderCard } from "./LeaderCard";
 import { LeadersData } from "@/constants/Leaders";
 import React from "react";
-import { LeaderCard } from "./LeaderCard";
 
 export const Leaders = () => {
   return (
@@ -12,7 +13,7 @@ export const Leaders = () => {
           Our Secret Weapons. Our team of Experts
         </h3>
       </div>
-      <div className="flex flex-wrap gap-[16px] justify-center">
+      <div className="flex flex-wrap gap-[20px] justify-center">
         {LeadersData.map(({ name, linkedinProfile, image, position }) => {
           return (
             <LeaderCard
