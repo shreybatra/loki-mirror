@@ -7,12 +7,13 @@ import {
   Motto,
   WorkCulture,
 } from "@/components/AboutUs";
+
 import { GetStarted } from "@/components/Landing";
 
 export default function Page() {
   return (
-    <main className="flex flex-col items-center">
-      <div className="flex flex-col items-center gap-[120px] w-[90%] md:gap-[190px]">
+    <main className="about-main flex flex-col items-center">
+      <div className="flex flex-col items-center gap-[100px] w-[95%] md:gap-[190px]">
         <Motto />
         <About />
         <Leaders />
