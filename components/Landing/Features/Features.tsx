@@ -2,7 +2,6 @@
 
 import { FeatureDescription } from "./FeatureDescription";
 import { FeaturesCollection } from "@/constants/Features";
-import { MdChevronRight } from "react-icons/md";
 import React from "react";
 
 export const Features = () => {
@@ -22,8 +21,9 @@ export const Features = () => {
             Unlocking your potential with our capabilities
           </h2>
           <div className="cursor-pointer flex gap-2 items-center text-muted">
-            <p className="text-[12px]">View All</p>
-            <MdChevronRight />
+            {/* Disabled */}
+            {/* <p className="text-[12px]">View All</p> */}
+            {/* <MdChevronRight /> */}
           </div>
         </div>
       </div>
@@ -45,9 +45,13 @@ export const Features = () => {
             );
           })}
         </div>
-        <div key={crypto.randomUUID()} className="flex flex-row-reverse md:flex-col items-end gap-[20px] md:gap-[50px] relative top-[66px] md:top-[44px] w-full md:w-1/3">
+        <div
+          key={crypto.randomUUID()}
+          className="flex flex-row-reverse md:flex-col items-end gap-[20px] md:gap-[50px] relative top-[66px] md:top-[44px] w-full md:w-1/3"
+        >
           {FeaturesCollection[2].map((feature, index) => {
-            const className = index === 0? "relative top-[-66px] md:top-0": "";
+            const className =
+              index === 0 ? "relative top-[-66px] md:top-0" : "";
             return (
               <FeatureDescription
                 key={index}

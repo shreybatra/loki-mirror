@@ -15,7 +15,8 @@ export default function Page() {
     <main className="flex flex-col items-center gap-[120px] md:gap-[190px]">
       <div className="flex flex-col items-center gap-[90px] w-[90%] md:gap-[190px]">
         <Home />
-        <Client />
+        {/* Flagged off till data is not present. */}
+        {/* <Client /> */}
         <ProductionFlow />
         <Partners />
         <Features />
@@ -23,7 +24,8 @@ export default function Page() {
       </div>
       <div className="flex flex-col items-center gap-[100px] w-[100%] md:gap-[190px]">
         <Testimonials />
-        <SecurityComplianceCheck />
+        {/* Flagged off till data is not present. */}
+        {/* <SecurityComplianceCheck /> */}
       </div>
       <div className="flex flex-col items-center gap-[100px] w-[90%] md:gap-[190px]">
         <GetStarted />

@@ -1,59 +1,70 @@
-"use client"
+"use client";
 
-import Image from 'next/image'
-import LandingVideoThumbnail from '@/assets/png/landing_video_thumbnail.png';
-import PlayButton from '@/assets/svg/play_btn.svg';
-import React from 'react'
+import React, { useEffect, useState } from "react";
+import ReactPlayer from "react-player";
+
+const reactPlayerSize = {
+  "360": {
+    width: 387,
+    height: 218,
+  },
+  "720": {
+    width: 387,
+    height: 218,
+  },
+  "1440": {
+    width: 640,
+    height: 360,
+  },
+};
 
 export const OutOfTheBox = () => {
-  const [showModal, setShowModal] = React.useState(false);
+  const [playerSize, setPlayerSize] = useState(reactPlayerSize["1440"]);
+
+  useEffect(() => {
+    if (window.innerWidth <= 360) {
+      setPlayerSize(reactPlayerSize["360"]);
+    } else if (window.innerWidth <= 720) {
+      setPlayerSize(reactPlayerSize["720"]);
+    } else {
+      setPlayerSize(reactPlayerSize["1440"]);
+    }
+  }, []);
+
+  console.log(playerSize);
+
   return (
-    <div className='flex flex-col gap-[36px] items-center md:flex-row'>
-      <div className='video-thumbnail-container p-[6px] relative'>
-        <Image src={LandingVideoThumbnail} alt='Landing video'/>
-        <div className='video-play-button'  onClick={() => setShowModal(true)}>
-          <Image src={PlayButton} alt='Play'/>
-        </div>
+    <div className="flex flex-col gap-[36px] items-center md:flex-row">
+      <div className="video-thumbnail-container p-[6px] relative">
+        <ReactPlayer
+          url="https://youtu.be/UWco0D6xp7U"
+          controls={true}
+          width={playerSize.width}
+          height={playerSize.height}
+        />
       </div>
-      <div className='flex flex-col gap-[16px] md:gap-[42px]'>
-        <div className='flex flex-col w-full gap-[12px]'>
-          <h3 className='text-[16px] font-[700]'>Out of the box</h3>
-          <h2 className='text-gradient text-[20px] font-[700] md:text-[32px]' style={{backgroundColor:"red"}}>Flexibility, Scalability, Security</h2>
-        </div>
-        <div className='flex flex-col gap-[12px] text-muted text-[12px]'>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-      </div>
-      {showModal ? (
-        <>
-          <div
-            className="justify-center items-center flex w-[100%] fixed inset-0 z-50 outline-none focus:outline-none"
+      <div className="flex flex-col gap-[16px] md:gap-[42px]">
+        <div className="flex flex-col w-full gap-[12px]">
+          <h3 className="text-[16px] font-[700]">Out of the box</h3>
+          <h2
+            className="text-gradient text-[20px] font-[700] md:text-[32px]"
+            style={{ backgroundColor: "red" }}
           >
-            <div className=" relative w-auto my-6 mx-auto max-w-3xl">
-              {/*content*/}
-              <div className="bg-[#020617] border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
-                {/*body*/}
-                <div className="relative p-6 flex-auto">
-                <iframe  src="https://drive.google.com/file/d/1ky79fobIh_i7807Nj1AsWyndcTb0gM5U/preview" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" className='w-[400px] h-[300px] md:w-[640px] md:h-[420px]'></iframe>
-                </div>
-                {/*footer*/}
-                <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
-                  
-                  <button
-                    className="bg-[#6C3DD1] text-white font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none"
-                    type="button"
-                    onClick={() => setShowModal(false)}
-                  >
-                    Close
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
-        </>
-      ) : null}
+            Flexibility, Scalability, Security
+          </h2>
+        </div>
+        <div className="flex flex-col gap-[4px] text-muted text-[18px]">
+          <p>
+            Cosmocloud is the next-gen no-code Backend-as-a-Service (BaaS)
+            platform which lets you build and deploy your applications in a
+            matter of minutes.
+          </p>
+          <p>
+            From signing up to deploying your first application with a set of
+            APIs, everything is possible in just 5 minutes.
+          </p>
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};

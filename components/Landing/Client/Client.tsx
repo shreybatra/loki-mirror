@@ -12,7 +12,9 @@ export const Client = () => {
           Our Clients
         </h3>
         <div className="flex flex-col gap-[12px] items-center">
-          <h2 className="font-[700] text-[20px] md:text-[32px] text-center">Loved by Companies</h2>
+          <h2 className="font-[700] text-[20px] md:text-[32px] text-center">
+            Loved by Companies
+          </h2>
           <p className="text-muted text-[12px] md:text-[14px] text-center">
             We believe in building strong, long-lasting relationships with our
             clients, and their success is our success.
