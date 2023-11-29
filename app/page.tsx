@@ -15,16 +15,19 @@ export default function Page() {
     <main className="flex flex-col items-center gap-[120px] md:gap-[190px]">
       <div className="flex flex-col items-center gap-[90px] w-[90%] md:gap-[190px]">
         <Home />
-        <Client />
+        {/* Flagged off till data is not present. */}
+        {/* <Client /> */}
         <ProductionFlow />
         <Partners />
         <Features />
         <OutOfTheBox />
       </div>
-      <div className="flex flex-col items-center gap-[100px] w-[100%] md:gap-[190px]">
-        <Testimonials />
-        <SecurityComplianceCheck />
-      </div>
+      {/* Flagged off till data is not present. */}
+      {/* <div className="flex flex-col items-center gap-[100px] w-[100%] md:gap-[190px]"> */}
+
+      {/* <Testimonials /> */}
+      {/* <SecurityComplianceCheck /> */}
+      {/* </div> */}
       <div className="flex flex-col items-center gap-[100px] w-[90%] md:gap-[190px]">
         <GetStarted />
       </div>

@@ -5,22 +5,15 @@
 .feature-description {
   border-radius: 10px;
   gap: 16px;
-  border: 1px solid var(--purple-gradient-color);
-  background: linear-gradient(
-    260deg,
-    rgba(40, 40, 40, 0.77) 0%,
-    rgba(40, 40, 40, 0.19) 100%
-  );
+  /* border: 1px solid #AC5CC9; */
+  background: linear-gradient(260deg,
+      rgba(40, 40, 40, 0.77) 0%,
+      rgba(40, 40, 40, 0.19) 100%);
   backdrop-filter: blur(15px);
   cursor: pointer;
 }
 
 .feature-description:hover {
   border-radius: 10px;
-  border: 1px solid var(--purple-gradient-color);
-  background: linear-gradient(
-    264deg,
-    rgba(40, 40, 40, 0.77) 0%,
-    rgba(40, 40, 40, 0.19) 99.15%
-  );
+  /* border: 1px solid var(--primary-color); */
 }

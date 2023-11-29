@@ -1,32 +1,23 @@
-:root {
-  --muted-color: #b5b5b6;
-  --primary-pink: #d281bc;
-  --description-color: rgba(255, 255, 255, 0.7);
-}
-
 .text-muted {
   color: var(--muted-color);
 }
 
 .text-gradient {
-  background: var(
-    --Gradient,
-    linear-gradient(90deg,#d281bc, #6c3dd1)
-  );
+  background: linear-gradient(90deg, var(--secondary-color) 0%, var(--primary-color) 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-gradient-2 {
-  background: linear-gradient(270deg, #6c3dd1 28.83%, #d281bc 71.17%);
+  background: linear-gradient(270deg, var(--primary-color) 28.83%, var(--secondary-color) 71.17%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-primary-pink {
-  color: var(--primary-pink);
+  color: var(--secondary-color);
 }
 
 .text-description {

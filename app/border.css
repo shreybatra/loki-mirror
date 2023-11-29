@@ -1,14 +1,12 @@
 .border-image {
-  border: 1px solid var(--purple-gradient-color);
-  background: linear-gradient(
-    264deg,
-    rgba(40, 40, 40, 0.77) 0%,
-    rgba(40, 40, 40, 0.19) 99.15%
-  );
+  border: 1px solid var(--primary-color);
+  background: linear-gradient(264deg,
+      rgba(40, 40, 40, 0.77) 0%,
+      rgba(40, 40, 40, 0.19) 99.15%);
 }
 
 .border-primary {
-    border-color: var(--purple-gradient-color);
+  border-color: var(--primary-color);
 }
 
 .border-gradient {
@@ -23,6 +21,25 @@
   min-width: 100%;
   z-index: 15;
   height: 3px;
-  background: linear-gradient(90deg, #D281BC,#6C3DD1);
+  background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
   transform: rotate(90deg);
+}
+
+.border-background {
+
+  position: relative;
+}
+
+.border-background::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  padding: 1px;
+  background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
 }
