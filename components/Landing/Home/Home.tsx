@@ -33,7 +33,7 @@ export const Home = () => {
             (window.location.href = "https://dashboard.cosmocloud.io/sign-up")
           }
         >
-          Let's get started
+          Let&apos;s get started
         </button>
         <button
           className="button-dark border-background px-[18px] py-[9px] md:py-[12px] md:px-[24px]"
@@ -45,12 +45,12 @@ export const Home = () => {
       <div className="relative h-full w-full">
         <div className="absolute right-[-3%] md:right-[-5%] lg:right-[-15%] top-[-7%] aspect-[242/440] w-[36%]">
           <div className="screenshot-background h-full w-full p-1">
-            <Image className="w-full" src={Frame1Img} alt="" />
+            <Image className="w-full" src={Frame1Img} alt="" priority={false} />
           </div>
         </div>
         <div className="absolute left-[-3%] md:left-[-5%] bottom-[10%] lg:left-[-18%] aspect-[154/58] w-[40%]">
           <div className="screenshot-background h-full w-full p-1">
-            <Image className="h-full" src={Frame2Img} alt="" />
+            <Image className="h-full w-full" src={Frame2Img} alt="" />
           </div>
         </div>
         <div className="screenshot-background h-full w-full p-1">

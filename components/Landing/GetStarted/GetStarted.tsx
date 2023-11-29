@@ -22,13 +22,13 @@ export const GetStarted = () => {
       <div className="flex flex-col items-center w-full md:w-[250px]">
         <Link href="https://dashboard.cosmocloud.io/sign-up">
           <div className="button-gradient text-[16px] px-[24px] py-[12px] md:py-[16px] w-full">
-            Let's get started
+            Let&apos;s get started
           </div>
         </Link>
-        <div className="cursor-pointer flex justify-center gap-2 items-center text-muted p-[16px] w-full">
+        {/* <div className="cursor-pointer flex justify-center gap-2 items-center text-muted p-[16px] w-full">
           <p>Book a demo</p>
           <MdChevronRight />
-        </div>
+        </div> */}
       </div>
     </div>
   );

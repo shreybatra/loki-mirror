@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import ReactPlayer from "react-player";
+import dynamic from "next/dynamic";
+const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
 const reactPlayerSize = {
   "360": {
@@ -31,8 +32,6 @@ export const OutOfTheBox = () => {
     }
   }, []);
 
-  console.log(playerSize);
-
   return (
     <div className="flex flex-col gap-[36px] items-center md:flex-row">
       <div className="video-thumbnail-container p-[6px] relative">
@@ -54,15 +53,16 @@ export const OutOfTheBox = () => {
           </h2>
         </div>
         <div className="flex flex-col gap-[4px] text-muted text-[18px]">
-          <p>
+          <p className="mb-4">
             Cosmocloud is the next-gen no-code Backend-as-a-Service (BaaS)
             platform which lets you build and deploy your applications in a
             matter of minutes.
           </p>
-          <p>
+          <p className="mb-4">
             From signing up to deploying your first application with a set of
             APIs, everything is possible in just 5 minutes.
           </p>
+          <p className="text-gradient">Checkout the demo video!</p>
         </div>
       </div>
     </div>

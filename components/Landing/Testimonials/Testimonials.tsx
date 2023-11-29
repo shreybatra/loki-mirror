@@ -17,7 +17,7 @@ export const Testimonials = () => {
     <div className="flex flex-col gap-[20px] w-full md:gap-[24px]">
       <div className="flex flex-col items-center justify-center">
         <h3 className="text-[12px] font-[600] md:text-[28px] ">
-          Don't take our word for it
+          Don&apos;t take our word for it
         </h3>
         <h2 className="text-gradient text-[16px] font-[600] md:text-[32px] ">
           Trust our Customers

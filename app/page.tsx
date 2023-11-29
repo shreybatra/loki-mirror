@@ -22,11 +22,12 @@ export default function Page() {
         <Features />
         <OutOfTheBox />
       </div>
-      <div className="flex flex-col items-center gap-[100px] w-[100%] md:gap-[190px]">
-        <Testimonials />
-        {/* Flagged off till data is not present. */}
-        {/* <SecurityComplianceCheck /> */}
-      </div>
+      {/* Flagged off till data is not present. */}
+      {/* <div className="flex flex-col items-center gap-[100px] w-[100%] md:gap-[190px]"> */}
+
+      {/* <Testimonials /> */}
+      {/* <SecurityComplianceCheck /> */}
+      {/* </div> */}
       <div className="flex flex-col items-center gap-[100px] w-[90%] md:gap-[190px]">
         <GetStarted />
       </div>
