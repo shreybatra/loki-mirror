@@ -1,9 +1,9 @@
 "use client";
-import React from "react";
-import PipelineFlowImage from "@/assets/svg/pipeline1.svg";
 
 import Image from "next/image";
+import PipelineFlowImage from "@/assets/svg/pipeline1.svg";
 import { ProductionFlowCard } from "./ProductionFlowCard";
+import React from "react";
 
 export const ProductionFlow = () => {
   const ProductionFlowData = [
@@ -32,10 +32,10 @@ export const ProductionFlow = () => {
   return (
     <div className="flex flex-col gap-[96px] relative w-full">
       <div className="flex flex-col gap-[12px] items-center">
-        <h3 className="text-primary-pink uppercase tracking-[5px]">
+        <h3 className="text-primary-pink uppercase tracking-[5px] text-[12px] md:text-[16px]  font-[500]">
           Production Flow
         </h3>
-        <h2 className="text-[32px] font-[700]">Feature pipeline flow</h2>
+        <h2 className="text-[20px] font-[700] text-[20px] md:text-[32px]">Feature pipeline flow</h2>
       </div>
       <div className="hidden md:block relative  lg:h-[600px]">
         <Image src={PipelineFlowImage} alt="Pipeline" />
@@ -71,7 +71,7 @@ export const ProductionFlow = () => {
         </div>
       </div>
       <div className="md:hidden relative">
-        <div className="flex flex-col items-center gap-[52px] relative">
+        <div className="flex flex-col items-center gap-[10px]  relative" >
           <div className="absolute flex flex-col w-[290px] md:w-[170px] lg:w-[280px] h-full">
             <div className="w-[700px] production-flow-border left-[-132.5%] sm:left-[-132%] md:hidden"></div>
           </div>
@@ -80,6 +80,7 @@ export const ProductionFlow = () => {
             title={ProductionFlowData[0].title}
             description={ProductionFlowData[0].description}
             type="pink"
+            displayMd={true}
             // showBorder={true}
           />
           <ProductionFlowCard

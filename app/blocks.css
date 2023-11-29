@@ -6,7 +6,7 @@
 .button-dark {
     border-radius: 10px;
     background: #282828;
-    border: 1.4px solid var(--Bg_Black);
+    border: 1.4px solid var(--Gradient, #6C3DD1);
 }
 
 .button-dark:hover {

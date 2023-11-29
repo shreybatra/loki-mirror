@@ -1,7 +1,9 @@
 "use client"
+
+import Image, { StaticImageData } from 'next/image';
+
 import React from 'react';
 import TestiMonialIcon from '@/assets/svg/testimonial_icon.svg';
-import Image, { StaticImageData } from 'next/image';
 
 interface TestimonialCardProps {
     description: string;
@@ -12,7 +14,7 @@ interface TestimonialCardProps {
 
 export const TestimonialCard = ({description, customerName, companyName, image}: TestimonialCardProps) => {
   return (
-    <div className='testimonial-card m-2 flex flex-col gap-[16px]'>
+    <div className='testimonial-card m-2 flex flex-col gap-[12px]'>
         <div className='w-[32px] h-[32px] rounded-[9999px]'>
             <Image src={TestiMonialIcon} alt='testimonial icon' />
         </div>

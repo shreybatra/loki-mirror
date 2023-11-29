@@ -1,12 +1,13 @@
 import Image from "next/image";
-import React from "react";
 import ProductImage from "@/assets/png/sde.png";
+import React from "react";
 
 interface ProductionFlowCardProps {
   title: string;
   description: string;
   type?: "pink" | "purple";
   showBorder?: boolean;
+  displayMd?:boolean
 }
 
 export const ProductionFlowCard = ({
@@ -14,6 +15,7 @@ export const ProductionFlowCard = ({
   description,
   type,
   showBorder,
+  displayMd
 }: ProductionFlowCardProps) => {
   return (
     <div
@@ -23,12 +25,12 @@ export const ProductionFlowCard = ({
       {showBorder && (
         <div className="w-[700px] production-flow-border md:hidden"></div>
       )}
-      <div className="product-image">
+      <div className={`product-image`}>
         <Image src={ProductImage} alt="image" />
       </div>
-      <div className="flex flex-col p-[8px] gap-[8px] items-center">
-        <h3 className="text-[14px] lg:text-[20px] font-[700]">{title}</h3>
-        <p className="text-center text-[10px] lg:text-[14px] font-[400] line-clamp">
+      <div className="flex flex-col p-[8px] gap-[8px] items-center md: items-baseline">
+        <h3 className="text-[14px] lg:text-[20px] font-[700] md: text-[14px] text-start">{title}</h3>
+        <p className="text-center text-[10px] lg:text-[14px] font-[400] line-clamp  md: text-[12px] text-start">
           {description}
         </p>
       </div>

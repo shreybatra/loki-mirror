@@ -1,9 +1,8 @@
-import GoogleLogo from '@/assets/svg/google.svg';
-import GithubLogo from '@/assets/svg/github.svg';
-import MongodbLogo from '@/assets/svg/mongodb.svg';
 import FacebookLogo from '@/assets/svg/facebook.svg';
+import GithubLogo from '@/assets/svg/github.svg';
+import GoogleLogo from '@/assets/svg/google.svg';
 import MicrosoftLogo from '@/assets/svg/microsoft.svg';
-
+import MongodbLogo from '@/assets/svg/mongodb.svg';
 
 export const ClientLogos = [
     {
@@ -25,5 +24,22 @@ export const ClientLogos = [
     {
         icon: MicrosoftLogo,
         name: 'Microsoft'
-    }
+    },
+    {
+        icon: GoogleLogo,
+        name: 'Google'
+    },
+    {
+        icon: GithubLogo,
+        name: 'Github'
+    },
+    {
+        icon: MongodbLogo,
+        name: 'MongoDB'
+    },
+    {
+        icon: FacebookLogo,
+        name: 'Facebook'
+    },
+    
 ]
