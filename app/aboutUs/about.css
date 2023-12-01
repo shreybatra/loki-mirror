@@ -17,6 +17,7 @@
 .leader-card-bg {
   background: url("../../assets/png/leader-card-bg.png");
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .leader-card {
