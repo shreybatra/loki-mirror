@@ -13,8 +13,9 @@ import { Analytics } from "@vercel/analytics/react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Cosmocloud",
-  description: "Backend as a service",
+  title: "Cosmocloud: No-Code, Backend-as-a-Service",
+  description:
+    "Build your next pluggable backend microservice, fully no-code. From complex APIs to background jobs to search, everything in one single platform.",
 };
 
 export default function RootLayout({

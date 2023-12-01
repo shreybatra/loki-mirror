@@ -6,12 +6,12 @@ const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
 const reactPlayerSize = {
   "360": {
-    width: 387,
-    height: 218,
+    width: 360,
+    height: 203,
   },
   "720": {
-    width: 387,
-    height: 218,
+    width: 720,
+    height: 406,
   },
   "1440": {
     width: 640,
@@ -19,21 +19,38 @@ const reactPlayerSize = {
   },
 };
 
+const returnCalculatedPlayerSize = ({
+  height,
+  width,
+}: {
+  height: number;
+  width: number;
+}) => {
+  const maxPlayerWidth = window.innerWidth * 0.9;
+
+  const finalWidth = maxPlayerWidth < width ? maxPlayerWidth : width;
+  const finalHeight = finalWidth / 1.77;
+  return {
+    height: finalHeight,
+    width: finalWidth,
+  };
+};
+
 export const OutOfTheBox = () => {
   const [playerSize, setPlayerSize] = useState(reactPlayerSize["1440"]);
 
   useEffect(() => {
-    if (window.innerWidth <= 360) {
-      setPlayerSize(reactPlayerSize["360"]);
-    } else if (window.innerWidth <= 720) {
-      setPlayerSize(reactPlayerSize["720"]);
+    if (window.innerWidth <= 500) {
+      setPlayerSize(returnCalculatedPlayerSize(reactPlayerSize["360"]));
+    } else if (window.innerWidth <= 1000) {
+      setPlayerSize(returnCalculatedPlayerSize(reactPlayerSize["720"]));
     } else {
-      setPlayerSize(reactPlayerSize["1440"]);
+      setPlayerSize(returnCalculatedPlayerSize(reactPlayerSize["1440"]));
     }
   }, []);
 
   return (
-    <div className="flex flex-col gap-[36px] items-center md:flex-row">
+    <div className="flex flex-col gap-[36px] items-center lg:flex-row w-[90%]">
       <div className="video-thumbnail-container p-[6px] relative">
         <ReactPlayer
           url="https://youtu.be/UWco0D6xp7U"

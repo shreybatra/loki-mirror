@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import PipelineFlowImage from "@/assets/svg/features.svg";
+import PipelineFlowImage from "@/assets/svg/features1.svg";
 import PipelineFlowImage2 from "@/assets/svg/features-mobile.svg";
 import { ProductionFlowCard } from "./ProductionFlowCard";
 import React from "react";
