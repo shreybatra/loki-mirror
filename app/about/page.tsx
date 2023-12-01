@@ -6,7 +6,7 @@ import {
   Leaders,
   Motto,
   WorkCulture,
-} from "@/components/AboutUs";
+} from "@/components/About";
 
 import { GetStarted } from "@/components/Landing";
 
