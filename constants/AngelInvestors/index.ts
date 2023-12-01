@@ -1,40 +1,88 @@
-import AngelInvestorImage1 from "@/assets/png/shrey-batra-leader.png";
+import AngelInvestorImage1 from "@/assets/svg/team/shrey_batra.svg";
 
 export const AngelInvestorsData = [
-    {
-        name: "Shrey Batra",
-        linkedinProfile: "",
-        position: "Founder & CEO",
-        image: AngelInvestorImage1
-    },
-    {
-        name: "Shrey Batra",
-        linkedinProfile: "",
-        position: "Founder & CEO",
-        image: AngelInvestorImage1
-    },
-    {
-        name: "Shrey Batra",
-        linkedinProfile: "",
-        position: "Founder & CEO",
-        image: AngelInvestorImage1
-    },
-    {
-        name: "Shrey Batra",
-        linkedinProfile: "",
-        position: "Founder & CEO",
-        image: AngelInvestorImage1
-    },
-    {
-        name: "Shrey Batra",
-        linkedinProfile: "",
-        position: "Founder & CEO",
-        image: AngelInvestorImage1
-    },
-    {
-        name: "Shrey Batra",
-        linkedinProfile: "",
-        position: "Founder & CEO",
-        image: AngelInvestorImage1
-    },
-]
+  {
+    name: "Ankit Maheshwari",
+    linkedinProfile: "",
+    position: "CTO",
+    company: "Innovaccer",
+    image: AngelInvestorImage1,
+  },
+  {
+    name: "Sachin Kapoor",
+    linkedinProfile: "",
+    position: "Ex-Head of Business",
+    company: "LinkedIn",
+    image: AngelInvestorImage1,
+  },
+  {
+    name: "Ravish Kumar",
+    linkedinProfile: "",
+    position: "VC & Partnerships",
+    company: "Google",
+    image: AngelInvestorImage1,
+  },
+  {
+    name: "Kapil Surlaker",
+    linkedinProfile: "",
+    position: "VP of Engineering",
+    company: "LinkedIn",
+    image: AngelInvestorImage1,
+  },
+  {
+    name: "Krishna Kumar",
+    linkedinProfile: "",
+    position: "Director, Engineering",
+    company: "Innovaccer",
+    image: AngelInvestorImage1,
+  },
+  {
+    name: "Divyansh Mahajan",
+    linkedinProfile: "",
+    position: "Sr. Eng Manager",
+    company: "Innovaccer",
+    image: AngelInvestorImage1,
+  },
+  {
+    name: "Harikumar Velayutham",
+    linkedinProfile: "",
+    position: "Sr. Manager @ LinkedIn",
+    company: "",
+    image: AngelInvestorImage1,
+  },
+  {
+    name: "Gaurav Batra",
+    linkedinProfile: "",
+    position: "Co-Founder",
+    company: "Semaai",
+    image: AngelInvestorImage1,
+  },
+  {
+    name: "Karan Jain",
+    linkedinProfile: "",
+    position: "Founder & CEO",
+    company: "HROne",
+    image: AngelInvestorImage1,
+  },
+  {
+    name: "Vivek Thunga",
+    linkedinProfile: "",
+    position: "VP of Sales",
+    company: "HealthEM.AI",
+    image: AngelInvestorImage1,
+  },
+  {
+    name: "Saurabh Kunawar",
+    linkedinProfile: "",
+    position: "Software Architect",
+    company: "HSBC",
+    image: AngelInvestorImage1,
+  },
+  {
+    name: "Sumanta Mukhopadhyay",
+    linkedinProfile: "",
+    position: "AVP of Eng @ Finarb",
+    company: "",
+    image: AngelInvestorImage1,
+  },
+];
