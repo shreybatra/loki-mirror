@@ -16,6 +16,7 @@ export const metadata: Metadata = {
   title: "Cosmocloud: No-Code, Backend-as-a-Service",
   description:
     "Build your next pluggable backend microservice, fully no-code. From complex APIs to background jobs to search, everything in one single platform.",
+  metadataBase: new URL("https://loki-mirror.vercel.app"),
 };
 
 export default function RootLayout({
