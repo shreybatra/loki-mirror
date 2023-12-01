@@ -8,28 +8,28 @@ export const AngelInvestors = () => {
   return (
     <div className="flex flex-col gap-[42px]">
       <div className="flex flex-col gap-[12px] items-center">
-        <h1 className="text-[12px] font-[500] text-primary-pink uppercase tracking-[5px] text-center md:text-[16px]">
+        <h2 className="text-[12px] md:text-[16px] lg:text-[28px] font-[700]">
           Our Investors
-        </h1>
-        <div className="flex flex-col gap-[8px] items-center">
-          <h2 className="text-[20px] text-center font-[700] md:text-[32px]">
-            Angel Investors
-          </h2>
-          <p className="text-[12px] font-[400] text-description md:text-[14px]">Such as...</p>
-        </div>
+        </h2>
+        <h3 className="text-gradient-2 text-[16px] md:text-[21px] lg:text-[32px] font-[700]">
+          Industry leaders backing us
+        </h3>
       </div>
-      <div className="flex flex-wrap gap-[16px] justify-center">
-        {AngelInvestorsData.map(({ name, linkedinProfile, image, position }) => {
-          return (
-            <AngelInvestorCard
-              key={crypto.randomUUID()}
-              name={name}
-              linkedinProfile={linkedinProfile}
-              image={image}
-              position={position}
-            />
-          );
-        })}
+      <div className="flex flex-wrap lg:gap-10 gap-3 justify-center">
+        {AngelInvestorsData.map(
+          ({ name, linkedinProfile, image, position, company }) => {
+            return (
+              <AngelInvestorCard
+                key={crypto.randomUUID()}
+                name={name}
+                linkedinProfile={linkedinProfile}
+                image={image}
+                company={company}
+                position={position}
+              />
+            );
+          }
+        )}
       </div>
     </div>
   );

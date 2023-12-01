@@ -16,26 +16,16 @@
 
 .leader-card-bg {
   background: url("../../assets/png/leader-card-bg.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
 .leader-card {
   border-radius: 10px;
-  border: 0.5px solid var(--gray-color);
   background: linear-gradient(260deg,
       rgba(40, 40, 40, 0.77) 0%,
       rgba(40, 40, 40, 0.19) 100%);
   backdrop-filter: blur(15px);
-  cursor: pointer;
-}
-
-.leader-card:hover {
-  border-radius: 10px;
-  border: 1px solid var(--primary-color);
-  background: linear-gradient(264deg,
-      rgba(40, 40, 40, 0.77) 0%,
-      rgba(40, 40, 40, 0.19) 99.15%);
 }
 
 .strip-played {

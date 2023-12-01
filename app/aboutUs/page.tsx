@@ -19,7 +19,7 @@ export default function Page() {
         <Leaders />
         <Ideation />
         <WorkCulture />
-        <Investors />
+        {/* <Investors /> */}
         <AngelInvestors />
         <GetStarted />
       </div>
