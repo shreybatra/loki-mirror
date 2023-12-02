@@ -1,6 +1,7 @@
 .scroller {
   max-width: 99vw;
 }
+
 .scroller__inner {
   padding-block: 1rem;
   display: flex;
@@ -10,21 +11,20 @@
 
 .scroller[data-animated="true"] {
   overflow: hidden;
-  -webkit-mask: linear-gradient(
+  /* -webkit-mask: linear-gradient(
     90deg,
     transparent,
     white 20%,
     white 80%,
     transparent
   );
-  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent); */
 }
 
 .scroller[data-animated="true"] .scroller__inner {
   width: max-content;
   flex-wrap: nowrap;
-  animation: scroll var(--_animation-duration, 40s)
-    var(--_animation-direction, forwards) linear infinite;
+  animation: scroll var(--_animation-duration, 40s) var(--_animation-direction, forwards) linear infinite;
 }
 
 .scroller[data-direction="right"] {
@@ -48,5 +48,3 @@
     transform: translate(calc(-50% - 10px));
   }
 }
-
-

@@ -1,6 +1,7 @@
 .v-scroller {
   max-width: 99vw;
 }
+
 .v-scroller__inner {
   padding-block: 1rem;
   display: flex;
@@ -11,21 +12,20 @@
 
 .v-scroller[data-animated="true"] {
   overflow: hidden;
-  -webkit-mask: linear-gradient(
+  /* -webkit-mask: linear-gradient(
     0deg,
     transparent,
     white 20%,
     white 80%,
     transparent
   );
-  mask: linear-gradient(0deg, transparent, white 20%, white 80%, transparent);
+  mask: linear-gradient(0deg, transparent, white 20%, white 80%, transparent); */
 }
 
 .v-scroller[data-animated="true"] .v-scroller__inner {
   width: max-content;
   flex-wrap: nowrap;
-  animation: v-scroll var(--_animation-duration, 40s)
-    var(--_animation-direction, forwards) linear infinite;
+  animation: v-scroll var(--_animation-duration, 40s) var(--_animation-direction, forwards) linear infinite;
 }
 
 .v-scroller[data-direction="down"] {
@@ -49,5 +49,3 @@
     transform: translate(0, calc(-50% - 10px));
   }
 }
-
-

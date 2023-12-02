@@ -1,13 +1,14 @@
 "use client";
 
-import CultureImage from "@/assets/png/culture.png";
+import picture1 from "@/assets/png/work-culture/picture1.jpg";
+import picture2 from "@/assets/png/work-culture/picture2.jpg";
 import { HorizontalScroller } from "@/blocks";
 import Image from "next/image";
 import React from "react";
 import { VerticalScroller } from "@/blocks/VerticalScroller";
 
 export const WorkCulture = () => {
-  const CultureImages = [CultureImage, CultureImage];
+  const CultureImages = [picture1, picture2];
   return (
     <div className="flex flex-col gap-[16px] w-[90vw] lg:gap-[130px] md:flex-row justify-between overflow-hidden md:h-[300px] relative">
       <div className="flex flex-col gap-[16px]">
@@ -27,7 +28,7 @@ export const WorkCulture = () => {
       <div className="md:hidden">
         <HorizontalScroller direction="left" speed="fast">
           {CultureImages.map((image) => (
-            <div className="rounded-[8px] " key={crypto.randomUUID()}>
+            <div className="rounded-[8px] my-auto" key={crypto.randomUUID()}>
               <Image
                 className="rounded-[8px] w-[260px]"
                 src={image}
@@ -40,7 +41,7 @@ export const WorkCulture = () => {
       <div className="hidden md:block relative top-[-10%]">
         <VerticalScroller direction="up" speed="fast">
           {CultureImages.map((image) => (
-            <div className="rounded-[8px]" key={crypto.randomUUID()}>
+            <div className="rounded-[8px] mx-auto" key={crypto.randomUUID()}>
               <Image
                 className="rounded-[8px] w-[400px]"
                 src={image}

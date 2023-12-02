@@ -29,7 +29,9 @@ export const AngelInvestorCard = ({
 
       <div className="w-full">
         <div className="flex justify-between items-center">
-          <h4 className="text-[9px] font-[700] md:text-[14px] z-40">{name}</h4>
+          <h4 className="text-white text-[9px] font-[700] md:text-[14px] z-40">
+            {name}
+          </h4>
           <Link href={linkedinProfile} target="_blank">
             <BsLinkedin />
             {/* <Image src={LinkedinLogo} alt="Linkedin logo" /> */}
