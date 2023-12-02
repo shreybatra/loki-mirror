@@ -17,9 +17,9 @@ export const WorkCulture = () => {
         </h1>
         <p className="text-[12px] font-[400] opacity-[0.75] max-w-[630px] md:text-[16px] text-justify">
           Join us in rewriting the code of innovation! Explore a dynamic work
-          culture at Cosmocloud where creativity meets technology. We're not
-          just building software, we're crafting a team of forward-thinkers,
-          collaborators, and game-changers.
+          culture at Cosmocloud where creativity meets technology. We&apos;re
+          not just building software, we&apos;re crafting a team of
+          forward-thinkers, collaborators, and game-changers.
         </p>
         <p className="text-[12px] font-bold max-w-[630px] md:text-[16px] text-gradient">
           Building the future of backend development.
