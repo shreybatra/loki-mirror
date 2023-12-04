@@ -43,7 +43,7 @@ export const Navbar = () => {
         </div>
         <div className="hidden navigation md:flex md:gap-4 lg:gap-10 items-center">
           {
-            routes.map((route:any)=> <Link href={route.path}>
+            routes.map((route:any)=> <Link href={route.path} key={route.path}>
             <div className="text-muted cursor-pointer hover:text-white md:text-sm lg:text-base">
               {route.label}
             </div>
@@ -67,7 +67,7 @@ export const Navbar = () => {
       <div className={`mobile ${open ? 'fade-in' : 'fade-out'}`}>
          <div className="mobile-links">
            {
-            routes.map((route:any)=> <Link href={route.path} onClick={()=>setOpen(!open)}>
+            routes.map((route:any)=> <Link key={route.path} href={route.path} onClick={()=>setOpen(!open)}>
             <div className={`mobile-link  ${path===route.path ? 'active':""}`}>
               {route.label}
             </div>
