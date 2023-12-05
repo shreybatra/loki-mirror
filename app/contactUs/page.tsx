@@ -25,7 +25,7 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="flex flex-wrap      md:ml-[169px]    md:mr-[169px]  gap-[42px]  md:gap-[48px]   mt-[64px]  mb-[161px] ">
+      <div className="flex flex-wrap justify-center     md:ml-[169px]    md:mr-[169px]  gap-[42px]  md:gap-[48px]   mt-[64px]  mb-[161px] ">
         <ContactCard image={phoneImg} info={"Contact With Us"} data={""} />
         <ContactCard
           image={mail}

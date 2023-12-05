@@ -8,7 +8,6 @@
 }
 
 .navBar-container-item:hover {
-  backdrop-filter: blur(6px);
   padding-left: 12px;
   border-image-slice: 1;
 }

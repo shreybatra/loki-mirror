@@ -1,6 +1,5 @@
 .pricingDataContainer {
   flex: 1;
-  margin-top: 84px;
   margin-left: 42px;
   margin-right: 80px;
 }
@@ -45,7 +44,6 @@
   background: rgba(40, 40, 40, 0.4);
   display: flex;
   backdrop-filter: blur(20px);
-  padding: 20px 16px;
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
@@ -78,13 +76,12 @@
   line-height: normal;
 }
 .planInfo--button {
-  padding: 12px 24px;
   justify-content: center;
   align-items: center;
   align-self: stretch;
   padding: 12px 24px;
   border-radius: 10px;
-  border: 0.5px solid #717171;
+  border: 1px solid #717171;
   background: #282828;
   backdrop-filter: blur(15px);
   margin: 32px;
@@ -98,7 +95,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
-  flex: 1 0 0;
+  /* flex: 1 0 0; */
   align-self: stretch;
 }
 

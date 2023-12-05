@@ -60,7 +60,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="mt-[62px] w-[296px]    md:w-[738px] text-muted mb-[161px]">
+    <div className="mt-[62px] w-[296px]  mb-[100px]  md:w-[738px] text-muted  md:mb-[161px]">
       <div className="contact-form">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-[20px]">
           <div className="">
