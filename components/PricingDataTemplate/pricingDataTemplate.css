@@ -1,0 +1,114 @@
+.pricingDataContainer {
+  margin-left: 42px;
+  margin-right: 80px;
+}
+
+.pricingDataTemplate--heading {
+  color: var(--Full-White, #fff);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.planBox {
+  padding: 42px 0;
+  border-bottom: 2px solid #262626;
+}
+.planBox--heading {
+  color: var(--Full-White, #fff);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+.planBox--heading--subheading {
+  color: var(--Full-White, #fff);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.planBox--content {
+  color: var(--Muted-800, #b5b5b6);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.planInfo--box {
+  border-radius: 10px;
+  background: rgba(40, 40, 40, 0.4);
+  display: flex;
+  backdrop-filter: blur(20px);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+.planInfo--heading {
+  color: var(--Primary-Pink, #d281bc);
+  font-family: Inter;
+  /* font-size: 16px; */
+  font-style: normal;
+  font-weight: 500;
+  line-height: 124.188%;
+  letter-spacing: 5.12px;
+}
+.planInfo--pricing {
+  color: #fff;
+  line-height: 124.188%;
+}
+.planInfo--pricing--afterText {
+  color: #cecece;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  line-height: normal;
+}
+.planInfo--button {
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  padding: 12px 24px;
+  border-radius: 10px;
+  border: 1px solid #717171;
+  background: #282828;
+  backdrop-filter: blur(15px);
+  margin: 32px;
+}
+
+.planInfoText {
+  width: 100%;
+  border-bottom: 2px dashed #373737;
+  display: flex;
+  padding: 20px 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  /* flex: 1 0 0; */
+  align-self: stretch;
+}
+
+.pricing--table {
+  background-color: rgba(40, 40, 40, 0.4);
+}
+.pricing--table--header {
+  border-bottom: 2px solid #373737;
+}
+.plan--dropdown select {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid var(--dark-mode-border-default, #4a4a4b);
+  color: #a8a8aa;
+  background-color: #26262600;
+  width: 100%;
+  margin-top: 4px;
+}
+
+.test {
+  overflow-x: auto;
+}

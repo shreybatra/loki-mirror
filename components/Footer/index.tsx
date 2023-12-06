@@ -1,13 +1,14 @@
 "use client"
-import React from "react";
+
 import "./footer.css";
 
-import TwitterLogo from "@/assets/svg/twitter_logo.svg";
-import LinkedinLogo from "@/assets/svg/linkedin_logo.svg";
-import InstagramLogo from "@/assets/svg/instagram_logo.svg";
 import CosmocloudLogo from "@/assets/svg/CosmocloudLogo.svg";
 import Image from "next/image";
+import InstagramLogo from "@/assets/svg/instagram_logo.svg";
 import Link from "next/link";
+import LinkedinLogo from "@/assets/svg/linkedin_logo.svg";
+import React from "react";
+import TwitterLogo from "@/assets/svg/twitter_logo.svg";
 
 export const Footer = () => {
   return (

@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="flex flex-col gap-[32px] md:gap-0 overflow-hidden">
+        <div className="flex flex-col gap-[32px] md:gap-0">
           <Navbar />
           {children}
         </div>
