@@ -10,7 +10,7 @@ import { useContext } from "react";
 
 const Page = () => {
     const { plan, setPlan } = useContext(PlanContext);
-    const dataBandwidthPriceDisplay = dataBandwidthPricingData[plan.cloud].find((region) => region.region == plan.region)
+    const dataBandwidthPriceDisplay: any = dataBandwidthPricingData[plan.cloud].find((region) => region.region == plan.region)
 
     return (
         <main>
@@ -20,7 +20,7 @@ const Page = () => {
                 <div className="pt-[42px] pb-[42px] border-b-2 border-solid border-gray-700">
                     <h3 className="text-white text-xl font-semibold mb-5">Free Plan</h3>
                     <p className="text-muted-800 text-base font-normal">
-                        You have selected cloud as {plan.cloud} and region as {dataBandwidthPriceDisplay.region} and cost as {dataBandwidthPriceDisplay.cost[plan.currency]}
+                        You have selected cloud as {plan.cloud} and region as {dataBandwidthPriceDisplay?.region} and cost as {dataBandwidthPriceDisplay?.cost[plan.currency]}
                     </p>
                     <div className="mt-[16px]">
                         <PlanInfoHighlight text={"Lorem Ipsum 1"} />

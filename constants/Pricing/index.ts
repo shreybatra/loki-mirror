@@ -1,4 +1,40 @@
-const storagePricing = [
+interface StoragePricing {
+  cloudName: string;
+  region: string;
+  usd: number;
+  inr: number;
+}
+
+interface TierCost {
+  inr: string;
+  usd: string;
+}
+
+interface TierFeatures {
+  tier: string;
+  cost: TierCost;
+  features: string[];
+}
+
+interface ApplicationEnvironment {
+  region: string;
+  shared: { data: TierFeatures[] };
+  low: { data: TierFeatures[] };
+  power: { data: TierFeatures[] };
+  boost: { data: TierFeatures[] };
+}
+
+interface PricingData {
+  region: string;
+  cost: TierCost;
+}
+
+interface DropdownData {
+  region: string[];
+  currency: string[];
+}
+
+const storagePricing: StoragePricing[] = [
   {
     cloudName: "AWS",
     region: "North Virginia",
@@ -13,7 +49,7 @@ const storagePricing = [
   },
 ];
 
-const storagePricingData = {
+const storagePricingData: Record<string, PricingData[]> = {
   aws: [
     {
       region: "mumbai",
@@ -36,7 +72,7 @@ const storagePricingData = {
   ],
 };
 
-const logsPricingData = {
+const logsPricingData: Record<string, PricingData[]> = {
   aws: [
     {
       region: "mumbai",
@@ -59,7 +95,7 @@ const logsPricingData = {
   ],
 };
 
-const fullTextSearchPricingData = {
+const fullTextSearchPricingData: Record<string, PricingData[]> = {
   aws: [
     {
       region: "mumbai",
@@ -81,30 +117,7 @@ const fullTextSearchPricingData = {
     },
   ],
 };
-const dataBandwidthPricingData = {
-  aws: [
-    {
-      region: "mumbai",
-      cost: { inr: "₹", usd: "$" },
-    },
-    {
-      region: "north-virginia",
-      cost: { inr: "₹", usd: "$" },
-    },
-  ],
-  gcp: [
-    {
-      region: "hyderabd",
-      cost: { inr: "₹", usd: "$" },
-    },
-    {
-      region: "new-york",
-      cost: { inr: "₹", usd: "$" },
-    },
-  ],
-};
-
-const databasesPricingData = {
+const dataBandwidthPricingData: Record<string, PricingData[]> = {
   aws: [
     {
       region: "mumbai",
@@ -127,7 +140,30 @@ const databasesPricingData = {
   ],
 };
 
-const applicationEnvironmentData = {
+const databasesPricingData: Record<string, PricingData[]> = {
+  aws: [
+    {
+      region: "mumbai",
+      cost: { inr: "₹", usd: "$" },
+    },
+    {
+      region: "north-virginia",
+      cost: { inr: "₹", usd: "$" },
+    },
+  ],
+  gcp: [
+    {
+      region: "hyderabd",
+      cost: { inr: "₹", usd: "$" },
+    },
+    {
+      region: "new-york",
+      cost: { inr: "₹", usd: "$" },
+    },
+  ],
+};
+
+const applicationEnvironmentData: Record<string, ApplicationEnvironment[]> = {
   aws: [
     {
       region: "mumbai",
@@ -690,7 +726,7 @@ const applicationEnvironmentData = {
   ],
 };
 
-const dropDownData = {
+const dropDownData: any = {
   aws: {
     region: ["mumbai", "north-virginia"],
     currency: ["inr", "usd"],

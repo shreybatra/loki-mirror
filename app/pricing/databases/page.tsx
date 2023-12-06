@@ -11,7 +11,7 @@ import { useContext } from "react";
 
 const Page = () => {
     const { plan, setPlan } = useContext(PlanContext);
-    const databasesPriceDisplay = databasesPricingData[plan.cloud].find((region) => region.region == plan.region)
+    const databasesPriceDisplay:any = databasesPricingData[plan.cloud].find((region) => region.region == plan.region)
 
     return (
         <main>

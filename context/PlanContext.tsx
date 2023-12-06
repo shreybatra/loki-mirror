@@ -1,30 +1,34 @@
-// PlanContext.tsx
-"use client";
+import React, { Dispatch, ReactNode, SetStateAction, createContext, useContext, useState } from "react";
 
-import React, {
-  Dispatch,
-  SetStateAction,
-  createContext,
-  useContext,
-  useState,
-} from "react";
-
-// Define the type for your plan
 type Plan = {
   cloud: string;
   region: string;
   currency: string;
 };
 
-// // Define the type for your context
 type PlanContextType = {
   plan: Plan;
   setPlan: Dispatch<SetStateAction<Plan>>;
 };
 
-const PlanContext = createContext<PlanContextType>({} as PlanContextType);
-const PlanContextProvider: React.FC = ({ children }) => {
-  const [plan, setPlan] = useState({
+interface PlanContextProviderProps {
+  children: ReactNode;
+}
+
+
+const initialPlanContext: PlanContextType = {
+  plan: {
+    cloud: "aws",
+    region: "mumbai",
+    currency: "usd",
+  },
+  setPlan: () => { },
+};
+
+const PlanContext = createContext<PlanContextType>(initialPlanContext);
+
+const PlanContextProvider: React.FC<PlanContextProviderProps> = ({ children }) => {
+  const [plan, setPlan] = useState<Plan>({
     cloud: "aws",
     region: "mumbai",
     currency: "usd",

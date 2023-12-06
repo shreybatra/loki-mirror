@@ -1,7 +1,13 @@
 import Image from "next/image";
 import checkMarkImage from "../../assets/svg/Checkmark Circle.svg";
 
-export const PlanInfoHighlight = ({ text }) => {
+type PlanInfoHighlightProps = {
+  text: string
+}
+
+
+
+export const PlanInfoHighlight: React.FC<PlanInfoHighlightProps> = ({ text }) => {
   return (
     <div className="flex gap-[10px]">
       <Image src={checkMarkImage} alt="'checkMarkImage"></Image>

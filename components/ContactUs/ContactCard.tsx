@@ -1,7 +1,13 @@
 import Image from "next/image";
 import React from "react";
 
-const ContactCard = ({ imageIcon, info, data }) => {
+type ContactCardProps = {
+  imageIcon: React.ReactNode;
+  info: string;
+  data: React.ReactNode;
+};
+
+const ContactCard = ({ imageIcon, info, data }: ContactCardProps) => {
   return (
     <div className="contactCard">
       {imageIcon}
