@@ -8,7 +8,7 @@ export const VerticalNavbar = () => {
   return (
     <div className="pl-[80px] w-[500px] hidden md:block   navBar-container">
       <ul className="text-muted ">
-        <li className="pricingDataTemplate--heading pb-[32px] pt-[32px]">Resources</li>
+        <li className="text-white text-2xl font-bold pb-[32px] pt-[32px]">Resources</li>
         <Link href={'/pricing'}  >
           <li className="navBar-container-item">Application Environment</li>
         </Link>

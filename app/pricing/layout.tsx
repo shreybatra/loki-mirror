@@ -14,14 +14,14 @@ import { VerticalNavbar2 } from "@/components/VerticalNavbar2";
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <div className="flex flex-col items-center">
+    <div>
       <div className="sm:none bg-pricing">
         <Image src={PricingBg} alt="contact-bg" />
       </div>
       <PricingHeader />
       <PricingTitle />
       <PlanContextProvider>
-        <div className="flex mt-[84px]">
+        <div className="flex flex-col md:flex-row mt-[42px]  md:mt-[84px]">
           <VerticalNavbar />
           <VerticalNavbar2 />
           {children}

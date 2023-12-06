@@ -52,7 +52,7 @@
 .planInfo--heading {
   color: var(--Primary-Pink, #d281bc);
   font-family: Inter;
-  font-size: 16px;
+  /* font-size: 16px; */
   font-style: normal;
   font-weight: 500;
   line-height: 124.188%;
@@ -60,18 +60,13 @@
 }
 .planInfo--pricing {
   color: #fff;
-  font-family: Inter;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 700;
   line-height: 124.188%;
 }
 .planInfo--pricing--afterText {
   color: #cecece;
   font-family: Inter;
-  font-size: 12px;
+  font-size: 10px;
   font-style: normal;
-  font-weight: 400;
   line-height: normal;
 }
 .planInfo--button {

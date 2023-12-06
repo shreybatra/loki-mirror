@@ -21,7 +21,7 @@ const PlanDropdown = () => {
   });
 
   return (
-    <div className="grid grid-cols-3 my-[44px] gap-[20px]">
+    <div className="grid grid-cols-1 md:grid-cols-3 my-[44px] gap-[20px]">
       <div className="plan--dropdown">
         <p>Cloud</p>
         <select

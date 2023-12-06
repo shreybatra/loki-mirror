@@ -12,18 +12,18 @@ export const PlanInfoBox: React.FC<PlanInfoBoxProps> = ({
   list,
 }) => {
   return (
-    <div className="planInfo--box ">
+    <div className="planInfo--box">
       <div className="planInfoText">
-        <h4 className="planInfo--heading">{header}</h4>
-        <p className="planInfo--pricing">
+        <h4 className="text-xs font-medium md:text-base md:font-bold planInfo--heading">{header}</h4>
+        <p className=" text-xl md:text-2xl font-semibold md:font-bold planInfo--pricing">
           {price}{"/-"}
-          <p className="planInfo--pricing--afterText">
+          <p className="md:text-xs planInfo--pricing--afterText">
             per month per project
           </p>{" "}
         </p>
-        <button className="planInfo--button">Get Started</button>
+        <button className="text-sm planInfo--button">Get Started</button>
       </div>
-      <div className="mb-[20px] ml-[16px]">
+      <div className="text-xs md:text-sm font-normal  mb-[20px] ml-[16px]">
         {list.map((feature, idx) => {
           return <PlanInfoHighlight text={feature} key={idx} />;
         })}

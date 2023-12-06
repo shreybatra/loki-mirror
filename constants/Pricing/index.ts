@@ -7,11 +7,129 @@ const storagePricing = [
   },
   {
     cloudName: "AWS",
-    region: "Mumbai", 
+    region: "Mumbai",
     usd: 0.023,
     inr: 3,
   },
 ];
+
+const storagePricingData = {
+  aws: [
+    {
+      region: "mumbai",
+      cost: { inr: "₹", usd: "$" },
+    },
+    {
+      region: "north-virginia",
+      cost: { inr: "₹", usd: "$" },
+    },
+  ],
+  gcp: [
+    {
+      region: "hyderabd",
+      cost: { inr: "₹", usd: "$" },
+    },
+    {
+      region: "new-york",
+      cost: { inr: "₹", usd: "$" },
+    },
+  ],
+};
+
+const logsPricingData = {
+  aws: [
+    {
+      region: "mumbai",
+      cost: { inr: "₹", usd: "$" },
+    },
+    {
+      region: "north-virginia",
+      cost: { inr: "₹", usd: "$" },
+    },
+  ],
+  gcp: [
+    {
+      region: "hyderabd",
+      cost: { inr: "₹", usd: "$" },
+    },
+    {
+      region: "new-york",
+      cost: { inr: "₹", usd: "$" },
+    },
+  ],
+};
+
+const fullTextSearchPricingData = {
+  aws: [
+    {
+      region: "mumbai",
+      cost: { inr: "₹", usd: "$" },
+    },
+    {
+      region: "north-virginia",
+      cost: { inr: "₹", usd: "$" },
+    },
+  ],
+  gcp: [
+    {
+      region: "hyderabd",
+      cost: { inr: "₹", usd: "$" },
+    },
+    {
+      region: "new-york",
+      cost: { inr: "₹", usd: "$" },
+    },
+  ],
+};
+const dataBandwidthPricingData = {
+  aws: [
+    {
+      region: "mumbai",
+      cost: { inr: "₹", usd: "$" },
+    },
+    {
+      region: "north-virginia",
+      cost: { inr: "₹", usd: "$" },
+    },
+  ],
+  gcp: [
+    {
+      region: "hyderabd",
+      cost: { inr: "₹", usd: "$" },
+    },
+    {
+      region: "new-york",
+      cost: { inr: "₹", usd: "$" },
+    },
+  ],
+};
+
+const databasesPricingData = {
+  aws: [
+    {
+      region: "mumbai",
+      cost: { inr: "₹", usd: "$" },
+    },
+    {
+      region: "north-virginia",
+      cost: { inr: "₹", usd: "$" },
+    },
+  ],
+  gcp: [
+    {
+      region: "hyderabd",
+      cost: { inr: "₹", usd: "$" },
+    },
+    {
+      region: "new-york",
+      cost: { inr: "₹", usd: "$" },
+    },
+  ],
+};
+
+
+
+
 
 const applicationEnvironmentData = {
   aws: [
@@ -591,4 +709,4 @@ const dropDownData = {
   },
 };
 
-export { storagePricing, applicationEnvironmentData, dropDownData };
+export { storagePricing, applicationEnvironmentData, dropDownData,storagePricingData, logsPricingData, fullTextSearchPricingData,dataBandwidthPricingData,databasesPricingData};

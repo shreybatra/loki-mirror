@@ -2,146 +2,62 @@
 
 import "@/components/PricingDataTemplate/pricingDataTemplate.css";
 
-import { PlanInfoBox } from "@/components/PricingDataTemplate/PlanInfoBox";
+import { PlanContext } from "@/context/PlanContext"
+import PlanDropdown from "@/components/PricingDataTemplate/PlanDropdown";
 import { PlanInfoHighlight } from "@/components/PricingDataTemplate/PlanInfoHighlight";
-import { PricingTable } from "@/components/PricingDataTemplate/PricingTable";
-import { VerticalNavbar } from "@/components/VerticalNavbar";
-import { applicationEnvironmentData } from "@/constants/Pricing/index";
+import { storagePricingData } from "@/constants/Pricing/index";
+import { useContext } from "react";
 
 const Page = () => {
+  const { plan, setPlan } = useContext(PlanContext);
+  const storagePriceDisplay = storagePricingData[plan.cloud].find((region) => region.region == plan.region)
+
+
   return (
     <main>
-      <div className="">
-        <div className="pricingDataContainer">
-          <h2 className="pricingDataTemplate--heading">Object Storage</h2>
+      <div className="ml-[16px] mr-[16px]  md:ml-[42px] md:mr-[80px]">
+        <h2 className="text-white text-2xl font-bold">Object Storage</h2>
 
-          <div className="planBox">
-            <h3 className="planBox--heading">Free Plan</h3>
-            <p className="planBox--content">
-              You can integrate your own MongoDB cluster per project, Cosmocloud
-              does not charge anything for this integration currently. In
-              future, you will be able to spin up MongoDB Clusters directly from
-              Cosmocloud.
-            </p>
-            <div className="mt-[16px]">
-              <PlanInfoHighlight text={"Lorem Ipsum 1"} />
-              <PlanInfoHighlight text={"Lorem Ipsum 1"} />
-              <PlanInfoHighlight text={"Lorem Ipsum 1"} />
-            </div>
-            <PricingTable />
-          </div>
-          <div className="planBox">
-            <h3 className="planBox--heading">Standard Plan</h3>
-            <p className="planBox--content">
-              You can integrate your own MongoDB cluster per project, Cosmocloud
-              does not charge anything for this integration currently. In
-              future, you will be able to spin up MongoDB Clusters directly from
-              Cosmocloud.
-            </p>
-          </div>
-          <div className="planBox">
-            <h3 className="planBox--heading">Shared Tier</h3>
-            <p className="planBox--content">
-              {/* {applicationEnvironmentData.shared.info} */}
-            </p>
-            <div className="flex flex-row gap-[24px] mt-[20px]">
-              {/* {applicationEnvironmentData.shared.data.map((entry, idx) => {
-                return (
-                  <PlanInfoBox
-                    header={"SHARED" + entry.tier}
-                    price={entry.cost.inr}
-                    list={entry.features}
-                    key={idx}
-                  />
-                );
-              })} */}
-            </div>
-          </div>
-          <div className="planBox">
-            <h3 className="planBox--heading">Low Tier</h3>
-            <p className="planBox--content">
-              You can integrate your own MongoDB cluster per project, Cosmocloud
-              does not charge anything for this integration currently. In
-              future, you will be able to spin up MongoDB Clusters directly from
-              Cosmocloud.
-            </p>
-            <div className="flex flex-row gap-[24px] mt-[20px]">
-              {/* {applicationEnvironmentData.low.data.map((entry, idx) => {
-                return (
-                  <PlanInfoBox
-                    header={"LOW" + entry.tier}
-                    price={entry.cost.inr}
-                    list={entry.features}
-                    key={idx}
-                  />
-                );
-              })} */}
-            </div>
-          </div>
-          <div className="planBox">
-            <h3 className="planBox--heading">Power Tier</h3>
-            <p className="planBox--content">
-              You can integrate your own MongoDB cluster per project, Cosmocloud
-              does not charge anything for this integration currently. In
-              future, you will be able to spin up MongoDB Clusters directly from
-              Cosmocloud.
-            </p>
-            <div className="flex flex-row gap-[24px] mt-[20px]">
-              {/* {applicationEnvironmentData.power.data.map((entry, idx) => {
-                return (
-                  <PlanInfoBox
-                    header={entry.tier}
-                    price={entry.cost.inr}
-                    list={entry.features}
-                    key={idx}
-                  />
-                );
-              })} */}
-            </div>
-          </div>
-          <div className="planBox">
-            <h3 className="planBox--heading">Boost Tier</h3>
-            <p className="planBox--content">
-              You can integrate your own MongoDB cluster per project, Cosmocloud
-              does not charge anything for this integration currently. In
-              future, you will be able to spin up MongoDB Clusters directly from
-              Cosmocloud.
-            </p>
-            <div className="flex flex-row gap-[24px] mt-[20px]">
-              {/* {applicationEnvironmentData.boost.data.map((entry, idx) => {
-                return (
-                  <PlanInfoBox
-                    header={entry.tier}
-                    price={entry.cost.inr}
-                    list={entry.features}
-                    key={idx}
-                  />
-                );
-              })} */}
-            </div>
-          </div>
-
-          <div className="planBox">
-            <h3 className="planBox--heading--subheading">Examples</h3>
-            <h4>Example 1</h4>
-
-            <p>
-              You can integrate your own MongoDB cluster per project, Cosmocloud
-              does not charge anything for this integration currently. In
-              future, you will be able to spin up MongoDB Clusters directly from
-              Cosmocloud.
-            </p>
-            <h4>Example 2</h4>
-            <p>
-              You can integrate your own MongoDB cluster per project, Cosmocloud
-              does not charge anything for this integration currently. In
-              future, you will be able to spin up MongoDB Clusters directly from
-              Cosmocloud.
-            </p>
+        <div className="pt-[42px] pb-[42px] border-b-2 border-solid border-gray-700">
+          <h3 className="text-white text-xl font-semibold mb-5">Free Plan</h3>
+          <p className="text-muted-800 text-base font-normal">
+            You have selected cloud as {plan.cloud} and region as {storagePriceDisplay.region} and cost as {storagePriceDisplay.cost[plan.currency]}
+          </p>
+          <div className="mt-[16px]">
+            <PlanInfoHighlight text={"Lorem Ipsum 1"} />
+            <PlanInfoHighlight text={"Lorem Ipsum 1"} />
+            <PlanInfoHighlight text={"Lorem Ipsum 1"} />
           </div>
         </div>
-      </div>
-    </main>
+        <div className="pt-[42px] pb-[42px] border-b-2 border-solid border-gray-700">
+          <h3 className="text-white text-xl font-semibold mb-5">Standard Plan</h3>
+          <PlanDropdown />
+          <p className="text-muted-800 text-base font-normal">
+            You have selected cloud as {plan.cloud} and region as {storagePriceDisplay.region} and cost as {storagePriceDisplay.cost[plan.currency]}
+          </p>
+        </div>
+
+
+        <div className="pt-[42px] pb-[42px] border-b-2 border-solid border-gray-700">
+          <h3 className="text-white text-base font-semibold">Examples</h3>
+          <h4>Example 1</h4>
+
+          <p>
+            You can integrate your own MongoDB cluster per project, Cosmocloud
+            does not charge anything for this integration currently. In
+            future, you will be able to spin up MongoDB Clusters directly from
+            Cosmocloud.
+          </p>
+          <h4>Example 2</h4>
+          <p>
+            You can integrate your own MongoDB cluster per project, Cosmocloud
+            does not charge anything for this integration currently. In
+            future, you will be able to spin up MongoDB Clusters directly from
+            Cosmocloud.
+          </p>
+        </div>
+      </div >
+    </main >
   );
 };
 

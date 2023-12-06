@@ -13,7 +13,7 @@
   --muted-color: #9f9fa0;
 }
 
-body {
+body { 
   color: rgb(255, 255, 255);
   position: relative;
   background-image: url("../assets/svg/background.svg");
