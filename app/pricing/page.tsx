@@ -16,76 +16,77 @@ export default function Page() {
   const { plan, setPlan } = useContext(PlanContext);
   return (
     <main>
-        <div className="pricingDataContainer">
-          <h2 className="pricingDataTemplate--heading">
-            Application Environment
-          </h2>
+      <div className="pricingDataContainer">
+        <h2 className="pricingDataTemplate--heading">
+          Application Environment
+        </h2>
 
-          <div className="planBox">
-            <h3 className="planBox--heading">Free Plan</h3>
-            <p className="planBox--content">
-              You can integrate your own MongoDB cluster per project, Cosmocloud
-              does not charge anything for this integration currently. In
-              future, you will be able to spin up MongoDB Clusters directly from
-              Cosmocloud.
-            </p>
-            <div className="mt-[16px]">
-              <PlanInfoHighlight text={"Lorem Ipsum 1"} />
-              <PlanInfoHighlight text={"Lorem Ipsum 1"} />
-              <PlanInfoHighlight text={"Lorem Ipsum 1"} />
-            </div>
-            <PricingTable />
+        <div className="planBox">
+          <h3 className="planBox--heading">Free Plan</h3>
+          <p className="planBox--content">
+            You can integrate your own MongoDB cluster per project, Cosmocloud
+            does not charge anything for this integration currently. In
+            future, you will be able to spin up MongoDB Clusters directly from
+            Cosmocloud.
+          </p>
+          <div className="mt-[16px]">
+            <PlanInfoHighlight text={"Lorem Ipsum 1"} />
+            <PlanInfoHighlight text={"Lorem Ipsum 1"} />
+            <PlanInfoHighlight text={"Lorem Ipsum 1"} />
           </div>
-          <div className="planBox">
-            <h3 className="planBox--heading">Standard Plan</h3>
-            <p className="planBox--content">
-              You can integrate your own MongoDB cluster per project, Cosmocloud
-              does not charge anything for this integration currently. In
-              future, you will be able to spin up MongoDB Clusters directly from
-              Cosmocloud.
-            </p>
-            <PlanDropdown />
+          {/* <PricingTable /> */}
+        </div>
+        <div className="planBox">
+          <h3 className="planBox--heading">Standard Plan</h3>
+          <p className="planBox--content">
+            You can integrate your own MongoDB cluster per project, Cosmocloud
+            does not charge anything for this integration currently. In
+            future, you will be able to spin up MongoDB Clusters directly from
+            Cosmocloud.
+          </p>
+          <PlanDropdown />
+        </div>
+        <div className="planBox">
+          <h3 className="planBox--heading">Shared Tier</h3>
+          <p className="planBox--content">
+            {/* {applicationEnvironmentData.shared.info} */}
+          </p>
+          <div className="flex flex-row  gap-[24px] mt-[20px] test">
+            {applicationEnvironmentData[plan.cloud]
+              .find((region) => region.region === plan.region)
+              .shared.data.map((entry, idx) => (
+                <PlanInfoBox
+                  header={entry.tier}
+                  price={entry.cost[plan.currency]}
+                  list={entry.features}
+                  key={idx}
+                />
+              ))}
           </div>
-          <div className="planBox">
-            <h3 className="planBox--heading">Shared Tier</h3>
-            <p className="planBox--content">
-              {/* {applicationEnvironmentData.shared.info} */}
-            </p>
-            <div className="flex flex-row gap-[24px] mt-[20px]">
-              {applicationEnvironmentData[plan.cloud]
-                .find((region) => region.region === plan.region)
-                .shared.data.map((entry, idx) => (
-                  <PlanInfoBox
-                    header={entry.tier}
-                    price={entry.cost[plan.currency]}
-                    list={entry.features}
-                    key={idx}
-                  />
-                ))}
-            </div>
-          </div>
+        </div>
 
-          <div className="planBox">
-            <h3 className="planBox--heading">Low Tier</h3>
-            <p className="planBox--content">
-              You can integrate your own MongoDB cluster per project, Cosmocloud
-              does not charge anything for this integration currently. In
-              future, you will be able to spin up MongoDB Clusters directly from
-              Cosmocloud.
-            </p>
-            <div className="flex flex-row gap-[24px] mt-[20px]">
-              {applicationEnvironmentData[plan.cloud]
-                .find((region) => region.region === plan.region)
-                .low.data.map((entry, idx) => (
-                  <PlanInfoBox
-                    header={entry.tier}
-                    price={entry.cost.inr}
-                    list={entry.features}
-                    key={idx}
-                  />
-                ))}
-            </div>
+        <div className="planBox">
+          <h3 className="planBox--heading">Low Tier</h3>
+          <p className="planBox--content">
+            You can integrate your own MongoDB cluster per project, Cosmocloud
+            does not charge anything for this integration currently. In
+            future, you will be able to spin up MongoDB Clusters directly from
+            Cosmocloud.
+          </p>
+          <div className="flex flex-row gap-[24px] mt-[20px]">
+            {applicationEnvironmentData[plan.cloud]
+              .find((region) => region.region === plan.region)
+              .low.data.map((entry, idx) => (
+                <PlanInfoBox
+                  header={entry.tier}
+                  price={entry.cost.inr}
+                  list={entry.features}
+                  key={idx}
+                />
+              ))}
           </div>
+        </div>
+        {/*  
           <div className="planBox">
             <h3 className="planBox--heading">Power Tier</h3>
             <p className="planBox--content">
@@ -147,7 +148,8 @@ export default function Page() {
               Cosmocloud.
             </p>
           </div>
-        </div>
+          */}
+      </div>
     </main>
   );
 }

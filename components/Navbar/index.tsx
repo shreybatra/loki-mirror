@@ -2,19 +2,29 @@
 
 import "./navbar.css";
 
+import React, { useState } from "react";
+
 import CosmocloudLogo from "@/assets/svg/CosmocloudLogo.svg";
+import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import Image from "next/image";
+import { IoCloseSharp } from "react-icons/io5";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React, { useState } from "react";
-import { HiOutlineMenuAlt3 } from "react-icons/hi";
-import { IoCloseSharp } from "react-icons/io5";
 
 const routes =[
   {
     "path":"/about",
     "label":"About us"
   },
+  {
+    "path":"/contact-us",
+    "label":"Contact us"
+  },
+  {
+    "path":"/pricing",
+    "label":"Pricing"
+  },
+  
   // {
   //   "path":"/features",
   //   "label":"Features"

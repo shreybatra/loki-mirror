@@ -1,7 +1,5 @@
 import "./vericalNavbar2.css";
 
-import Image from "next/image";
-import Link from "next/link";
 import { useRouter } from 'next/navigation'
 import { useState } from "react";
 
@@ -23,7 +21,7 @@ export const VerticalNavbar2 = () => {
         router.push(`/pricing/${e.target.value}`)
     };
     return (
-        <div className="pl-[80px] w-[500px] sm:visible md:none  navBar-container2">
+        <div className="pl-[80px] w-[500px]  md:hidden  navBar-container2">
             <select
                 name="languages"
                 id="language-select"
