@@ -63,7 +63,7 @@ export const Navbar = () => {
             </Link>
           ))}
           <button
-            className="button-gradient md:text-sm lg:text-base md:px-[12px] md:py-[5px] lg:px-[24px] lg:py-[10px]"
+            className="button-gradient text-[14px] md:text-sm lg:text-base md:px-[12px] md:py-[5px] lg:px-[24px] lg:py-[10px]"
             onClick={() =>
               (window.location.href = "https://dashboard.cosmocloud.io/sign-in")
             }
@@ -100,7 +100,7 @@ export const Navbar = () => {
           ))}
         </div>
         <button
-          className="button-gradient text-lg text-base px-[12px] py-[5px]"
+          className="button-gradient text-sm text-base px-[12px] py-[5px]"
           onClick={() =>
             (window.location.href = "https://dashboard.cosmocloud.io/sign-in")
           }
