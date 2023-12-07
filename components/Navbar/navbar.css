@@ -17,19 +17,21 @@
   top: 60px;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
-  background: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(11.5px);
-  -webkit-backdrop-filter: blur(11.5px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: #282828;
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 11.5px );
+  -webkit-backdrop-filter: blur( 11.5px );
+  border-width: 1px; 
+  border-style: solid;
+  border-color: #AC5CC9;
   min-height: 20vh;
 
   /* content css  */
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap:2rem;
   justify-content: center;
-  font-size: 16px;
+  font-size: 14px;
   align-items: start;
   padding: 2rem;
 }
@@ -46,8 +48,9 @@
 .mobile-links {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  font-weight: 700
+  gap: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 .active {
@@ -59,14 +62,15 @@
 
 .open {
   transition: background 0.5s ease-in-out;
-  background: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(11.5px);
-  -webkit-backdrop-filter: blur(11.5px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: #282828;
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 11.5px );
+  -webkit-backdrop-filter: blur( 11.5px );
+
+  border: 1px solid #AC5CC9; 
 }
 
 .close {
   background: transparent;
-  transition: background 0.5s ease-in-out;
+  transition: background 0.5s ease-in-out, ;
 }
