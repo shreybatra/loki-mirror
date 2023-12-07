@@ -10,7 +10,7 @@ import { useContext } from "react";
 
 const Page = () => {
   const { plan, setPlan } = useContext(PlanContext);
-  const storagePriceDisplay = storagePricingData[plan.cloud].find((region) => region.region == plan.region)
+  const storagePriceDisplay:any = storagePricingData[plan.cloud].find((region) => region.region == plan.region)
 
 
   return (

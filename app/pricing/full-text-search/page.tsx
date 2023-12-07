@@ -10,7 +10,7 @@ import { useContext } from "react";
 
 const Page = () => {
     const { plan, setPlan } = useContext(PlanContext);
-    const fullTextPriceDisplay = fullTextSearchPricingData[plan.cloud].find((region) => region.region == plan.region)
+    const fullTextPriceDisplay:any = fullTextSearchPricingData[plan.cloud].find((region) => region.region == plan.region)
     return (
         <main>
             <div className="ml-[16px] mr-[16px]  md:ml-[42px] md:mr-[80px]">

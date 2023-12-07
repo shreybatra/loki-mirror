@@ -15,7 +15,7 @@ export const VerticalNavbar2 = () => {
         setSelectSize(0);
     };
 
-    const handleChange = (e) => {
+    const handleChange = (e: any) => {
         e.target.size = 1;
         e.target.blur();
         router.push(`/pricing/${e.target.value}`)

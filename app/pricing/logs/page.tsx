@@ -10,7 +10,7 @@ import { useContext } from "react";
 
 const Page = () => {
     const { plan, setPlan } = useContext(PlanContext);
-    const logsPriceDisplay = logsPricingData[plan.cloud].find((region) => region.region == plan.region)
+    const logsPriceDisplay:any = logsPricingData[plan.cloud].find((region) => region.region == plan.region)
     return (
         <main>
             <div className="ml-[16px] mr-[16px]  md:ml-[42px] md:mr-[80px]">

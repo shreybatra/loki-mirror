@@ -14,10 +14,11 @@ const PlanDropdown = () => {
   const { plan, setPlan } = useContext(PlanContext);
 
   const cloudKeys = Object.keys(dropDownData);
+  const selectedCloud: any = dropDownData[plan.cloud]
   const [data, setData] = useState<PlanDropdownData>({
     cloud: plan.cloud,
-    region: dropDownData[plan.cloud].region,
-    currency: dropDownData[plan.cloud].currency,
+    region: selectedCloud.region,
+    currency: selectedCloud.currency,
   });
 
   return (
