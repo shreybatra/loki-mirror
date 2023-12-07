@@ -23,8 +23,12 @@ export const AngelInvestorCard = ({
 }: AngelInvestorCardProps) => {
   return (
     <div className="leader-card pt-[8px] px-[12px] pb-[12px] flex flex-col justify-center items-center gap-1 lg:w-64 lg:h-64 w-32 h-32 border-background">
-      <div className="leader-card-bg relative w-full h-full">
-        <Image className="absolute bottom-0 h-[130%]" src={image} alt="name" />
+      <div className="leader-card-bg relative w-full h-full flex justify-center">
+        <Image
+          className="absolute bottom-0 h-[130%] w-auto"
+          src={image}
+          alt="name"
+        />
       </div>
 
       <div className="w-full">
@@ -40,9 +44,11 @@ export const AngelInvestorCard = ({
         <h6 className="text-muted text-[8px] font-bold italic md:text-[12px]">
           {position}
         </h6>
-        <h6 className="text-muted text-[8px] font-bold italic md:text-[12px]">
-          {company}
-        </h6>
+        {company && (
+          <h6 className="text-muted text-[8px] font-bold italic md:text-[12px]">
+            {company}
+          </h6>
+        )}
       </div>
     </div>
   );

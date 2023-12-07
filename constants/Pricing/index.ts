@@ -127,10 +127,6 @@ const databasesPricingData = {
   ],
 };
 
-
-
-
-
 const applicationEnvironmentData = {
   aws: [
     {
@@ -709,4 +705,13 @@ const dropDownData = {
   },
 };
 
-export { storagePricing, applicationEnvironmentData, dropDownData,storagePricingData, logsPricingData, fullTextSearchPricingData,dataBandwidthPricingData,databasesPricingData};
+export {
+  storagePricing,
+  applicationEnvironmentData,
+  dropDownData,
+  storagePricingData,
+  logsPricingData,
+  fullTextSearchPricingData,
+  dataBandwidthPricingData,
+  databasesPricingData,
+};

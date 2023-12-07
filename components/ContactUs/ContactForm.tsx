@@ -22,7 +22,7 @@ const ContactForm = () => {
   const sendData = async () => {
     try {
       const response = await axios.post(
-        `${process.env.NEXT_PUBLIC_BASE_URL}contact-us`,
+        `${process.env.NEXT_PUBLIC_BASE_URL}/contact`,
         detail
       );
 
@@ -34,16 +34,15 @@ const ContactForm = () => {
           setError("");
         }, 1000);
       } else {
-        setError("Message sent failed!");
+        setError("An error occured. Please try again later.");
       }
     } catch (error) {
-      setError("An error occured");
+      setError("An error occured. Please try again later.");
     }
   };
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
-    console.log("clicked");
     if (
       !detail.name ||
       !detail.email ||
@@ -60,8 +59,8 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="mt-[62px] w-[296px]  mb-[100px]  md:w-[738px] text-muted  md:mb-[161px]">
-      <div className="contact-form">
+    <div className="mt-[62px] w-[90%]  mb-[100px]  md:w-[738px] text-muted  md:mb-[161px]">
+      <div className="contact-form text-white">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-[20px]">
           <div className="">
             <div className="grid  gap-[4px]  mb-[32px]">
@@ -161,8 +160,12 @@ const ContactForm = () => {
         >
           Submit
         </button>
-        {error && <p>{error}</p>}
-        {success && <p>{success}</p>}
+        {error && (
+          <p className="text-red-500 font-semibold text-center">{error}</p>
+        )}
+        {success && (
+          <p className="text-green-500 font-semibold text-center">{success}</p>
+        )}
       </div>
     </div>
   );

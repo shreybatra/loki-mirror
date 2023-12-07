@@ -1,12 +1,15 @@
 import Image from "next/image";
 import React from "react";
 
-const ContactCard = ({ image, info, data }) => {
+const ContactCard = ({ imageIcon, info, data }) => {
   return (
     <div className="contactCard">
-      <Image src={image} alt="alt" />
-      <p className="text-muted">{info}</p>
-      <h3>{data}</h3>
+      {imageIcon}
+
+      <h1 className="block text-gradient font-semibold mt-2 text-xl w-fit">
+        {info}
+      </h1>
+      <h1 className="text-md">{data}</h1>
     </div>
   );
 };

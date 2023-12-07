@@ -20,6 +20,10 @@
   color: var(--secondary-color);
 }
 
+.text-primary-purple {
+  color: var(--primary-color);
+}
+
 .text-description {
   color: var(--description-color);
 }

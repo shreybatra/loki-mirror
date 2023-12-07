@@ -15,7 +15,7 @@ export const AngelInvestors = () => {
           Industry leaders backing us
         </h3>
       </div>
-      <div className="flex flex-wrap lg:gap-10 gap-3 justify-center">
+      <div className="flex flex-wrap lg:gap-10 gap-4 justify-center w-full lg:max-w-[1024px]">
         {AngelInvestorsData.map(
           ({ name, linkedinProfile, image, position, company }) => {
             return (

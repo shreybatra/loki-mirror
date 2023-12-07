@@ -27,7 +27,7 @@ export const GetStarted = () => {
           </div>
         </Link>
         <div className="cursor-pointer text-muted flex flex-col gap-2 items-center p-[16px] w-full">
-          <Link href={"/contact-us"}>
+          <Link href={"/contact"}>
             <p className="flex felx-col items-center">
               Book a demo{" "}
               <span>

@@ -27,34 +27,6 @@ export const AngelInvestorsData = [
     company: "Google",
     image: RavishKumar,
   },
-  // {
-  //   name: "Kapil Surlaker",
-  //   linkedinProfile: "",
-  //   position: "VP of Engineering",
-  //   company: "LinkedIn",
-  //   image: AngelInvestorImage1,
-  // },
-  // {
-  //   name: "Krishna Kumar",
-  //   linkedinProfile: "",
-  //   position: "Director, Engineering",
-  //   company: "Innovaccer",
-  //   image: AngelInvestorImage1,
-  // },
-  // {
-  //   name: "Divyansh Mahajan",
-  //   linkedinProfile: "",
-  //   position: "Sr. Eng Manager",
-  //   company: "Innovaccer",
-  //   image: AngelInvestorImage1,
-  // },
-  // {
-  //   name: "Harikumar Velayutham",
-  //   linkedinProfile: "",
-  //   position: "Sr. Manager @ LinkedIn",
-  //   company: "",
-  //   image: AngelInvestorImage1,
-  // },
   {
     name: "Gaurav Batra",
     linkedinProfile: "https://www.linkedin.com/in/ravish-kumar-82020469/",
@@ -76,18 +48,4 @@ export const AngelInvestorsData = [
     company: "HealthEM.AI",
     image: VivekThunga,
   },
-  // {
-  //   name: "Saurabh Kunawar",
-  //   linkedinProfile: "",
-  //   position: "Software Architect",
-  //   company: "HSBC",
-  //   image: AngelInvestorImage1,
-  // },
-  // {
-  //   name: "Sumanta Mukhopadhyay",
-  //   linkedinProfile: "",
-  //   position: "AVP of Eng @ Finarb",
-  //   company: "",
-  //   image: AngelInvestorImage1,
-  // },
 ];

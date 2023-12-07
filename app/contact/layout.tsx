@@ -1,0 +1,9 @@
+import "./contactUs.css";
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return <div className="flex flex-col md:ml-[80px]">{children}</div>;
+}

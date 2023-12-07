@@ -36,12 +36,10 @@ export const Home = () => {
         >
           Let&apos;s get started
         </button>
-        <Link href={'/contact-us'}>
-        <button
-          className="button-dark border-background px-[18px] py-[9px] md:py-[12px] md:px-[24px]"
-        >
-          Book a demo
-        </button>
+        <Link href={"/contact"}>
+          <button className="button-dark border-background px-[18px] py-[9px] md:py-[12px] md:px-[24px]">
+            Book a demo
+          </button>
         </Link>
       </div>
       <div className="relative h-full w-full">

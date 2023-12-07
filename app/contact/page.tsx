@@ -1,18 +1,22 @@
 import ContactCard from "@/components/ContactUs/ContactCard";
 import ContactForm from "@/components/ContactUs/ContactForm";
-import ContactUsHeader from "@/components/ContactUs/ContactUsHeader";
-import CosmocloudFullLogo from "@/assets/svg/cosmocloud-logo-full-dark.svg";
 import { GetStarted } from "@/components/Landing";
-import Image from "next/image";
-import Link from "next/link";
-import { MdChevronRight } from "react-icons/md";
 import location from "@/assets/svg/location.svg";
 import mail from "@/assets/svg/mail.svg";
 import phoneImg from "@/assets/svg/phone.svg";
+import ContactBg from "@/assets/svg/contact-bg.svg";
+import ContactUsHeader from "@/components/ContactUs/ContactUsHeader";
+import { FaEnvelope } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
+import Image from "next/image";
 
 export default function Page() {
   return (
     <main className="flex flex-col items-center md:block">
+      <div className="sm:none bg-contact">
+        <Image src={ContactBg} alt="contact-bg" />
+      </div>
+      <ContactUsHeader />
       <ContactForm />
       <div className="flex flex-col gap-[24px]  items-center justify-center  ">
         <h3 className="text-primary-pink uppercase tracking-[5px] text-start text-[12px] md:text-[16px] md:text-center">
@@ -25,22 +29,20 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="flex flex-wrap justify-center     md:ml-[169px]    md:mr-[169px]  gap-[42px]  md:gap-[48px]   mt-[64px]  mb-[161px] ">
-        <ContactCard image={phoneImg} info={"Contact With Us"} data={""} />
+      <div className="flex flex-wrap justify-center gap-10 md:gap-10 mt-16 mb-40">
         <ContactCard
-          image={mail}
+          imageIcon={<FaEnvelope className="text-[32px] text-muted" />}
           info={"Email Support"}
-          data={"support@cosmocloud.io"}
-        />
-
-        <ContactCard
-          image={location}
-          info={"Address"}
           data={
-            "Wework Berger Delhi One, Sector 16B, Noida, U.P - 201301"
+            <a href="mailto:support@cosmocloud.io">support@cosmocloud.io</a>
           }
         />
 
+        <ContactCard
+          imageIcon={<FaLocationDot className="text-[32px] text-muted" />}
+          info={"Address"}
+          data={"Wework Berger Delhi One, Sector 16B, Noida, U.P - 201301"}
+        />
       </div>
       <div className="md:ml-[330px] md:mr-[330px]">
         <GetStarted />
