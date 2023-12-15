@@ -5,14 +5,15 @@ import "./blogs.css";
 import { BlogsHeader } from "@/components/Blogs/BlogsHeader/BlogsHeader";
 import { BlogsNavbar } from "@/components/Blogs/BlogsNavbar/BlogsNavbar";
 import Image from "next/image";
-import PricingBg from "@/assets/svg/pricingBg.svg";
+import BlogsBg from "@/assets/svg/blogsBg.svg";
+
 import { ReactNode } from "react";
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <div>
       <div className="sm:none bg-pricing">
-        <Image src={PricingBg} alt="contact-bg" />
+        <Image src={BlogsBg} alt="contact-bg" />
       </div>
       <BlogsHeader />
       <BlogsNavbar />

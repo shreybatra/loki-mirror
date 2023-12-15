@@ -1,5 +1,6 @@
 .bg-pricing {
   position: absolute;
-  left: 55%;
   z-index: -1;
+  top: 2%;
+  right: 0;
 }
