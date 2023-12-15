@@ -33,6 +33,7 @@ export default function Page() {
             <PlanInfoHighlight text={"Lorem Ipsum 1"} />
           </div>
         </div>
+        
         <div className="pt-[42px] pb-[42px]">
           <h3 className="planBox--heading">Standard Plan</h3>
           <p className="text-muted-800 text-base font-normal">
@@ -45,9 +46,6 @@ export default function Page() {
         </div>
         <div className="pb-[42px] border-b-2 border-solid border-gray-700">
           <h3 className="planBox--heading">Shared Tier</h3>
-          <p className="text-muted-800 text-base font-normal">
-            {/* {applicationEnvironmentData.shared.info} */}
-          </p>
           <div className="flex flex-row  gap-[24px] mt-[20px] test">
             {selectedCloudData
               .find((region: any) => region.region === plan.region)
