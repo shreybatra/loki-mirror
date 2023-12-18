@@ -11,7 +11,7 @@ export const PlanInfoHighlight: React.FC<PlanInfoHighlightProps> = ({
   return (
     <div className="flex gap-[10px] mb-[10px] items-center">
       <FaCheckCircle className="text-primary-pink" />
-      <p>{text}</p>
+      <p className="text-[12px] md:text-[14px] text-muted">{text}</p>
     </div>
   );
 };

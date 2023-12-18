@@ -22,7 +22,7 @@ const PlanDropdown = ({
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 my-[44px] gap-[20px]">
       <div className="plan--dropdown">
-        <p>Cloud</p>
+        <p className="text-[14px] text-white font-[500]">Cloud</p>
         <select
           name="cloud"
           id="cloud"
@@ -41,7 +41,7 @@ const PlanDropdown = ({
         </select>
       </div>
       <div className="plan--dropdown">
-        <p>Region</p>
+        <p className="text-[14px] text-white font-[500]">Region</p>
         <select
           name="region"
           id="region"
@@ -60,7 +60,7 @@ const PlanDropdown = ({
         </select>
       </div>
       <div className="plan--dropdown">
-        <p>Currency</p>
+        <p className="text-[14px] text-white font-[500]">Currency</p>
         <select
           name="currency"
           id="currency"

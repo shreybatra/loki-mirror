@@ -16,7 +16,7 @@ export const PricingHeader = () => {
         Cosmocloud bills on a monthly subscription model for resources used per
         project
       </p>
-      <div className="flex flex-col gap-[12px] md:flex-row   text-center md:justify-center    mt-[56px]">
+      <div className="flex flex-col items-center gap-[12px] md:flex-row   text-center md:justify-center    mt-[56px]">
         <Link href="/contact">
           <div className="button-dark border-background md:mr-[16px] text-[16px] px-[24px] py-[12px] md:py-[16px] w-48">
             Talk to sales

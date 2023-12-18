@@ -50,6 +50,12 @@
   align-self: stretch;
 }
 
+@media screen and (max-width: 600px) {
+  .planInfo--box {
+    min-width: 260px;
+  }
+}
+
 .planInfo--heading {
   color: var(--Primary-Pink, #d281bc);
   /* font-size: 16px; */
@@ -69,8 +75,7 @@
   align-self: stretch;
   padding: 12px 24px;
   border-radius: 10px;
-  border: 1px solid #717171;
-  background: #282828;
+  border: 0.5px solid #717171;
   backdrop-filter: blur(15px);
 
 }

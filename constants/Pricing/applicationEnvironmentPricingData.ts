@@ -45,35 +45,35 @@ export const applicationEnvironmentData: Record<
       low: {
         data: [
           {
-            tier: "LOW 0",
-            displayName: "LOW 0",
+            tier: "L0",
+            displayName: "Low-0",
             cost: {
-              INR: 0,
-              USD: 0,
+              INR: 18.90,
+              USD: 0.2305,
             },
           },
           {
-            tier: "LOW 1",
-            displayName: "LOW 1",
+            tier: "L1",
+            displayName: "Low-1",
             cost: {
-              INR: 0,
-              USD: 0,
+              INR: 56.70,
+              USD: 0.6915,
             },
           },
           {
-            tier: "LOW 2",
-            displayName: "LOW 2",
+            tier: "L2",
+            displayName: "Low-2",
             cost: {
-              INR: 0,
-              USD: 0,
+              INR: 94.50,
+              USD: 1.1524,
             },
           },
           {
-            tier: "LOW 3",
-            displayName: "LOW 3",
+            tier: "L3",
+            displayName: "Low-3",
             cost: {
-              INR: 0,
-              USD: 0,
+              INR: 132.30,
+              USD: 1.6134,
             },
           },
         ],
@@ -81,35 +81,35 @@ export const applicationEnvironmentData: Record<
       power: {
         data: [
           {
-            tier: "POWER 0",
-            displayName: "POWER 0",
+            tier: "P0",
+            displayName: "Power-0",
             cost: {
-              INR: 0,
-              USD: 0,
+              INR: 37.80,
+              USD: 0.4610,
             },
           },
           {
-            tier: "POWER 1",
-            displayName: "POWER 1",
+            tier: "P1",
+            displayName: "Power-1",
             cost: {
-              INR: 0,
-              USD: 0,
+              INR: 113.40,
+              USD: 1.3829,
             },
           },
           {
-            tier: "POWER 2",
-            displayName: "POWER 2",
+            tier: "P2",
+            displayName: "Power-2",
             cost: {
-              INR: 0,
-              USD: 0,
+              INR: 189.00,
+              USD: 2.3049,
             },
           },
           {
-            tier: "POWER 3",
-            displayName: "POWER 3",
+            tier: "P3",
+            displayName: "Power-3",
             cost: {
-              INR: 0,
-              USD: 0,
+              INR: 264.60,
+              USD: 3.2268,
             },
           },
         ],
@@ -117,35 +117,35 @@ export const applicationEnvironmentData: Record<
       boost: {
         data: [
           {
-            tier: "BOOST 0",
-            displayName: "BOOST 0",
+            tier: "B0",
+            displayName: "Boost-0",
             cost: {
-              INR: 0,
-              USD: 0,
+              INR: 75.60,
+              USD: 0.9220,
             },
           },
           {
-            tier: "BOOST 1",
-            displayName: "BOOST 1",
+            tier: "B1",
+            displayName: "Boost-1",
             cost: {
-              INR: 0,
-              USD: 0,
+              INR: 226.80,
+              USD: 2.7659,
             },
           },
           {
-            tier: "BOOST 2",
-            displayName: "BOOST 2",
+            tier: "B2",
+            displayName: "Boost-2",
             cost: {
-              INR: 0,
-              USD: 0,
+              INR: 378.00,
+              USD: 4.6098,
             },
           },
           {
-            tier: "BOOST 3",
-            displayName: "BOOST 3",
+            tier: "B3",
+            displayName: "Boost-3",
             cost: {
-              INR: 0,
-              USD: 0,
+              INR: 529.20,
+              USD: 6.4537,
             },
           },
         ],
@@ -156,27 +156,27 @@ export const applicationEnvironmentData: Record<
       shared: {
         data: [
           {
-            tier: "SHARED 0",
-            displayName: "SHARED 0",
+            tier: "S0",
+            displayName: "Shared-0",
             cost: {
-              INR: 0,
-              USD: 0,
+              INR: 2.36,
+              USD: 0.0288,
             },
           },
           {
-            tier: "SHARED 1",
-            displayName: "SHARED 1",
+            tier: "S1",
+            displayName: "Shared-1",
             cost: {
-              INR: 0,
-              USD: 0,
+              INR: 7.09,
+              USD: 0.0864,
             },
           },
           {
-            tier: "SHARED 2",
-            displayName: "SHARED 2",
+            tier: "S2",
+            displayName: "Shared-2",
             cost: {
-              INR: 0,
-              USD: 0,
+              INR: 11.81,
+              USD: 0.1441,
             },
           },
         ],
@@ -184,35 +184,35 @@ export const applicationEnvironmentData: Record<
       low: {
         data: [
           {
-            tier: "LOW 0",
-            displayName: "LOW 0",
+            tier: "L0",
+            displayName: "Low-0",
             cost: {
-              INR: 0,
-              USD: 0,
+              INR: 18.90,
+              USD: 0.2305,
             },
           },
           {
-            tier: "LOW 1",
-            displayName: "LOW 1",
+            tier: "L1",
+            displayName: "Low-1",
             cost: {
-              INR: 0,
-              USD: 0,
+              INR: 56.70,
+              USD: 0.6915,
             },
           },
           {
-            tier: "LOW 2",
-            displayName: "LOW 2",
+            tier: "L2",
+            displayName: "Low-2",
             cost: {
-              INR: 0,
-              USD: 0,
+              INR: 94.50,
+              USD: 1.1524,
             },
           },
           {
-            tier: "LOW 3",
-            displayName: "LOW 3",
+            tier: "L3",
+            displayName: "Low-3",
             cost: {
-              INR: 0,
-              USD: 0,
+              INR: 132.30,
+              USD: 1.6134,
             },
           },
         ],
@@ -220,35 +220,35 @@ export const applicationEnvironmentData: Record<
       power: {
         data: [
           {
-            tier: "POWER 0",
-            displayName: "POWER 0",
+            tier: "P0",
+            displayName: "Power-0",
             cost: {
-              INR: 0,
-              USD: 0,
+              INR: 37.80,
+              USD: 0.4610,
             },
           },
           {
-            tier: "POWER 1",
-            displayName: "POWER 1",
+            tier: "P1",
+            displayName: "Power-1",
             cost: {
-              INR: 0,
-              USD: 0,
+              INR: 113.40,
+              USD: 1.3829,
             },
           },
           {
-            tier: "POWER 2",
-            displayName: "POWER 2",
+            tier: "P2",
+            displayName: "Power-2",
             cost: {
-              INR: 0,
-              USD: 0,
+              INR: 189.00,
+              USD: 2.3049,
             },
           },
           {
-            tier: "POWER 3",
-            displayName: "POWER 3",
+            tier: "P3",
+            displayName: "Power-3",
             cost: {
-              INR: 0,
-              USD: 0,
+              INR: 264.60,
+              USD: 3.2268,
             },
           },
         ],
@@ -256,40 +256,40 @@ export const applicationEnvironmentData: Record<
       boost: {
         data: [
           {
-            tier: "BOOST 0",
-            displayName: "BOOST 0",
+            tier: "B0",
+            displayName: "Boost-0",
             cost: {
-              INR: 0,
-              USD: 0,
+              INR: 75.60,
+              USD: 0.9220,
             },
           },
           {
-            tier: "BOOST 1",
-            displayName: "BOOST 1",
+            tier: "B1",
+            displayName: "Boost-1",
             cost: {
-              INR: 0,
-              USD: 0,
+              INR: 226.80,
+              USD: 2.7659,
             },
           },
           {
-            tier: "BOOST 2",
-            displayName: "BOOST 2",
+            tier: "B2",
+            displayName: "Boost-2",
             cost: {
-              INR: 0,
-              USD: 0,
+              INR: 378.00,
+              USD: 4.6098,
             },
           },
           {
-            tier: "BOOST 3",
-            displayName: "BOOST 3",
+            tier: "B3",
+            displayName: "Boost-3",
             cost: {
-              INR: 0,
-              USD: 0,
+              INR: 529.20,
+              USD: 6.4537,
             },
           },
         ],
       },
-    },
+    }
   ],
   gcp: [],
   azure: [],

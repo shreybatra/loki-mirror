@@ -12,7 +12,7 @@ export const Footer = () => {
   return (
     <div className="footer">
       <div className="max-w-[1280px] mx-auto flex flex-col justify-center md:items-center gap-[24px] md:flex-row md:[80px] lg:mt-[150px] px-[16px] py-[24px] md:px-[24px] md:py-[80px] w-full">
-        <div className="h-[20px] md:h-full md:grow">
+        <div className="h-[20px] w-full md:h-full md:w-[5%] md:grow" >
           <Link href={"/"}>
             <Image
               className="w-[130px] md:w-auto"
@@ -21,7 +21,7 @@ export const Footer = () => {
             />
           </Link>
         </div>
-        <div className="flex justify-between items-center w-full md:w-auto md:grow">
+        <div className="flex justify-between items-center md:w-auto md:grow" >
           <div className="flex items-center gap-[16px]">
             <button
               onClick={() =>

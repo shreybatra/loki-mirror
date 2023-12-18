@@ -1,18 +1,20 @@
 export const PricingFooter = () => {
   return (
-    <div className="pricing--footer items-center gap-[24px] p-[62px]">
-      <div className=" text-xl  md:text-2xl font-[700] pb-[24px]">
-        <h2 className="text-center">
-          Still have,{" "}
-          <span className="text-2xl md:text-3xl text-gradient font-[800]">Questions ?</span>
+    <div className="flex flex-col items-center gap-[24px] pt-[62px]">
+      <div className="font-[700]">
+        <h2 className="flex text-center gap-[8px]">
+          <span className="text-[20px] md:[28px]">
+          Still have a,
+          </span>
+          <span className="text-[20px] md:[32px] text-gradient font-[800]"> Question?</span>
         </h2>
       </div>{" "}
-      <p className="text-xs   text-muted text-center">
+      <div className="text-[12px] md:[14px] text-center text-muted">
         Interested in learning about pricing, reach out to us and upgrade your
-        free tier{" "}
-      </p>{" "}
+        free tier.
+      </div>
       <div className="text-center">
-        <button className="planInfo--button">Contact sales </button>{" "}
+        <button className="planInfo--button text-[16px]">Contact sales </button>{" "}
       </div>
     </div>
   );

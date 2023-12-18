@@ -23,7 +23,8 @@ export const PlanInfoBox: React.FC<PlanInfoBoxProps> = ({
         <h4 className="text-xs md:text-base text-primary-pink tracking-widest">
           ({tier}) {displayName}
         </h4>
-        <div className="text-xl md:text-2xl">
+        <div>
+        <div className="text-[20px] font-[600] md:text-[24px]">
           {Intl.NumberFormat(locale, {
             maximumFractionDigits: 4,
             minimumFractionDigits: 0,
@@ -31,14 +32,15 @@ export const PlanInfoBox: React.FC<PlanInfoBoxProps> = ({
             currency: currency,
           }).format(price)}
           /-
-          <p className="text-sm text-muted">per project per hour</p>
-        </div>
+          </div>
+          <p className="text-[12px] font-[400] text-muted md:[14px]">per project per hour</p>
+          </div>
         <Link
           className="planInfo--button text-center"
           href="https://dashboard.cosmocloud.io/sign-up"
           target="_blank"
         >
-          <div className="text-sm ">Get Started</div>
+          <div className="text-[14px] font-[500] ">Get Started</div>
         </Link>
       </div>
       <div className="mb-[20px] ml-[16px]">
