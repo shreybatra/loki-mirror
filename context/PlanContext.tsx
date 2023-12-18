@@ -1,4 +1,10 @@
-import React, { Dispatch, ReactNode, SetStateAction, createContext, useContext, useState } from "react";
+import React, {
+  Dispatch,
+  ReactNode,
+  SetStateAction,
+  createContext,
+  useState,
+} from "react";
 
 type Plan = {
   cloud: string;
@@ -15,19 +21,20 @@ interface PlanContextProviderProps {
   children: ReactNode;
 }
 
-
 const initialPlanContext: PlanContextType = {
   plan: {
     cloud: "aws",
-    region: "mumbai",
-    currency: "usd",
+    region: "ap-south-1",
+    currency: "inr",
   },
-  setPlan: () => { },
+  setPlan: () => {},
 };
 
 const PlanContext = createContext<PlanContextType>(initialPlanContext);
 
-const PlanContextProvider: React.FC<PlanContextProviderProps> = ({ children }) => {
+const PlanContextProvider: React.FC<PlanContextProviderProps> = ({
+  children,
+}) => {
   const [plan, setPlan] = useState<Plan>({
     cloud: "aws",
     region: "mumbai",

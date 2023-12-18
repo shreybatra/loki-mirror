@@ -1,17 +1,17 @@
 import Image from "next/image";
-import checkMarkImage from "../../assets/svg/Checkmark Circle.svg";
+import { FaCheckCircle } from "react-icons/fa";
 
 type PlanInfoHighlightProps = {
-  text: string
-}
+  text: string;
+};
 
-
-
-export const PlanInfoHighlight: React.FC<PlanInfoHighlightProps> = ({ text }) => {
+export const PlanInfoHighlight: React.FC<PlanInfoHighlightProps> = ({
+  text,
+}) => {
   return (
-    <div className="flex gap-[10px]">
-      <Image src={checkMarkImage} alt="'checkMarkImage"></Image>
-      <p className="opacity-[0.8]">{text}</p>
+    <div className="flex gap-[10px] mb-[10px] items-center">
+      <FaCheckCircle className="text-primary-pink" />
+      <p>{text}</p>
     </div>
   );
 };
