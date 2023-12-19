@@ -45,22 +45,22 @@ export const VerticalNavbar2 = () => {
           Full text Search
         </option>
 
-        <option value={"#"} className="navBar-container2-item">
+        <option disabled value={"#"} className="navBar-container2-item">
           Secrets (Coming Soon)
         </option>
-        <option value={"#"} className="navBar-container2-item">
+        <option disabled value={"#"} className="navBar-container2-item">
           Background Jobs (Coming Soon)
         </option>
-        <option value={"#"} className="navBar-container2-item">
+        <option disabled value={"#"} className="navBar-container2-item">
           Cache (Coming Soon)
         </option>
-        <option value={"#"} className="navBar-container2-item">
-          Data Bandwidth
+        <option disabled value={"#"} className="navBar-container2-item">
+          Data Bandwidth (Coming Soon)
         </option>
-        <option value={"#"} className="navBar-container2-item">
-          Logs
+        <option disabled value={"#"} className="navBar-container2-item">
+          Logs (Coming Soon)
         </option>
-        <option value={"#"} className="navBar-container2-item">
+        <option disabled value={"#"} className="navBar-container2-item">
           Event Streams (Coming Soon)
         </option>
       </select>
