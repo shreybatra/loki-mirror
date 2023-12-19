@@ -2,9 +2,9 @@
 
 import "./pricing.css";
 
-import Image from "next/image"
+import Image from "next/image";
 import { PlanContextProvider } from "@/context/PlanContext";
-import PricingBg from "@/assets/svg/pricingBg.svg"
+import PricingBg from "@/assets/svg/pricingBg.svg";
 import { PricingFooter } from "@/components/PricingDataTemplate/PricingFooter";
 import { PricingHeader } from "@/components/Pricing/PricingHeader/PricingHeader";
 import { PricingTitle } from "@/components/Pricing/PricingTitle/PricingTitle";
@@ -15,7 +15,7 @@ import { VerticalNavbar2 } from "@/components/VerticalNavbar2";
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <div>
-      <div className="sm:none bg-pricing">
+      <div className="hidden md:block bg-pricing">
         <Image src={PricingBg} alt="contact-bg" />
       </div>
       <PricingHeader />

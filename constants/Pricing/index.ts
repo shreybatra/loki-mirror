@@ -40,23 +40,15 @@ const storagePricingData: Record<string, PricingData[]> = {
   aws: [
     {
       region: "ap-south-1",
-      cost: { INR: 0, USD: 0 },
+      cost: { INR: 3, USD: 0.04 },
     },
     {
       region: "north-virginia",
-      cost: { INR: 0, USD: 0 },
+      cost: { INR: 3, USD: 0.04 },
     },
   ],
-  gcp: [
-    {
-      region: "hyderabd",
-      cost: { INR: 0, USD: 0 },
-    },
-    {
-      region: "new-york",
-      cost: { INR: 0, USD: 0 },
-    },
-  ],
+  gcp: [],
+  azure: [],
 };
 
 const logsPricingData: Record<string, PricingData[]> = {

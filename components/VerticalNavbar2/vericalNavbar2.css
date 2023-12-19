@@ -1,8 +1,9 @@
 .navBar-container2:hover {
   cursor: pointer;
 }
+
 .navBar-container2 {
-  position: sticky;
+  /* position: sticky; */
   height: 100%;
   top: 0;
   left: 0;

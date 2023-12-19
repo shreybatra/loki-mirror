@@ -16,21 +16,6 @@
   border-bottom: 2px solid #262626;
 }
 
-/* .planBox--heading {
-  color: var(--Full-White, #fff);
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  margin-bottom: 20px;
-}
-.planBox--heading--subheading {
-  color: var(--Full-White, #fff);
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-} */
 .planBox--content {
   color: var(--Muted-800, #b5b5b6);
   font-size: 16px;
@@ -58,7 +43,6 @@
 
 .planInfo--heading {
   color: var(--Primary-Pink, #d281bc);
-  /* font-size: 16px; */
   font-weight: 500;
   line-height: 124.188%;
   letter-spacing: 5.12px;

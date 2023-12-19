@@ -25,7 +25,7 @@ const initialPlanContext: PlanContextType = {
   plan: {
     cloud: "aws",
     region: "ap-south-1",
-    currency: "inr",
+    currency: "usd",
   },
   setPlan: () => {},
 };
