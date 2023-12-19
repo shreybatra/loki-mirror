@@ -12,7 +12,7 @@ export const Footer = () => {
   return (
     <div className="footer">
       <div className="max-w-[1280px] mx-auto flex flex-col justify-center md:items-center gap-[24px] md:flex-row md:[80px] lg:mt-[150px] px-[16px] py-[24px] md:px-[24px] md:py-[80px] w-full">
-        <div className="h-[20px] w-full md:h-full md:w-[5%] md:grow" >
+        <div className="h-[20px] w-full md:h-full md:w-[5%] md:grow">
           <Link href={"/"}>
             <Image
               className="w-[130px] md:w-auto"
@@ -21,7 +21,7 @@ export const Footer = () => {
             />
           </Link>
         </div>
-        <div className="flex justify-between items-center md:w-auto md:grow" >
+        <div className="flex justify-between items-center md:w-auto md:grow">
           <div className="flex items-center gap-[16px]">
             <button
               onClick={() =>
@@ -54,9 +54,19 @@ export const Footer = () => {
               <BsInstagram />
             </button>
           </div>
-          <div className="flex gap-[12px] text-sm">
-            <p>Terms</p>
-            <p>Policy</p>
+          <div className="flex gap-5 text-sm">
+            <Link
+              href="https://docs.google.com/document/d/1sj35QqX03ODPjatPFuOpkQ88AItB6MFoN6pCb7t6rSo"
+              target="_blank"
+            >
+              Terms of Service
+            </Link>
+            <Link
+              href="https://docs.google.com/document/d/1nr1g7dX-mFBZBzE0IjOsJZf3-e0e43kuXcf0DZC92MM"
+              target="_blank"
+            >
+              Policy Policy
+            </Link>
           </div>
         </div>
       </div>
