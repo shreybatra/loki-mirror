@@ -3,7 +3,6 @@
     backdrop-filter 0.1s ease;
   border-left: 3px solid;
   border-image-source: linear-gradient(to bottom, #6c3dd1, #d281bc);
-  margin-bottom: 32px;
   cursor: pointer;
 }
 
@@ -11,9 +10,11 @@
   padding-left: 12px;
   border-image-slice: 1;
 }
+
 .navBar-container:hover {
   cursor: pointer;
 }
+
 .navBar-container {
   position: sticky;
   height: 100%;

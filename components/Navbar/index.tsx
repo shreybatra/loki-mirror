@@ -13,6 +13,10 @@ import { usePathname } from "next/navigation";
 
 const routes = [
   {
+    path: "/pricing",
+    label: "Pricing",
+  },
+  {
     path: "/about",
     label: "About",
   },

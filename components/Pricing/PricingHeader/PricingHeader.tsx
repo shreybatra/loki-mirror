@@ -1,23 +1,28 @@
+import Link from "next/link";
+
 export const PricingHeader = () => {
   return (
     <div className="text-center w-[90%] mb-[107px] mt-[92px] ml-[auto] mr-[auto]">
       <div className="text-[22px] md:text-[32px] lg:text-[48px] font-medium  md:font-[700] ">
         <h2>
           Start for free, on
-          <span className="text-gradient font-[800]"> Free tier limits</span>
+          <span className="text-gradient font-[800]"> free tier</span>
         </h2>
         <h2 className="text-[22px] md:text-[32px] lg:text-[48px]">
-          of each resource
+          for each resource
         </h2>
       </div>
-      <p className="text-muted">
-        Cosmocloud bills each project on a monthly subscription model.
+      <p className="text-muted font-semibold">
+        Cosmocloud bills on a monthly subscription model for resources used per
+        project
       </p>
-      <div className="flex flex-col gap-[12px] md:flex-row   text-center md:justify-center    mt-[56px]">
-        <button className="button-dark border-background md:mr-[16px] text-[16px] px-[24px] py-[12px] md:py-[16px]">
-          Check Enterprise Plan
-        </button>
-        <button className="button-gradient text-[16px] px-[24px] py-[12px] md:py-[16px] ">
+      <div className="flex flex-col items-center gap-[12px] md:flex-row   text-center md:justify-center    mt-[56px]">
+        <Link href="/contact">
+          <div className="button-dark border-background md:mr-[16px] text-[16px] px-[24px] py-[12px] md:py-[16px] w-48">
+            Talk to sales
+          </div>
+        </Link>
+        <button className="button-gradient text-[16px] px-[24px] py-[12px] md:py-[16px] w-48">
           Let’s get started
         </button>
       </div>
