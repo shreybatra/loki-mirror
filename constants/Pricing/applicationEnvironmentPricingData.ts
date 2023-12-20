@@ -20,7 +20,7 @@ export const applicationEnvironmentData: Record<
             tier: "S0",
             displayName: "Shared-0",
             cost: {
-              INR: 0.67,
+              INR: 0.685,
               USD: 0.0028,
             },
           },
@@ -159,7 +159,7 @@ export const applicationEnvironmentData: Record<
             tier: "S0",
             displayName: "Shared-0",
             cost: {
-              INR: 0.67,
+              INR: 0.685,
               USD: 0.0028,
             },
           },
