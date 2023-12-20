@@ -15,11 +15,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <div className="sm:none bg-pricing">
         <Image src={BlogsBg} alt="contact-bg" />
       </div>
-      <BlogsHeader />
-      <BlogsNavbar />
-      <div className="flex flex-col md:flex-row mt-[42px]  md:mt-[84px]">
-        {children}
-      </div>
+      <div className="w-[90%] mx-auto">{children}</div>
     </div>
   );
 }

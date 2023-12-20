@@ -1,26 +1,40 @@
 "use client";
-import BlogButton from "../BlogButton/BlogButton";
-import { FaCircle } from "react-icons/fa";
 import Image from "next/image";
-import blogCard from "@/assets/svg/blog-bg.svg";
 import Markdown from "react-markdown";
-const BlogCard = ({ id, title, content, createdOn, readTime, tags }: Blog) => {
-  const newDate = new Date(0);
-  newDate.setUTCSeconds(createdOn);
-  const finalDate = newDate.toString().split(" ");
+import { BlogsSpecs } from "../BlogSpecs/BlogSpecs";
+const BlogCard = ({
+  id,
+  title,
+  content,
+  createdOn,
+  readTime,
+  tags,
+  image,
+  type,
+  length,
+  customClass,
+}: Blog) => {
   return (
-    <div className="p-4 bg-[#131212] rounded-lg border-2 border-[#8D8D8D]">
-      <Image src={blogCard} alt="blog-card" />
-      <h2 className="text-lg font-bold mt-4 mb-2">{title}</h2>
-      <Markdown>{content.substring(0,100)}</Markdown>
-      <div className="flex flex-row items-center justify-items-center mt-4 gap-4">
-        <p>{finalDate[1] + ", " + finalDate[2]}</p>
-        <FaCircle />
-        <p>{readTime} mins read</p>
-        <FaCircle />
-        {tags.map((tag) => (
-          <BlogButton tag={tag} />
-        ))}
+    <div
+      className={`p-4 bg-[#131212] rounded-lg border-2 border-[#8D8D8D]  ${
+        type ? "grid grid-cols-2 gap-4" : ""
+      }`}
+    >
+      <div>
+        <Image
+          src={image}
+          alt="blog-card"
+          width={1000}
+          height={1000}
+          className={`${customClass ? "md:h-[250px]" : "md:h-full"} w-full`}
+        />
+      </div>
+      <div>
+        <h2 className="text-[18px] font-[700] mt-4 mb-2">{title}</h2>
+        <Markdown className="text-muted">
+          {content.substring(0, length || 100) + "..."}
+        </Markdown>
+        <BlogsSpecs createdOn={createdOn} readTime={readTime} tags={tags} />
       </div>
     </div>
   );

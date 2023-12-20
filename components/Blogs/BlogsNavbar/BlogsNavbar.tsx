@@ -1,51 +1,46 @@
 import { CiSearch } from "react-icons/ci";
-import { GiShoppingBag } from "react-icons/gi";
-import { IoWalletOutline } from "react-icons/io5";
-import React from 'react'
-// import { blogNavbarData } from "@/constants/Blogs/";
+import { blogsTagsList } from "@/constants/Blogs";
+import { useEffect, useState } from "react";
+import BlogTag from "../BlogTag/BlogTag";
 
-export const BlogsNavbar = () => {
-    return (
-        <div className="flex flex-row justify-between w-full px-20 mt-40">
-            <div className="flex gap-4" >
-                <div className="flex gap-[10px] items-center bg-black border-[0.5px] px-6 py-3.5 border-[#717171] rounded-full outline-none">
+export const BlogsNavbar = ({
+  text,
+  setText,
+  tag,
+  setTag,
+}: BlogsNavbarProps) => {
+  const [selected, setSelected] = useState<string>(tag);
 
-                    <IoWalletOutline />
-                    <span className="text-base font-semibold">Fintech</span>
-                </div>
+  useEffect(() => {
+    setTag(selected);
+  }, [selected, setTag]);
 
-                <div className="flex gap-[10px] items-center bg-black border-[0.5px] px-6 py-3.5 border-[#717171] rounded-full outline-none">
-
-                    <GiShoppingBag />
-                    <span className="text-base font-semibold">E-commerce</span>
-                </div>
-
-                <div className="flex gap-[10px] items-center bg-black border-[0.5px] px-6 py-3.5 border-[#717171] rounded-full outline-none">
-
-                    <GiShoppingBag />
-                    <span className="text-base font-semibold">Fintech</span>
-                </div>
-
-                <div className="flex gap-[10px] items-center bg-black border-[0.5px] px-6 py-3.5 border-[#717171] rounded-full outline-none">
-
-                    <IoWalletOutline />
-                    <span className="text-base font-semibold">E-commerce</span>
-                </div>
-
-                <div className="flex gap-[10px] items-center bg-black border-[0.5px] px-6 py-3.5 border-[#717171] rounded-full outline-none">
-
-                    <GiShoppingBag />
-                    <span className="text-base font-semibold">Fintech</span>
-                </div>
-
-
-            </div>
-            <div className="flex items-center bg-black border-[0.5px] px-6 py-3.5 border-[#717171] rounded-lg outline-none gap-3" >
-                <CiSearch />
-                <input className="border-none bg-black outline-none" type="text" placeholder="Search here..." />
-            </div>
-
-        </div>
-
-    )
-}
+  return (
+    <div className="flex flex-row justify-between w-full mt-40">
+      <div className="flex gap-4">
+        {blogsTagsList.map((tagValue, i) => {
+          return (
+            <BlogTag
+              key={i}
+              tagValue={tagValue}
+              selected={selected}
+              setSelected={setSelected}
+            />
+          );
+        })}
+      </div>
+      <div className="flex items-center background-slate rounded-lg px-6 py-3.5 border-slate gap-3">
+        <CiSearch />
+        <input
+          value={text}
+          onChange={(e) => {
+            setText(e.target.value);
+          }}
+          className="border-none background-slate outline-none"
+          type="text"
+          placeholder="Search here..."
+        />
+      </div>
+    </div>
+  );
+};

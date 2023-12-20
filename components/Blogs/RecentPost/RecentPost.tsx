@@ -1,9 +1,11 @@
 import Link from "next/link";
 import BlogCard from "../BlogCard/BlogCard";
-const RecentPost = ({ blogs }: BlogsList) => {
+const img = "https://cosmocloud-public.s3.ap-south-1.amazonaws.com/test.png";
+
+const RecentPost = ({ blogs, title }: BlogsList) => {
   return (
-    <div className="px-20 mt-44">
-      <h2 className="text-xl mb-6">Recent Post</h2>
+    <div>
+      <h2 className="text-2xl font-bold mb-6">{title}</h2>
       <div className="grid grid-cols-3 gap-x-14 gap-y-8 ">
         {blogs.map((blog: Blog) => (
           <Link key={blog.id} href={`/blogs/${blog.title}`}>
@@ -14,6 +16,8 @@ const RecentPost = ({ blogs }: BlogsList) => {
               createdOn={blog.createdOn}
               readTime={blog.readTime}
               tags={blog.tags}
+              // image={blog.image}
+              image={img}
             />
           </Link>
         ))}

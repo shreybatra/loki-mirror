@@ -177,6 +177,15 @@ body {
     rgba(108, 61, 209, 0.2) 100%
   );
 }
+
+.background-gradient {
+  background: linear-gradient(
+    0deg,
+    rgba(235, 123, 192, 0.2) 0%,
+    rgba(108, 61, 209, 0.2) 100%
+  );
+}
+
 select {
   border-radius: 6px;
   border: 1px solid var(--dark-mode-border-default, #4a4a4b);
@@ -200,3 +209,11 @@ option {
   line-height: 19.6px;
 }
 
+
+.background-slate {
+  background: #252525
+}
+
+.border-slate {
+  border: 1px solid #717171;
+}
