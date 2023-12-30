@@ -57,6 +57,18 @@ export const Footer = () => {
           <div className="flex gap-5 text-sm">
             <Link href="/terms-of-service">Terms of Service</Link>
             <Link href="/privacy-policy">Privacy Policy</Link>
+            <Link
+              href="https://merchant.razorpay.com/policy/NHeXV9vtYZiRFY/refund"
+              target="_blank"
+            >
+              Refund Policy
+            </Link>
+            <Link
+              href="https://merchant.razorpay.com/policy/NHeXV9vtYZiRFY/shipping"
+              target="_blank"
+            >
+              Shipping Policy
+            </Link>
           </div>
         </div>
       </div>
