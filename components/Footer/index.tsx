@@ -55,18 +55,8 @@ export const Footer = () => {
             </button>
           </div>
           <div className="flex gap-5 text-sm">
-            <Link
-              href="https://docs.google.com/document/d/1sj35QqX03ODPjatPFuOpkQ88AItB6MFoN6pCb7t6rSo"
-              target="_blank"
-            >
-              Terms of Service
-            </Link>
-            <Link
-              href="https://docs.google.com/document/d/1nr1g7dX-mFBZBzE0IjOsJZf3-e0e43kuXcf0DZC92MM"
-              target="_blank"
-            >
-              Policy Policy
-            </Link>
+            <Link href="/terms-of-service">Terms of Service</Link>
+            <Link href="/privacy-policy">Privacy Policy</Link>
           </div>
         </div>
       </div>
