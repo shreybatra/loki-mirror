@@ -22,7 +22,7 @@ const ContactForm = () => {
   const sendData = async () => {
     try {
       const response = await axios.post(
-        `${process.env.NEXT_PUBLIC_BASE_URL}/contact`,
+        `${process.env.NEXT_PUBLIC_BASE_URL}/contact-us`,
         detail
       );
 
