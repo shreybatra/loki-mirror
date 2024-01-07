@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const PricingFooter = () => {
   return (
     <div className="flex flex-col items-center gap-[24px] pt-[62px]">
@@ -14,7 +16,9 @@ export const PricingFooter = () => {
         free tier.
       </div>
       <div className="text-center">
-        <button className="planInfo--button text-[16px]">Contact sales </button>{" "}
+        <Link href={"/contact"} className="planInfo--button text-[16px]">
+          Contact sales{" "}
+        </Link>{" "}
       </div>
     </div>
   );
