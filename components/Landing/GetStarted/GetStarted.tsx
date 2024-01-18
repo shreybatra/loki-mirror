@@ -8,7 +8,7 @@ import React from "react";
 
 export const GetStarted = () => {
   return (
-    <div className="flex flex-col gap-[32px] items-center w-full lg:w-[750px]">
+    <div className="flex flex-col gap-[32px] items-center w-full mb-[40px] lg:w-[750px]">
       <div className="w-1/3">
         <Image src={CosmocloudFullLogo} alt="Infinity Cosmocloud" />
       </div>

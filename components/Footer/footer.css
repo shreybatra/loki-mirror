@@ -1,5 +1,5 @@
 .footer {
     border-radius: 10px 10px 0 0;
-    background: linear-gradient(260deg, rgba(26, 26, 26, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%);    ;
+    background:linear-gradient(270deg,rgba(26,26,26),rgba(0,0,0))   ;
     backdrop-filter: blur(20px);
 }

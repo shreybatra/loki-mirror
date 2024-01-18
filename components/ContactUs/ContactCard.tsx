@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 
 type ContactCardProps = {
@@ -9,13 +8,12 @@ type ContactCardProps = {
 
 const ContactCard = ({ imageIcon, info, data }: ContactCardProps) => {
   return (
-    <div className="contactCard">
+    <div className="contactCard w-full md:w-[324px]">
       {imageIcon}
-
-      <h1 className="block text-gradient font-semibold mt-2 text-xl w-fit">
+      <h1 className="block mt-[16px] text-gradient text-[20px] font-semibold mt-2 md:text-xl w-fit">
         {info}
       </h1>
-      <h1 className="text-md">{data}</h1>
+      <h1 className=" text-[14px] md:text-md">{data}</h1>
     </div>
   );
 };

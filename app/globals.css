@@ -18,7 +18,7 @@ body {
   position: relative;
   background-image: url("../assets/svg/background.svg");
   background-repeat: repeat-y;
-  background-color: #0d0d0d;
+  background-color: rgba(0,0,0,0.9);
   overflow-x: hidden;
 }
 

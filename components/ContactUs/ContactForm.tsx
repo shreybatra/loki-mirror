@@ -18,7 +18,6 @@ const ContactForm = () => {
   };
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
-  const base = process.env.BASE_URL;
   const sendData = async () => {
     try {
       const response = await axios.post(
@@ -59,12 +58,12 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="mt-[62px] w-[90%]  mb-[100px]  md:w-[738px] text-muted  md:mb-[161px]">
-      <div className="contact-form text-white">
+    <div className="mt-[24px] md:mt-[62px] w-[90%]  mb-[100px]  md:w-[738px] text-muted  md:mb-[161px]">
+      <div className="contact-form text-white p-[16px] md:p-[32px]">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-[20px]">
-          <div className="">
-            <div className="grid  gap-[4px]  mb-[32px]">
-              <label htmlFor="">Full Name</label>
+          <div className="flex flex-col">
+            <div className="grid gap-[4px] mb-[20px] md:mb-[32px]">
+              <label className="text-[14px]">Full Name</label>
               <input
                 autoComplete="off"
                 type="text"
@@ -77,8 +76,8 @@ const ContactForm = () => {
                 }}
               />
             </div>
-            <div className="grid  gap-[4px] mb-[32px] ">
-              <label htmlFor="">Email ID</label>
+            <div className="grid  gap-[4px]  md:mb-[32px] ">
+              <label className="text-[14px]">Email ID</label>
               <input
                 autoComplete="off"
                 type="text"
@@ -93,8 +92,8 @@ const ContactForm = () => {
             </div>
           </div>
           <div className="">
-            <div className="grid  gap-[4px] mb-[32px] ">
-              <label htmlFor="">Designation</label>
+            <div className="grid  gap-[4px] mb-[20px] md:mb-[32px] ">
+              <label className="text-[14px]">Designation</label>
               <input
                 autoComplete="off"
                 type="text"
@@ -107,8 +106,8 @@ const ContactForm = () => {
                 }}
               />
             </div>
-            <div className="grid  gap-[4px] mb-[32px] ">
-              <label htmlFor="">Company Name</label>
+            <div className="grid  gap-[4px] mb-[20px] md:mb-[32px] ">
+              <label className="text-[14px]">Company Name</label>
               <input
                 autoComplete="off"
                 type="text"
@@ -124,8 +123,8 @@ const ContactForm = () => {
           </div>
         </div>
         <div className="">
-          <div className="grid  gap-[4px] mb-[32px]">
-            <label htmlFor="">Subject</label>
+          <div className="grid  gap-[4px] mb-[20px] md:mb-[32px]">
+            <label className="text-[14px]">Subject</label>
             <input
               autoComplete="off"
               type="text"
@@ -140,8 +139,8 @@ const ContactForm = () => {
           </div>
         </div>
         <div className="">
-          <div className="grid gap-[4px] mb-[32px]">
-            <label htmlFor="">Message</label>
+          <div className="grid gap-[4px] mb-[20px] md:mb-[32px]">
+            <label className="text-[14px]">Message</label>
             <textarea
               autoComplete="off"
               placeholder="Message"
@@ -150,7 +149,7 @@ const ContactForm = () => {
               onChange={(e) => {
                 handleChange(e);
               }}
-            ></textarea>
+            />
           </div>
         </div>
         <button

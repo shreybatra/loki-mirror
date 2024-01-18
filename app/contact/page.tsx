@@ -1,9 +1,6 @@
 import ContactCard from "@/components/ContactUs/ContactCard";
 import ContactForm from "@/components/ContactUs/ContactForm";
 import { GetStarted } from "@/components/Landing";
-import location from "@/assets/svg/location.svg";
-import mail from "@/assets/svg/mail.svg";
-import phoneImg from "@/assets/svg/phone.svg";
 import ContactBg from "@/assets/svg/contact-bg.svg";
 import ContactUsHeader from "@/components/ContactUs/ContactUsHeader";
 import { FaEnvelope } from "react-icons/fa";
@@ -18,7 +15,7 @@ export default function Page() {
       </div>
       <ContactUsHeader />
       <ContactForm />
-      <div className="flex flex-col gap-[24px]  items-center justify-center  ">
+      <div className="flex flex-col gap-[24px] w-[90%] items-center justify-center items-center">
         <h3 className="text-primary-pink uppercase tracking-[5px] text-start text-[12px] md:text-[16px] md:text-center">
           GET IN TOUCH
         </h3>
@@ -29,7 +26,7 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-10 md:gap-10 mt-16 mb-40">
+      <div className="flex flex-wrap justify-center w-[90%] gap-[16px] md:gap-10 md:gap-10 mt-16 mb-[60px]">
         <ContactCard
           imageIcon={<FaEnvelope className="text-[32px] text-muted" />}
           info={"Email Support"}
@@ -44,7 +41,7 @@ export default function Page() {
           data={"Wework Berger Delhi One, Sector 16B, Noida, U.P - 201301"}
         />
       </div>
-      <div className="md:ml-[330px] md:mr-[330px]">
+      <div className="flex flex-col items-center gap-[100px] w-[90%] md:gap-[190px]">
         <GetStarted />
       </div>
     </main>
