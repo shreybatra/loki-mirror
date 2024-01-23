@@ -1,6 +1,6 @@
 .button-gradient {
     border-radius: 10px;
-    background: linear-gradient(90deg, #AC5CC9 0%, var(--primary-color) 100%);
+    background: linear-gradient(90deg, #AC5CC9 0%, var(--primary-color) 100%) !important;
 }
 
 .button-dark {
