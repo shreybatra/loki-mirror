@@ -31,7 +31,7 @@ export const ChildContainer = ({
     <div className={classString} style={styleObj}>
       {routes?.map((child) => (
         <div className="px-5 pb-2" key={crypto.randomUUID()}>
-          <NavItem newTab={true} route={child} />
+          <NavItem newTab={true} route={child} isMobile={mobile} />
         </div>
       ))}
     </div>

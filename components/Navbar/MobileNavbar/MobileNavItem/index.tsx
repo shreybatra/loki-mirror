@@ -29,8 +29,8 @@ export const MobileNavItem = ({ route, setOpen }: MobileNavItemProps) => {
           >
             {route.label}
           </div>
-          <div className="text-muted cursor-pointer ">
-            {<RiArrowDropDownLine size={35} />}{" "}
+          <div className="cursor-pointer ">
+            {<RiArrowDropDownLine size={25} />}{" "}
           </div>
         </div>
         {showChildren && (

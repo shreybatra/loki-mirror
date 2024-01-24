@@ -7,15 +7,27 @@ import { routeType } from "@/constants/Navbar/Routes";
 type NavItemProps = {
   route: routeType;
   newTab?: boolean;
+  isMobile?: boolean;
 };
 
-export const NavItem = ({ route, newTab = false }: NavItemProps) => {
+export const NavItem = ({
+  route,
+  newTab = false,
+  isMobile = false,
+}: NavItemProps) => {
   const [showChildren, setShowChildren] = useState(false);
   const ifChildren = route.children;
   let targetVal = "_self";
   if (newTab) {
     targetVal = "_blank";
   }
+
+  let cssclassString =
+    "cursor-pointer hover:text-white md:text-sm lg:text-base";
+  if (!isMobile) {
+    cssclassString += " text-muted";
+  }
+
   if (ifChildren) {
     return (
       <>
@@ -44,9 +56,7 @@ export const NavItem = ({ route, newTab = false }: NavItemProps) => {
   return (
     <div className="flex items-center relative">
       <Link href={route.path} key={route.path} target={targetVal}>
-        <div className="text-muted cursor-pointer hover:text-white md:text-sm lg:text-base">
-          {route.label}
-        </div>
+        <div className={cssclassString}>{route.label}</div>
       </Link>
     </div>
   );
