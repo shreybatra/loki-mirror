@@ -34,7 +34,7 @@ export const PlanInfoBox: React.FC<PlanInfoBoxProps> = ({
             <span className="text-muted">/-</span>
           </div>
           <p className="text-[12px] font-[400] text-muted md:[14px]">
-            per project per hour
+            per env per hour
           </p>
         </div>
         <Link

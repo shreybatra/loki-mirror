@@ -1,3 +1,4 @@
+'use client'
 import React, { cloneElement } from "react";
 import "./scroller.css";
 
