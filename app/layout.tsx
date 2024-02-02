@@ -9,7 +9,7 @@ import { Inter } from "next/font/google";
 import type { Metadata } from "next";
 import { Navbar } from "@/components/Navbar";
 import { Analytics } from "@vercel/analytics/react";
-import Script from "next/script";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -47,6 +47,7 @@ export default function RootLayout({
         <Footer />
         <Analytics />
       </body>
+      <GoogleAnalytics gaId="G-DKTWR39RSJ" />
     </html>
   );
 }
