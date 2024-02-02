@@ -17,17 +17,7 @@ export const metadata: Metadata = {
   title: "Cosmocloud: No-Code, Backend-as-a-Service",
   description:
     "Build your next pluggable backend microservice, fully no-code. From complex APIs to background jobs to search, everything in one single platform.",
-  metadataBase: new URL("https://loki-mirror.vercel.app"),
-  openGraph: {
-    images: [
-      {
-        url: "https://public.cosmocloud.io/Banner.png",
-        width: 1280,
-        height: 720,
-        alt: "Cosmocloud: No-Code, Backend-as-a-Service",
-      },
-    ],
-  },
+  metadataBase: new URL("https://cosmocloud.io"),
 };
 
 export default function RootLayout({
@@ -37,7 +27,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
+      {/* <head>
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-DKTWR39RSJ" />
         <Script id="google-analytics">
           {`
@@ -48,7 +38,7 @@ export default function RootLayout({
           gtag('config', 'G-DKTWR39RSJ');
         `}
         </Script>
-      </head>
+      </head> */}
       <body className={inter.className}>
         <div className="flex flex-col gap-[32px] md:gap-0">
           <Navbar />
