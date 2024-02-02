@@ -18,6 +18,16 @@ export const metadata: Metadata = {
   description:
     "Build your next pluggable backend microservice, fully no-code. From complex APIs to background jobs to search, everything in one single platform.",
   metadataBase: new URL("https://loki-mirror.vercel.app"),
+  openGraph: {
+    images: [
+      {
+        url: "https://public.cosmocloud.io/Banner.png",
+        width: 1280,
+        height: 720,
+        alt: "Cosmocloud: No-Code, Backend-as-a-Service",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
