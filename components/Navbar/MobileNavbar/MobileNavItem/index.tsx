@@ -11,7 +11,7 @@ type MobileNavItemProps = {
 };
 
 export const MobileNavItem = ({ route, setOpen }: MobileNavItemProps) => {
-  const path = usePathname();
+  const path = usePathname(); 
   const [showChildren, setShowChildren] = useState(false);
   const ifChildren = route.children;
 
@@ -34,7 +34,7 @@ export const MobileNavItem = ({ route, setOpen }: MobileNavItemProps) => {
           </div>
         </div>
         {showChildren && (
-          <ChildContainer mobile={true} routes={route.children} />
+          <ChildContainer toggleOpen={setOpen} mobile={true} routes={route.children} />
         )}
       </>
     );

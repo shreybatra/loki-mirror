@@ -1,5 +1,5 @@
 import ComplexApisFeatureIcon from "@/assets/svg/api_feature.svg";
-import ElasticStabilityFeatureIcon from "@/assets/svg/elastic_stability_feature.svg";
+import ElasticScalabilityFeatureIcon from "@/assets/svg/elastic_stability_feature.svg";
 import SubscriptionFeatureIcon from "@/assets/svg/subscription_feature.svg";
 import FullTextSearchFeatureIcon from "@/assets/svg/fts_feature.svg";
 import PerformanceFeatureIcon from "@/assets/svg/performance_feature.svg";
@@ -28,10 +28,10 @@ export const FeaturesCollection = [
       icon: SecurityFeatureIcon,
     },
     {
-      name: "Elastic scalabity",
+      name: "Elastic scalability",
       description:
         "Scale as per your needs, from 100 users daily to millions of API calls per second.",
-      icon: ElasticStabilityFeatureIcon,
+      icon: ElasticScalabilityFeatureIcon,
     },
   ],
   [

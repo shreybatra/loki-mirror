@@ -47,7 +47,7 @@ export const NavItem = ({
               </div>
             )}
           </div>
-          {showChildren && <ChildContainer routes={route.children} />}
+          {showChildren && <ChildContainer toggleOpen={setShowChildren}  routes={route.children} />}
         </div>
       </>
     );

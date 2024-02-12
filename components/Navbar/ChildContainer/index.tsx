@@ -8,11 +8,13 @@ type styleObjType = {
 export type ChildContainerProps = {
   routes?: routesType;
   mobile?: boolean;
+  toggleOpen : React.Dispatch<React.SetStateAction<boolean>>
 };
 
 export const ChildContainer = ({
   routes,
   mobile = false,
+  toggleOpen,
 }: ChildContainerProps) => {
   const styleObj: styleObjType = {};
   let classString = "";
@@ -30,7 +32,7 @@ export const ChildContainer = ({
   return (
     <div className={classString} style={styleObj}>
       {routes?.map((child) => (
-        <div className="px-5 pb-2" key={crypto.randomUUID()}>
+        <div onClick={() => { toggleOpen(false) }} className="px-5 pb-2" key={crypto.randomUUID()}>
           <NavItem newTab={true} route={child} isMobile={mobile} />
         </div>
       ))}

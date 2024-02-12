@@ -53,7 +53,7 @@ export const OutOfTheBox = () => {
     <div className="flex flex-col gap-[36px] items-center lg:flex-row w-[90%]">
       <div className="video-thumbnail-container p-[6px] relative">
         <ReactPlayer
-          url="https://youtu.be/UWco0D6xp7U"
+          url="https://youtu.be/0kOZudVNcvE"
           controls={true}
           width={playerSize.width}
           height={playerSize.height}
@@ -79,7 +79,7 @@ export const OutOfTheBox = () => {
             From signing up to deploying your first application with a set of
             APIs, everything is possible in just 5 minutes.
           </p>
-          <p className="text-gradient">Checkout the demo video!</p>
+          <p className="text-gradient">Checkout the teaser!</p>
         </div>
       </div>
     </div>

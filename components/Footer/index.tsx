@@ -69,7 +69,7 @@ export const Footer = () => {
               </button>
             ))}
           </div>
-          <div className="flex align-center justify-center gap-[10px] text-[11px] md:text-[14px] md:gap-[20px] ">
+          <div className="flex align-center justify-center gap-[10px] text-[10px] md:text-[14px] md:gap-[20px] ">
             {footerLinks.map((item, index) => (
               <Link
                 key={index}
