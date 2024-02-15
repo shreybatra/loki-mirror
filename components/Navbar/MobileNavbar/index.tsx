@@ -12,12 +12,8 @@ export const MobileNavbar = ({ open, setOpen, routes }: MobileNavbarProps) => {
   return (
     <div className={`mobile ${open ? "fade-in" : "fade-out"}`}>
       <div className="mobile-links">
-        {routes.map((route: any) => (
-          <MobileNavItem
-            route={route}
-            setOpen={setOpen}
-            key={crypto.randomUUID()}
-          />
+        {routes.map((route: any, idx) => (
+          <MobileNavItem route={route} setOpen={setOpen} key={idx} />
         ))}
       </div>
       <Link href={"https://dashboard.cosmocloud.io/sign-in"}>

@@ -27,8 +27,8 @@ export const WorkCulture = () => {
       </div>
       <div className="md:hidden">
         <HorizontalScroller direction="left" speed="fast">
-          {CultureImages.map((image) => (
-            <div className="rounded-[8px] my-auto" key={crypto.randomUUID()}>
+          {CultureImages.map((image, idx) => (
+            <div className="rounded-[8px] my-auto" key={idx}>
               <Image
                 className="rounded-[8px] w-[260px]"
                 src={image}
@@ -40,8 +40,8 @@ export const WorkCulture = () => {
       </div>
       <div className="hidden md:block relative top-[-10%]">
         <VerticalScroller direction="up" speed="fast">
-          {CultureImages.map((image) => (
-            <div className="rounded-[8px] mx-auto" key={crypto.randomUUID()}>
+          {CultureImages.map((image, idx) => (
+            <div className="rounded-[8px] mx-auto" key={idx}>
               <Image
                 className="rounded-[8px] w-[400px]"
                 src={image}

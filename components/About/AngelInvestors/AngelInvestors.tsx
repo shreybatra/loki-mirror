@@ -17,10 +17,10 @@ export const AngelInvestors = () => {
       </div>
       <div className="flex flex-wrap lg:gap-10 gap-4 justify-center w-full lg:max-w-[1024px]">
         {AngelInvestorsData.map(
-          ({ name, linkedinProfile, image, position, company }) => {
+          ({ name, linkedinProfile, image, position, company }, idx) => {
             return (
               <AngelInvestorCard
-                key={crypto.randomUUID()}
+                key={idx}
                 name={name}
                 linkedinProfile={linkedinProfile}
                 image={image}

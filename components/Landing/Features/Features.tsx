@@ -32,7 +32,7 @@ export const Features = () => {
           {FeaturesCollection.slice(0, 2).map((features, featuresIndex) => {
             const className = FeaturesAlignmentStyling[featuresIndex];
             return (
-              <div key={crypto.randomUUID()} className={className}>
+              <div key={featuresIndex} className={className}>
                 {features.map((feature, index) => (
                   <FeatureDescription
                     key={index}
@@ -45,10 +45,7 @@ export const Features = () => {
             );
           })}
         </div>
-        <div
-          key={crypto.randomUUID()}
-          className="flex flex-row-reverse md:flex-col items-end gap-[20px] md:gap-[50px] relative top-[66px] md:top-[44px] w-full md:w-1/3"
-        >
+        <div className="flex flex-row-reverse md:flex-col items-end gap-[20px] md:gap-[50px] relative top-[66px] md:top-[44px] w-full md:w-1/3">
           {FeaturesCollection[2].map((feature, index) => {
             const className =
               index === 0 ? "relative top-[-66px] md:top-0" : "";

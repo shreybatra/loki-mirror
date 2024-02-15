@@ -15,13 +15,15 @@ export const Investors = () => {
           <h2 className="text-[20px] text-center font-[700] md:text-[32px]">
             Backed by VCs and Angel Investors
           </h2>
-          <p className="text-[12px] font-[400] opacity-[0.75] md:text-[14px]">Such as...</p>
+          <p className="text-[12px] font-[400] opacity-[0.75] md:text-[14px]">
+            Such as...
+          </p>
         </div>
       </div>
       <div className="flex gap-[32px] flex-wrap justify-center md:justify-between md:max-w-[60vw]">
-        {InvestorsData.map(({ image }) => {
+        {InvestorsData.map(({ image }, idx) => {
           return (
-            <div className="border-gradient w-[156px] md:w-[218px]" key={crypto.randomUUID()}>
+            <div className="border-gradient w-[156px] md:w-[218px]" key={idx}>
               <div className="px-[12px] py-[20px] investor-card w-full flex justify-center md:px-[24px] md:py-[24px]">
                 <Image src={image} alt="investor" />
               </div>

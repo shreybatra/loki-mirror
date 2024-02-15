@@ -10,7 +10,7 @@ export const About = () => {
       {AboutData.map(({ question, answer, image }, index) => {
         return (
           <AboutCard
-            key={crypto.randomUUID()}
+            key={index}
             position={index & 1 ? "right" : "left"}
             question={question}
             answer={answer}

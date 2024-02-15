@@ -9,8 +9,8 @@ type DesktopNavbarProps = {
 export const DesktopNavbar = ({ routes }: DesktopNavbarProps) => {
   return (
     <div className="hidden navigation md:flex md:gap-4 lg:gap-10 items-center">
-      {routes.map((route) => {
-        return <NavItem route={route} key={crypto.randomUUID()} />;
+      {routes.map((route, idx) => {
+        return <NavItem route={route} key={idx} />;
       })}
 
       <Link href={"https://dashboard.cosmocloud.io/sign-in"}>
