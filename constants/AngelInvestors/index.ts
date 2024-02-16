@@ -29,7 +29,7 @@ export const AngelInvestorsData = [
   },
   {
     name: "Gaurav Batra",
-    linkedinProfile: "https://www.linkedin.com/in/ravish-kumar-82020469/",
+    linkedinProfile: "https://www.linkedin.com/in/gaurav-batra-b4665240/",
     position: "Co-Founder",
     company: "Semaai",
     image: GauravBatra,

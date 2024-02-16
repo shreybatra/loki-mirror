@@ -12,19 +12,19 @@ export const LeadersData = [
   },
   {
     name: "Supriya Purohit",
-    linkedinProfile: "",
+    linkedinProfile: "https://www.linkedin.com/in/supriyapurohit27/",
     position: "Head of Product",
     image: SupriyaPurohit,
   },
   {
     name: "Abhay Bhardwaj",
-    linkedinProfile: "",
+    linkedinProfile: "https://www.linkedin.com/in/iamabhay17/",
     position: "Engineering",
     image: AbhayKumar,
   },
   {
     name: "Rishabh Dubey",
-    linkedinProfile: "",
+    linkedinProfile: "https://www.linkedin.com/in/rishverse/",
     position: "Engineering",
     image: RishabhDubey,
   },
