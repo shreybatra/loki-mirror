@@ -24,7 +24,8 @@
 .scroller[data-animated="true"] .scroller__inner {
   width: max-content;
   flex-wrap: nowrap;
-  animation: scroll var(--_animation-duration, 80s) var(--_animation-direction, forwards) linear infinite;
+  animation: scroll var(--_animation-duration, 80s)
+    var(--_animation-direction, forwards) linear infinite;
 }
 
 .scroller[data-direction="right"] {
@@ -46,5 +47,21 @@
 @keyframes scroll {
   to {
     transform: translate(calc(-50% - 10px));
+  }
+}
+
+@media (max-width: 640px) {
+  .scroller[data-speed="fast"] {
+    --_animation-duration: 40s;
+  }
+
+  .scroller[data-speed="slow"] {
+    --_animation-duration: 50s;
+  }
+  .scroller[data-animated="true"] .scroller__inner {
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroll var(--_animation-duration, 40s)
+      var(--_animation-direction, forwards) linear infinite;
   }
 }
