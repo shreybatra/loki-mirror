@@ -23,17 +23,9 @@
 .leader-card {
   border-radius: 10px;
   background: linear-gradient(260deg,
-      rgba(40, 40, 40, 0.77) 0%,
-      rgba(40, 40, 40, 0.19) 100%);
+      rgba(var(--gray-rgb-val), 0.77) 0%,
+      rgba(var(--gray-rgb-val), 0.19) 100%);
   backdrop-filter: blur(15px);
-}
-
-.strip-played {
-  background: #5c5c5c;
-}
-
-.strip-unplayed {
-  background: var(--primary-color);
 }
 
 .ideation-dot::after {
@@ -59,8 +51,8 @@
   border-radius: 10px;
   border: 0.5px solid var(--gray-color);
   background: linear-gradient(260deg,
-      rgba(40, 40, 40, 0.77) 0%,
-      rgba(40, 40, 40, 0.19) 100%);
+      rgba(var(--gray-rgb-val), 0.77) 0%,
+      rgba(var(--gray-rgb-val), 0.19) 100%);
   backdrop-filter: blur(15px);
   cursor: pointer;
 }
@@ -74,8 +66,8 @@
   border-radius: 10px;
   border: 0.5px solid var(--gray-color);
   background: linear-gradient(260deg,
-      rgba(40, 40, 40, 0.77) 0%,
-      rgba(40, 40, 40, 0.19) 100%);
+      rgba(var(--gray-rgb-val), 0.77) 0%,
+      rgba(var(--gray-rgb-val), 0.19) 100%);
   backdrop-filter: blur(15px);
   cursor: pointer;
 }
@@ -84,6 +76,6 @@
   border-radius: 10px;
   border: 1px solid var(--primary-color);
   background: linear-gradient(264deg,
-      rgba(40, 40, 40, 0.77) 0%,
-      rgba(40, 40, 40, 0.19) 99.15%);
+      rgba(var(--gray-rgb-val), 0.77) 0%,
+      rgba(var(--gray-rgb-val), 0.19) 99.15%);
 }

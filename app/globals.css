@@ -3,22 +3,30 @@
 @tailwind utilities;
 
 :root {
+  --btn-dark: #282828; 
   --bg-black: #0d0d0d;
-  --primary-color: #6c3dd1;
-  --secondary-color: #eb7bc0;
+  --bg-black-light: #252525;
+  --primary-color: #eb7bc0;
+  --primary-dark: #eb7bc0cc;
+  --secondary-color: #b490ff;
+  --secondary-dark: #6c3dd1;
   --ellipse1-color: #eb7bc033;
   --ellipse2-color: #6c3dd14d;
-  --description-color: rgba(255, 255, 255, 0.7);
-  --white: #ffffff;
+  --white: #fff;
   --muted-color: #9f9fa0;
+  --btn-border-grey: #9f9fa0;
+  --gray-color: #9f9fa0;
+  --contact-form-border: #9f9fa0;
+  --gray-rgb-val: 40, 40, 40;
+  --white-rgb-val: 255, 255, 255;
 }
 
-body { 
-  color: rgb(255, 255, 255);
+body {
+  color: rgb(var(--white-rgb-val));
   position: relative;
   background-image: url("../assets/svg/background.svg");
   background-repeat: repeat-y;
-  background-color: rgba(0,0,0,0.9);
+  background-color: rgba(0, 0, 0, 0.9);
   overflow-x: hidden;
 }
 
@@ -27,9 +35,9 @@ body {
   opacity: 0.2;
   background: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 0) 0%,
+    rgba(var(--white-rgb-val), 0) 0%,
     #fff 52.6%,
-    rgba(255, 255, 255, 0) 100%
+    rgba(var(--white-rgb-val), 0) 100%
   );
 }
 
@@ -38,9 +46,9 @@ body {
   opacity: 0.2;
   background: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 0) 0%,
+    rgba(var(--white-rgb-val), 0) 0%,
     #fff 52.6%,
-    rgba(255, 255, 255, 0) 100%
+    rgba(var(--white-rgb-val), 0) 100%
   );
 }
 
@@ -49,8 +57,8 @@ body {
   border: 0.5px solid #8d8d8d;
   background: linear-gradient(
     260deg,
-    rgba(40, 40, 40, 0.77) 0%,
-    rgba(40, 40, 40, 0.19) 100%
+    rgba(var(--gray-rgb-val), 0.77) 0%,
+    rgba(var(--gray-rgb-val), 0.19) 100%
   );
   backdrop-filter: blur(15px);
 }
@@ -66,7 +74,7 @@ body {
 
 .testimonial-card {
   border-radius: 10px;
-  background: rgba(40, 40, 40, 0.4);
+  background: rgba(var(--gray-rgb-val), 0.4);
   backdrop-filter: blur(20px);
   width: 360px;
   padding: 20px;
@@ -75,7 +83,7 @@ body {
 @media screen and (max-width: 768px) {
   .testimonial-card {
     width: 286px;
-    height: 175px;
+    /* height: 175px; */
     font-size: 12px;
     padding: 12px;
   }
@@ -84,7 +92,7 @@ body {
 .security-compliance-container {
   background: linear-gradient(
     270deg,
-    rgba(40, 40, 40, 0.4) 0%,
+    rgba(var(--gray-rgb-val), 0.4) 0%,
     rgba(10, 10, 10, 0.4) 103.19%
   );
   backdrop-filter: blur(20px);

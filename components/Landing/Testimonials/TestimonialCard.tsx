@@ -19,15 +19,15 @@ export const TestimonialCard = ({description, customerName, companyName, image}:
             <Image src={TestiMonialIcon} alt='testimonial icon' />
         </div>
         <div>
-            <p>{description}</p>
+            <p className='text-[14px]'>{description}</p>
         </div>
         <div className='flex gap-[8px] items-center'>
             <div>
-                <Image src={image} alt={customerName} />
+                <Image className='rounded-full' height={40} src={image} alt={customerName} />
             </div>
             <div className='flex flex-col gap-[2px]'>
-                <h5 className='text-[12px]'>{customerName}</h5>
-                <p className='text-muted italic text-[10px]'>{companyName}</p>
+                <h5 className='text-[16px] font-semibold text-primary '>{customerName}</h5>
+                <p className='text-muted font-semibold text-[14px]'>{companyName}</p>
             </div>
         </div>
     </div>

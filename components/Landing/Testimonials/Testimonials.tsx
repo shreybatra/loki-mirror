@@ -38,7 +38,7 @@ export const Testimonials = () => {
           })}
         </HorizontalScroller>
       </div>
-      <div className="flex overflow-hidden gap-[24px]">
+      {/* <div className="flex overflow-hidden gap-[24px]">
         <HorizontalScroller direction="right" speed="slow">
           {TestimonialsData.map((testimonial, testimonialsIndex) => {
             return (
@@ -52,7 +52,7 @@ export const Testimonials = () => {
             );
           })}
         </HorizontalScroller>
-      </div>
-    </div>
+      </div> */}
+    </div> 
   );
 };

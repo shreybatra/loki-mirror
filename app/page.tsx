@@ -16,16 +16,16 @@ export default function Page() {
       <div className="flex flex-col items-center gap-[90px] w-[90%] md:gap-[190px]">
         <Home />
         {/* Flagged off till data is not present. */}
-        {/* <Client /> */}
-        <ProductionFlow />
-        <Partners />
-        <Features />
         <OutOfTheBox />
+        {/* <Client /> */}
+        <Features />
+        <Partners />
+        {/* <ProductionFlow /> */}
       </div>
       {/* Flagged off till data is not present. */}
       {/* <div className="flex flex-col items-center gap-[100px] w-[100%] md:gap-[190px]"> */}
 
-      {/* <Testimonials /> */}
+      <Testimonials />
       {/* <SecurityComplianceCheck /> */}
       {/* </div> */}
       <div className="flex flex-col items-center gap-[100px] w-[90%] md:gap-[190px]">

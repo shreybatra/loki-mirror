@@ -2,7 +2,7 @@
   transition: border-left 0.1s ease, padding-left 0.1s ease,
     backdrop-filter 0.1s ease;
   border-left: 3px solid;
-  border-image-source: linear-gradient(to bottom, #6c3dd1, #d281bc);
+  border-image-source: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
   cursor: pointer;
 }
 

@@ -3,14 +3,22 @@
 }
 
 .text-gradient {
-  background: linear-gradient(90deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+  background: linear-gradient(
+    90deg,
+    var(--secondary-color) 0%,
+    var(--primary-color) 100%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-gradient-2 {
-  background: linear-gradient(270deg, var(--primary-color) 28.83%, var(--secondary-color) 71.17%);
+  background: linear-gradient(
+    270deg,
+    var(--primary-color) 28.83%,
+    var(--secondary-color) 71.17%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -25,5 +33,5 @@
 }
 
 .text-description {
-  color: var(--description-color);
+  color: rgba(var(--white-rgb-val), 0.7);
 }

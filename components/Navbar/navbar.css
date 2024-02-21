@@ -1,9 +1,7 @@
 .navbar {
   border-radius: 20px;
-  border: 0.5px solid #717171;
-
+  border: 0.5px solid var(--btn-border-grey);
   background: rgba(28, 28, 28, 0.2);
-
 }
 
 .mobile {
@@ -18,12 +16,12 @@
   background: rgba(28, 28, 28);
 
   border: 0.5px solid;
-  border-color: rgb(113,113,113,0.8);
-  
+  border-color: rgb(113, 113, 113, 0.8);
+
   /* content css  */
   display: flex;
   flex-direction: column;
-  gap:2rem;
+  gap: 2rem;
   justify-content: center;
   font-size: 14px;
   align-items: start;
@@ -37,7 +35,7 @@
 
 .fade-out {
   display: none;
-  opacity:0;
+  opacity: 0;
 }
 
 .mobile-links {
@@ -48,9 +46,12 @@
 }
 
 .active {
-  background: linear-gradient(90deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+  background: linear-gradient(
+    90deg,
+    var(--secondary-color) 0%,
+    var(--primary-color) 100%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-

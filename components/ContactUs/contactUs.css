@@ -4,11 +4,15 @@
   inset: 0;
   border-radius: 10px;
   padding: 1px;
-  background: linear-gradient(90deg,
-      var(--secondary-color),
-      var(--primary-color));
-  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  background: linear-gradient(
+    90deg,
+    var(--secondary-color),
+    var(--primary-color)
+  );
+  mask: linear-gradient(var(--white) 0 0) content-box,
+    linear-gradient(var(--white) 0 0);
+  -webkit-mask: linear-gradient(var(--white) 0 0) content-box,
+    linear-gradient(var(--white) 0 0);
   -webkit-mask-composite: xor;
 
   mask-composite: exclude;
@@ -18,31 +22,33 @@
 .contact-form {
   position: relative;
   border-radius: 10px;
-  background: linear-gradient(264deg,
-      rgba(40, 40, 40, 0.54) 10%,
-      rgba(40, 40, 40, 0.13) 99.15%);
+  background: linear-gradient(
+    264deg,
+    rgba(var(--gray-rgb-val), 0.54) 10%,
+    rgba(var(--gray-rgb-val), 0.13) 99.15%
+  );
   backdrop-filter: blur(7px);
 }
 
 .contact-form input {
   padding: 12px;
   border-radius: 6px;
-  border: 1px solid #606060;
-  background: #252525;
+  border: 1px solid var(--contact-form-border);
+  background: var(--bg-black-light);
   z-index: 1;
   outline: none;
 }
 
 .contact-form input:hover {
   outline: none;
-  border: 1px solid #6c3dd1;
+  border: 1px solid var(--primary-color);
 }
 
 .contact-form textarea {
   padding: 12px;
   border-radius: 6px;
-  border: 1px solid #606060;
-  background: #252525;
+  border: 1px solid var(--contact-form-border);
+  background: var(--bg-black-light);
   z-index: 1;
   outline: none;
   height: 136px;
@@ -50,13 +56,13 @@
 
 .contact-form textarea:hover {
   outline: none;
-  border: 1px solid #6c3dd1;
+  border: 1px solid var(--primary-color);
 }
 
 .contactCard {
   padding: 20px;
   border-radius: 10px;
-  background: rgba(40, 40, 40, 0.4);
+  background: rgba(var(--gray-rgb-val), 0.4);
   backdrop-filter: blur(20px);
   height: 200px;
 }

@@ -24,7 +24,7 @@
 .scroller[data-animated="true"] .scroller__inner {
   width: max-content;
   flex-wrap: nowrap;
-  animation: scroll var(--_animation-duration, 40s) var(--_animation-direction, forwards) linear infinite;
+  animation: scroll var(--_animation-duration, 80s) var(--_animation-direction, forwards) linear infinite;
 }
 
 .scroller[data-direction="right"] {
@@ -36,11 +36,11 @@
 }
 
 .scroller[data-speed="fast"] {
-  --_animation-duration: 20s;
+  --_animation-duration: 80s;
 }
 
 .scroller[data-speed="slow"] {
-  --_animation-duration: 60s;
+  --_animation-duration: 100s;
 }
 
 @keyframes scroll {
