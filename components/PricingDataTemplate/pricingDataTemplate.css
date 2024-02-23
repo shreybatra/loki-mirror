@@ -57,7 +57,6 @@
   border: 1px solid var(--dark-mode-border-default, #4a4a4b);
   color: #a8a8aa;
   background-color: #26262600;
-  width: 100%;
   margin-top: 4px;
   padding-right: 10px;
 }

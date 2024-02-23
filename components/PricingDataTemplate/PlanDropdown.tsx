@@ -23,7 +23,7 @@ const PlanDropdown = ({
     <div className="grid grid-cols-1 md:grid-cols-3 my-[44px] gap-[20px]">
       <div className="plan--dropdown">
         <p className="text-[14px] text-white font-[500]">Cloud</p>
-        <div className="plan--dropdown--select">
+        <div className="plan--dropdown--select w-[100%]">
           <select
             name="cloud"
             id="cloud"
@@ -44,7 +44,7 @@ const PlanDropdown = ({
       </div>
       <div className="plan--dropdown">
         <p className="text-[14px] text-white font-[500]">Region</p>
-        <div className="plan--dropdown--select">
+        <div className="plan--dropdown--select w-[100%]">
           <select
             name="region"
             id="region"
@@ -65,23 +65,22 @@ const PlanDropdown = ({
       </div>
       <div className="plan--dropdown">
         <p className="text-[14px] text-white font-[500]">Currency</p>
-        <div className="plan--dropdown--select">
-
-        <select
-          name="currency"
-          id="currency"
-          value={selectedCurrency}
-          onChange={(e) => {
-            setSelectedCurrency(e.target.value);
-          }}
+        <div className="plan--dropdown--select w-[100%]">
+          <select
+            name="currency"
+            id="currency"
+            value={selectedCurrency}
+            onChange={(e) => {
+              setSelectedCurrency(e.target.value);
+            }}
           >
-          {currencyTypes.map((val) => (
-            <option key={val} value={val}>
-              {val}
-            </option>
-          ))}
-        </select>
-          </div>
+            {currencyTypes.map((val) => (
+              <option key={val} value={val}>
+                {val}
+              </option>
+            ))}
+          </select>
+        </div>
       </div>
     </div>
   );
