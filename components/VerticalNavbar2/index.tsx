@@ -21,7 +21,7 @@ export const VerticalNavbar2 = () => {
     router.push(`/pricing/${e.target.value}`);
   };
   return (
-    <div className="w-[90%] ml-[auto] mr-[auto] mb-[42px]  md:hidden  navBar-container2">
+    <div className="w-[90%] ml-[auto] mr-[auto] mb-[42px]  md:hidden  navBar-container2 plan--dropdown plan--dropdown--select">
       <select
         name="languages"
         id="language-select"
@@ -64,6 +64,7 @@ export const VerticalNavbar2 = () => {
           Event Streams (Coming Soon)
         </option>
       </select>
+
     </div>
   );
 };
