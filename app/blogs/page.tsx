@@ -5,7 +5,6 @@ import { BlogsHeader } from "@/components/Blogs/BlogsHeader/BlogsHeader";
 import { BlogsNavbar } from "@/components/Blogs/BlogsNavbar/BlogsNavbar";
 import { useEffect, useState } from "react";
 
-const img = "https://cosmocloud-public.s3.ap-south-1.amazonaws.com/test.png";
 const Page = () => {
   const [blogs, setBlogs] = useState<BlogResponseProps>({
     featuredData: { data: [], page: { limit: 0, total: 0, next: 0 } },
@@ -51,7 +50,7 @@ const Page = () => {
         setRecentBlogs(res.blogsData.data);
       } else {
         setRecentBlogs((prevBlogs) => [...prevBlogs, ...res.blogsData.data]);
-        setBlogs((prevVal) => {
+        setBlogs((prevVal:any) => {
           return { ...prevVal, blogsData: { data: [...recentBlog] } };
         });
       }
