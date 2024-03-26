@@ -8,11 +8,14 @@ import PricingBg from "@/assets/svg/pricingBg.svg";
 import { PricingFooter } from "@/components/PricingDataTemplate/PricingFooter";
 import { PricingHeader } from "@/components/Pricing/PricingHeader/PricingHeader";
 import { PricingTitle } from "@/components/Pricing/PricingTitle/PricingTitle";
-import { ReactNode } from "react";
+import { ReactNode, useEffect } from "react";
 import { VerticalNavbar } from "@/components/VerticalNavbar";
 import { VerticalNavbar2 } from "@/components/VerticalNavbar2";
 
 export default function RootLayout({ children }: { children: ReactNode }) {
+  useEffect(()=>{
+    window.scrollTo(0, 0); 
+  },[])
   return (
     <div>
       <div className="hidden md:block bg-pricing">
