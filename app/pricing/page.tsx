@@ -52,7 +52,7 @@ const environmentPlansContent = [
 export default function Page() {
   const [selectedRegion, setSelectedRegion] = useState("ap-south-1");
   const [selectedCloud, setSelectedCloud] = useState("aws");
-  const [selectedCurrency, setSelectedCurrency] = useState("USD");
+  const [selectedCurrency, setSelectedCurrency] = useState("INR");
 
   const selectedCloudData: any = applicationEnvironmentData[selectedCloud];
 

@@ -25,7 +25,7 @@ const initialPlanContext: PlanContextType = {
   plan: {
     cloud: "aws",
     region: "ap-south-1",
-    currency: "usd",
+    currency: "inr",
   },
   setPlan: () => {},
 };
@@ -38,7 +38,7 @@ const PlanContextProvider: React.FC<PlanContextProviderProps> = ({
   const [plan, setPlan] = useState<Plan>({
     cloud: "aws",
     region: "mumbai",
-    currency: "usd",
+    currency: "inr",
   });
 
   return (
