@@ -44,7 +44,7 @@ export const VerticalNavbar2 = () => {
         <option value={"full-text-search"} className="navBar-container2-item">
           Full text Search
         </option>
-
+        {/* 
         <option disabled value={"#"} className="navBar-container2-item">
           Secrets (Coming Soon)
         </option>
@@ -63,6 +63,7 @@ export const VerticalNavbar2 = () => {
         <option disabled value={"#"} className="navBar-container2-item">
           Event Streams (Coming Soon)
         </option>
+         */}
       </select>
 
     </div>

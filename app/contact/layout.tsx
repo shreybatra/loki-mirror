@@ -5,5 +5,5 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <div className="flex w-[90%] flex-col md:ml-20">{children}</div>;
+  return <div className="flex w-[100%] flex-col md:ml-20">{children}</div>;
 }

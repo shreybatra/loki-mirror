@@ -27,7 +27,7 @@ export const VerticalNavbar = () => {
           <li className="navBar-container-item mb-8">Full Text Search</li>
         </Link>
 
-        <li className="text-muted mb-8">Background Jobs (Coming Soon)</li>
+        {/* <li className="text-muted mb-8">Background Jobs (Coming Soon)</li>
 
         <li className="text-muted mb-8">Cache (Coming Soon)</li>
 
@@ -38,6 +38,7 @@ export const VerticalNavbar = () => {
         <li className="text-muted mb-8">Data Bandwidth (Coming Soon)</li>
 
         <li className="text-muted mb-8">Secrets (Coming Soon)</li>
+         */}
       </ul>
     </div>
   );

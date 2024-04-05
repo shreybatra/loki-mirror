@@ -5,6 +5,7 @@ import ContactBg from "@/assets/svg/contact-bg.svg";
 import ContactUsHeader from "@/components/ContactUs/ContactUsHeader";
 import { FaEnvelope } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
+import { IoIosCall } from "react-icons/io";
 import Image from "next/image";
 
 export default function Page() {
@@ -40,6 +41,12 @@ export default function Page() {
           info={"Address"}
           data={"Wework Berger Delhi One, Sector 16B, Noida, U.P - 201301"}
         />
+        <ContactCard
+          imageIcon={<IoIosCall className="text-[32px] text-muted" />}
+          info={"Contact Us"}
+          data={"+91 9818444464"}
+        />
+        
       </div>
       <div className="flex flex-col items-center gap-[100px] w-[90%] md:gap-[190px]">
         <GetStarted />
