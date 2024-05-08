@@ -19,7 +19,7 @@ const Page = () => {
     {
       title: "Example 1",
       content:
-        "For example you create 2 Object Storage with 100 GB and 200 GB capacity respectively. You will be charged for 300 GB of data storage capacity.",
+        "For example you create 2 Object Storage Buckets with 100 GB and 200 GB capacity respectively. You will be charged for 300 GB of data storage capacity.",
     },
   ];
 
@@ -38,7 +38,7 @@ const Page = () => {
 
         <PricingPlans planName={"Free Plan"}>
           <p className="text-[12px] mb-[12px] md:text-[14px] text-muted">
-            On the Free Plan, you will get 1 Object Storage already created,
+            On the Free Plan, you will get 1 Object Storage Bucket already created,
             with a 512MB cap size allocated to you.
           </p>
           <div className="mt-[16px]">
@@ -53,7 +53,7 @@ const Page = () => {
         <PricingPlans planName={"Standard Plan"}>
           <p className="text-[12px] md:text-[14px] text-muted">
             Cosmocloud charges for the data storage capacity `requested` across
-            all Object Storage per month.
+            all Object Storage Buckets per month.
           </p>
           <PlanDropdown
             selectedRegion={selectedRegion}
