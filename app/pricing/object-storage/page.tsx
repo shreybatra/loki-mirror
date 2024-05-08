@@ -2,11 +2,10 @@
 
 import "@/components/PricingDataTemplate/pricingDataTemplate.css";
 
-import { PlanContext } from "@/context/PlanContext";
 import PlanDropdown from "@/components/PricingDataTemplate/PlanDropdown";
 import { PlanInfoHighlight } from "@/components/PricingDataTemplate/PlanInfoHighlight";
 import { storagePricingData } from "@/constants/Pricing/index";
-import { useContext, useState } from "react";
+import { useState } from "react";
 import { PricingPlans } from "@/components/Pricing/PricingPlans.tsx/PricingPlans";
 
 const Page = () => {
@@ -20,7 +19,7 @@ const Page = () => {
     {
       title: "Example 1",
       content:
-        "For example you create 2 Storage Accounts with 100 GB and 200 GB capacity respectively. You will be charged for 300 GB of data storage capacity.",
+        "For example you create 2 Object Storage with 100 GB and 200 GB capacity respectively. You will be charged for 300 GB of data storage capacity.",
     },
   ];
 
@@ -34,12 +33,12 @@ const Page = () => {
     <main>
       <div className="ml-[16px] mr-[16px] md:ml-[42px] md:mr-[80px]">
         <h2 className="text-white text-[20px] font-medium md:font-bold md:text-[24px]">
-          Storage Accounts (Object Storage)
+          Object Storage
         </h2>
 
         <PricingPlans planName={"Free Plan"}>
           <p className="text-[12px] mb-[12px] md:text-[14px] text-muted">
-            On the Free Plan, you will get 1 Storage Account already created,
+            On the Free Plan, you will get 1 Object Storage already created,
             with a 512MB cap size allocated to you.
           </p>
           <div className="mt-[16px]">
@@ -54,7 +53,7 @@ const Page = () => {
         <PricingPlans planName={"Standard Plan"}>
           <p className="text-[12px] md:text-[14px] text-muted">
             Cosmocloud charges for the data storage capacity `requested` across
-            all Storage Accounts per month.
+            all Object Storage per month.
           </p>
           <PlanDropdown
             selectedRegion={selectedRegion}
@@ -66,7 +65,7 @@ const Page = () => {
           />
 
           <p className="text-muted-800 text-base font-normal">
-            The storage price for {selectedRegion} in {selectedCloud} is{" "}
+            The Object Storage price for {selectedRegion} in {selectedCloud} is{" "}
             {Intl.NumberFormat(locale, {
               maximumFractionDigits: 4,
               minimumFractionDigits: 0,

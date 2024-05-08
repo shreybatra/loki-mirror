@@ -19,8 +19,8 @@ export const VerticalNavbar = () => {
         <Link href={"/pricing/databases"}>
           <li className="navBar-container-item mb-8">Databases</li>
         </Link>
-        <Link href={"/pricing/storage-account"}>
-          <li className="navBar-container-item mb-8">Storage Account</li>
+        <Link href={"/pricing/object-storage"}>
+          <li className="navBar-container-item mb-8">Object Storage</li>
         </Link>
 
         <Link href={"/pricing/full-text-search"}>

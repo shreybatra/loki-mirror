@@ -37,8 +37,8 @@ export const VerticalNavbar2 = () => {
         <option value={"databases"} className="navBar-container2-item">
           Databases
         </option>
-        <option value={"storage-account"} className="navBar-container2-item">
-          Storage Account
+        <option value={"object-storage"} className="navBar-container2-item">
+          Object Storage
         </option>
 
         <option value={"full-text-search"} className="navBar-container2-item">
@@ -65,7 +65,6 @@ export const VerticalNavbar2 = () => {
         </option>
          */}
       </select>
-
     </div>
   );
 };
