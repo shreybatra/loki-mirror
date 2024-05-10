@@ -22,7 +22,12 @@ export const PricingHeader = () => {
             Talk to sales
           </div>
         </Link>
-        <button className="button-gradient text-[16px] px-[24px] py-[12px] md:py-[16px] w-48">
+        <button
+          className="button-gradient text-[16px] px-[24px] py-[12px] md:py-[16px] w-48"
+          onClick={() =>
+            (window.location.href = "https://dashboard.cosmocloud.io/sign-up")
+          }
+        >
           Let’s get started
         </button>
       </div>
