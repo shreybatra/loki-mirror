@@ -22,7 +22,7 @@ const PricingCard = ({ heading, price, color, isMontly,features }: PricingCardsP
                   >
 
                       <div className="text-center mb-6">
-                          <h5 className={`text-3xl whitespace-nowrap font-semibold ${color ? color : 'text-gray-200'} mb-3`}>{heading}</h5>
+                          <h5 className={`text-3xl whitespace-nowrap font-semibold text-gray-200 mb-3`}>{heading}</h5>
                           <span className={`block   ${isMontly ? 'my-7 text-gray-400 text-sm' : 'mb-1 text-xl text-gray-200'}`}> {price}</span>
                           {
                               !isMontly && <span className="block text-gray-400 text-xs mb-6">per month</span>
@@ -44,7 +44,7 @@ const PricingCard = ({ heading, price, color, isMontly,features }: PricingCardsP
                                         <div className="w-[26px] max-w-[26px]">
                                             <IoRocketOutline width={"26px"} height={"26px"} className="fill-current w-[26px] max-w-[26px] text-gray-200" />
                                         </div>
-                                        <span className={`text-gray-500 ${feature.isExcluded ? 'line-through' : ''}`}>{feature.desc}</span>
+                                        <span className={`${feature.isExcluded ? 'text-gray-500' : 'text-gray-100'}`}>{feature.desc}</span>
                                     </li>
                                 ))
                           }
