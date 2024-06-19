@@ -30,15 +30,17 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           {children}
         </div>
       </PlanContextProvider> */}
-      <div className="flex flex-col  px-[6vw] justify-center items-center">
-        <PricingHorizontalCards label="Get Start with" span="Free tier" description="Start for free, on free tier
-for each resource. Build your app's backend in minutes." buttonLabel={'Get-Started'} />
-        <div className="flex w-full md:flex-row gap-12 flex-col justify-between items-center">
-        <PricingCards />
-        </div>
-        <PricingHorizontalCards label="Looking for
+      <div className="flex justify-center">
+        <div className="flex flex-col max-w-screen-2xl px-[6vw] justify-center items-center">
+          <PricingHorizontalCards label="Get Start with" span="free tier" description="Start for free, on free tier
+for each resource. Build your app's backend in minutes." buttonLabel={'Get started'} />
+          <div className="flex w-full md:flex-row gap-12 flex-col justify-between items-center">
+            <PricingCards />
+          </div>
+          <PricingHorizontalCards label="Looking for
 "  span="enterprise plans?" description="  Interested in learning about pricing, reach out to us and upgrade your
-            free tier." buttonLabel={"Contact Sales"} />
+            free tier." buttonLabel={"Contact sales"} />
+        </div>
       </div>
     </div>
   );

@@ -9,10 +9,10 @@ const PricingCards = () => {
                 desc: "1 Production Env (S2)"
             },
             {
-                desc: "1 Staging Env(S0)",
+                desc: "1 Staging Env (S0)",
             },
             {
-                desc: "1 Dev Env(Shared)"
+                desc: "1 Dev Env (Shared)"
             },
             {
                 desc: "Unlimited API calls",
@@ -23,17 +23,17 @@ const PricingCards = () => {
             ]
         },
         {
-            heading: "Business Plus",
+            heading: "Business",
             price: "₹45000",
             color: "text-blue-300",
             features: [{
-                desc: "1 Production Env(L1)"
+                desc: "1 Production Env (L1)"
             },
             {
-                desc: "1 Staging Env(S0)"
+                desc: "1 Staging Env (S0)"
             },
             {
-                desc: "1 Dev Env(Shared)"
+                desc: "1 Dev Env (Shared)"
             },
             {
                 desc: "Unlimited API calls",
@@ -48,10 +48,10 @@ const PricingCards = () => {
             price: "Contact sales for pricing",
             isMontly: true,
             features: [{
-                desc: "1 Production(Custom)",
+                desc: "1 Production (Custom)",
             },
             {
-                desc: "1 Staging(Custom)"
+                desc: "1 Staging (Custom)"
             },
             {
                 desc: "Custom Environments"
