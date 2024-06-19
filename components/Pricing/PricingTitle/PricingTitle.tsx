@@ -6,7 +6,7 @@ export const PricingTitle = () => {
       </h3>
       <div className=" text-center">
         <h2 className="text-xl md:text-[32px] font-medium  pb-[12px]  md:font-[700]">
-          Pricing per resource
+          Pricing plans
         </h2>
         <p className="text-sm pb-[12px] text-muted font-semibold">
           Cosmocloud charges on resouces used per project per month
