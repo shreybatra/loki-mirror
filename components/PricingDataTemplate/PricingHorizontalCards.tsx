@@ -2,36 +2,41 @@ import Link from "next/link";
 
 interface PricingFooterProps {
   label: string;
+  label2?: string;
   span?: string;
   description: string;
   buttonLabel: string;
+  linkUrl: string;
 }
-export const PricingHorizontalCards = ({ label, span, description, buttonLabel }: PricingFooterProps) => {
+export const PricingHorizontalCards = ({
+  label,
+  label2,
+  span,
+  description,
+  buttonLabel,
+  linkUrl,
+}: PricingFooterProps) => {
   return (
-    <div className="w-full flex justify-between items-center md:px-10 px-5 my-12 py-8  mx-auto  border-background">
-      <div className="flex flex-col w-full justify-center "> 
-        <h2 className="flex text-start w-full font-[700]">
-          <span className="text-[20px] w-full md:text-[28px] mr-1">{label}  <span className="text-[20px] w-full md:text-[32px] text-gradient font-[800]">
-            {span}
-          </span></span>{" "}
-           
-          </h2> 
+    <div className="w-full flex flex-col md:flex-row gap-2 md:gap-0 justify-between items-center md:px-10 px-5 my-12 py-8 mx-auto border-background">
+      <div className="flex flex-col w-full justify-center ">
+        <h1 className="flex text-start w-full font-medium">
+          <span className="text-lg w-full md:text-2xl mr-1">
+            {label}{" "}
+            <span className="text-lg w-full md:text-2xl text-gradient font-medium">
+              {span}
+            </span>{" "}
+            {label2}
+          </span>{" "}
+        </h1>
         <div className="flex md:flex-row flex-col items-center justify-between ">
-          <div className="text-[16px] text-muted">
-            {description}
-          </div>
-        
+          <div className="text-[16px] text-muted">{description}</div>
         </div>
-        
       </div>
-      <div className="flex min-w-fit" >
-        <Link href={"/contact"}
-          className="relative group inline-block py-3 px-10 text-center text-gray-300 hover:text-gray-50 bg-gray-800  rounded-full overflow-hidden transition duration-200"
-        >
-          <div
-            className="absolute top-0 right-full w-full h-full button-gradient transform group-hover:translate-x-full group-hover:scale-102 transition duration-500"
-          ></div>
-          <span className="relative !text-[16px]">{buttonLabel}</span>
+      <div className="flex min-w-fit">
+        <Link href={linkUrl}>
+          <button className="button-gradient px-[18px] py-[9px] md:py-[12px] md:px-[24px]">
+            {buttonLabel}
+          </button>
         </Link>
       </div>
     </div>
