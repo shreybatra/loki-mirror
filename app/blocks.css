@@ -12,3 +12,10 @@
   background: var(--btn-dark);
   /* border: 1.4px solid var(--Gradient, var(--primary-color)); */
 }
+
+.order-2{
+  order:2;
+}
+.order-1{
+  order:-9999;
+}

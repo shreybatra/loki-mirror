@@ -7,7 +7,7 @@
     rgba(var(--gray-rgb-val), 0.19) 100%
   );
   backdrop-filter: blur(15px);
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .feature-description:hover {
