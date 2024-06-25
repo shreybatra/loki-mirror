@@ -9,7 +9,7 @@ import React from "react";
 
 export const Home = () => {
   return (
-    <div className="flex flex-col gap-[56px] relative mt-[80px]">
+    <div className="flex flex-col gap-[56px] relative">
       <div className="flex flex-col items-center gap-[24px] w-full">
         <div className="text-[22px] md:text-[32px] lg:text-[48px] font-[700]">
           <h2 className="text-center">
