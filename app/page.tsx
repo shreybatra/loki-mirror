@@ -20,8 +20,8 @@ export default function Page() {
           <Home />
         </div>
         {/* Flagged off till data is not present. */}
+        <Client />
         <OutOfTheBox />
-        {/* <Client /> */}
         <Features />
         <Partners />
         {/* <ProductionFlow /> */}
