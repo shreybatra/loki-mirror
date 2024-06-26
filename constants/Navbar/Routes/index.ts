@@ -1,56 +1,70 @@
+import { IoChatboxSharp, IoLayers } from "react-icons/io5";
+
 const routes: routesType = [
   {
     path: "/pricing",
     label: "Pricing",
   },
   {
-    path: "/about",
-    label: "About",
+    path: "/startups",
+    label: "Startups",
   },
   {
-    path: "/contact",
-    label: "Contact",
+    path: "/buildx",
+    label: "BuildX",
+  },
+  {
+    path: "/",
+    label: "About",
+    icon:IoChatboxSharp ,
+    children: [
+      {
+        label: "About the company",
+        path: "/about",
+        description: "Learn more about the company",
+      },
+      {
+        label: "Contact us",
+        path: "/contact",
+        description: "Contact us for more information",
+      },
+      {
+        label: "Careers",
+        path: "/careers",
+        description: "Join our team",
+      },
+    ],
   },
   {
     path: "",
     label: "Resources",
+    icon: IoLayers,
     children: [
       {
         path: "https://docs.cosmocloud.io",
         label: "Documentation",
+        description: "Learn how to use Cosmocloud.",
       },
-      // { path: "#", label: "Events" },
       {
         path: "https://docs.cosmocloud.io/cosmocloud-documentation/help-and-support",
         label: "Help & Support",
+        description: "Get help from the community.",
       },
-      { path: "https://discord.gg/M8gqTVpRYE", label: "Discord Community" },
+      {
+        path: "https://discord.gg/M8gqTVpRYE",
+        label: "Discord Community",
+        description: "Join our Discord community.",
+      },
     ],
   },
-
-  // {
-  //   path: "/pricing",
-  //   label: "Pricing",
-  // },
-
-  // {
-  //   "path":"/features",
-  //   "label":"Features"
-  // },
-  // {
-  //   "path":"/solutions",
-  //   "label":"Solutions"
-  // },
-  // {
-  //   "path":"/resources",
-  //   "label":"Resources"
-  // },
 ];
 
 export type routeType = {
   path: string;
   label: string;
   children?: routeType[];
+  description?: string;
+  icon?: any;
 };
 
 export type routesType = routeType[];

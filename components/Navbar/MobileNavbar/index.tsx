@@ -17,7 +17,7 @@ export const MobileNavbar = ({ open, setOpen, routes }: MobileNavbarProps) => {
         ))}
       </div>
       <Link href={"https://dashboard.cosmocloud.io/sign-in"}>
-        <button className="button-gradient text-sm text-base px-[12px] py-[5px]">
+        <button className="button-gradient text-sm px-[12px] py-[5px]">
           Login
         </button>
       </Link>

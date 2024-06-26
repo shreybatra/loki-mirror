@@ -2,23 +2,99 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --btn-dark: #282828; 
-  --bg-black: #0d0d0d;
-  --bg-black-light: #252525;
-  --primary-color: #eb7bc0;
-  --primary-dark: #eb7bc0cc;
-  --secondary-color: #b490ff;
-  --secondary-dark: #6c3dd1;
-  --ellipse1-color: #eb7bc033;
-  --ellipse2-color: #6c3dd14d;
-  --white: #fff;
-  --muted-color: #9f9fa0;
-  --btn-border-grey: #9f9fa0;
-  --gray-color: #9f9fa0;
-  --contact-form-border: #9f9fa0;
-  --gray-rgb-val: 40, 40, 40;
-  --white-rgb-val: 255, 255, 255;
+@layer base {
+  :root {
+    --background: none;
+    --foreground: 213 31% 91%;
+
+    --muted: 0 0% 100%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --popover: 300 4% 14%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --card: 224 71% 4%;
+    --card-foreground: 213 31% 91%;
+
+    --primary: #eb7bc0;
+    --primary-foreground: #eb7bc0cc;
+
+    --secondary: #b490ff;
+    --secondary-foreground: #6c3dd1;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+
+    --btn-dark: #282828;
+    --bg-black: #0d0d0d;
+    --bg-black-light: #252525;
+    --primary-color: #eb7bc0;
+    --primary-dark: #eb7bc0cc;
+    --secondary-color: #b490ff;
+    --secondary-dark: #6c3dd1;
+    --ellipse1-color: #eb7bc033;
+    --ellipse2-color: #6c3dd14d;
+    --white: #fff;
+    --muted-color: #9f9fa0;
+    --btn-border-grey: #9f9fa0;
+    --gray-color: #9f9fa0;
+    --contact-form-border: #9f9fa0;
+    --gray-rgb-val: 40, 40, 40;
+    --white-rgb-val: 255, 255, 255;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --card: 224 71% 4%;
+    --card-foreground: 213 31% 91%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
 }
 
 body {
@@ -217,9 +293,8 @@ option {
   line-height: 19.6px;
 }
 
-
 .background-slate {
-  background: #252525
+  background: #252525;
 }
 
 .border-slate {

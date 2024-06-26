@@ -10,8 +10,12 @@
   },
   "dependencies": {
     "@next/third-parties": "^14.1.0",
+    "@radix-ui/react-navigation-menu": "^1.2.0",
     "@vercel/analytics": "^1.1.1",
     "axios": "^1.6.2",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.396.0",
     "next": "^14.0.1",
     "react": "^18",
     "react-dom": "^18",
@@ -20,7 +24,9 @@
     "react-player": "^2.13.0",
     "react-syntax-highlighter": "^15.5.0",
     "remark-gfm": "^4.0.0",
-    "sharp": "^0.33.0"
+    "sharp": "^0.33.0",
+    "tailwind-merge": "^2.3.0",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@types/node": "^20",
