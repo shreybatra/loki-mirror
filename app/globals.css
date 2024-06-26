@@ -22,11 +22,11 @@
     --card: 224 71% 4%;
     --card-foreground: 213 31% 91%;
 
-    --primary: #eb7bc0;
-    --primary-foreground: #eb7bc0cc;
+    --primary: 323 74% 70%;
+    --primary-foreground: 323.04, 73.68%, 70.2%;
 
-    --secondary: #b490ff;
-    --secondary-foreground: #6c3dd1;
+    --secondary: 259 100% 78%;
+    --secondary-foreground: 259 62% 53%;
 
     --destructive: 0 63% 31%;
     --destructive-foreground: 210 40% 98%;
@@ -268,6 +268,17 @@ body {
     rgba(235, 123, 192, 0.2) 0%,
     rgba(108, 61, 209, 0.2) 100%
   );
+}
+
+.border-gradient {
+  border-image: linear-gradient(
+      90deg,
+      rgba(var(--white-rgb-val), 0) 0%,
+      var(--white) 52.6%,
+      rgba(var(--white-rgb-val), 0) 100%
+    )
+    9;
+  border-style: solid;
 }
 
 select {

@@ -10,8 +10,8 @@ const routes: routesType = [
     label: "Startups",
   },
   {
-    path: "/buildx",
-    label: "BuildX",
+    path: "/build",
+    label: "Build",
   },
   {
     path: "/",

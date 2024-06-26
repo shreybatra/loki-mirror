@@ -7,8 +7,8 @@ interface IPointersProps {
 }
 const Pointers = ({ title, pointers }: IPointersProps) => {
   return (
-    <div>
-      <h3 className="text-3xl  sm:text-4xl md:text-5xl font-bold tracking-tight">
+    <div className="mx-4 py-12 md:py-18">
+      <h3 className="text-[22px] md:text-[32px] lg:text-[48px] font-[600]">
         {title}
       </h3>
       <div className="container grid grid-cols-1 my-16 sm:grid-cols-2 gap-14 px-4 md:px-6 ">

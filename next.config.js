@@ -3,7 +3,7 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        hostname: "cosmocloud-public.s3.ap-south-1.amazonaws.com",
+        hostname: "images.unsplash.com",
       },
     ],
   },

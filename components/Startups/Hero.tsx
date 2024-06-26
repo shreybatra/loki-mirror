@@ -26,7 +26,7 @@ const Hero = ({
   return (
     <section
       className={`w-full ${
-        bg ? "bg-black rounded-xl  py-12 md:py-24" : "py-12 md:py-20 "
+        bg ? "background-gradient rounded-2xl px-4 md:px-8 py-8 md:py-10" : "py-8 md:py-12"
       }`}
     >
       <div className="container grid   items-center gap-10 px-4 md:px-6 lg:grid-cols-2 lg:gap-24">
@@ -39,13 +39,13 @@ const Hero = ({
           <h1
             className={`${
               isFirst
-                ? "text-4xl  sm:text-5xl md:text-6xl "
-                : "text-3xl  sm:text-4xl md:text-5xl "
-            }font-bold tracking-tight `}
+                ? "text-[22px] md:text-[32px] lg:text-[48px] font-[700] "
+                : "text-[22px] md:text-[32px] lg:text-[48px] font-[600]"
+            } tracking-tight`}
           >
             {heading}
           </h1>
-          <p className="text-neutral-300 tracking-tight md:text-lg py-4">
+          <p className="text-neutral-300 tracking-tight text-[18px] md:text-[22px] py-4">
             {desc}
           </p>
           <div className="flex min-w-fit">
