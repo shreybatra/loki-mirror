@@ -5,7 +5,7 @@ import Image from "next/image";
 export interface IHeroProps {
   badge?: string;
   image_src?: string | StaticImageData | undefined;
-  heading?: string;
+  heading?: React.ReactNode;
   desc?: string;
   cta?: string;
   bg?: boolean;
@@ -26,13 +26,15 @@ const Hero = ({
   return (
     <section
       className={`w-full ${
-        bg ? "background-gradient rounded-2xl px-4 md:px-8 py-8 md:py-10" : "py-8 md:py-12"
+        bg
+          ? "background-gradient rounded-2xl px-4 md:px-8 py-8 md:py-10"
+          : "py-8 md:py-12"
       }`}
     >
-      <div className="container grid   items-center gap-10 px-4 md:px-6 lg:grid-cols-2 lg:gap-24">
+      <div className="container grid items-center gap-10 px-4 md:px-6 lg:grid-cols-2 lg:gap-24">
         <div className={`space-y-4 order-${order}`}>
           {badge && (
-            <div className="inline-block rounded-lg tracking-tight bg-neutral-600 px-3 py-1 text-xs">
+            <div className="inline-block rounded-full tracking-tight button-gradient font-medium px-4 py-2 text-md">
               {badge}
             </div>
           )}

@@ -15,10 +15,20 @@ const page = () => {
   return (
     <div className="md:px-20 px-6">
       <Hero
-        bg={true}
+        // bg={true}
         isFirst={true}
-        heading="The complete platform for building the Backend"
-        badge="COSMOCLOUD FOR STARTUPS"
+        // heading={
+        //   <span>
+        //     The <span className="text-gradient">complete platform</span> for
+        //     building your app's backend
+        //   </span>
+        // }
+        heading={
+          <span>
+            Cosmocloud for <span className="text-gradient">Startups</span>
+          </span>
+        }
+        badge="Cosmocloud for Startups"
         desc=" Give your team the toolkit to stop configuring and start innovating.
         Securely build, deploy, and scale the best web experiences."
         image_src="https://mambaui.com/assets/svg/Business_SVG.svg"

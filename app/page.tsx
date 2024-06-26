@@ -15,7 +15,7 @@ export default function Page() {
   return (
     <main className="flex flex-col items-center gap-[120px] md:gap-[190px]">
       <div className="flex flex-col items-center gap-[90px] w-[90%] md:gap-[190px]">
-        <div className="flex   items-center flex-col gap-[45px]">
+        <div className="flex items-center flex-col gap-[45px]">
           <AnnouncementBanner />
           <Home />
         </div>
