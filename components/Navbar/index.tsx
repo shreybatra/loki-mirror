@@ -1,14 +1,14 @@
 "use client";
 import "./navbar.css";
-import { useState } from "react";
-import CosmocloudLogo from "@/assets/svg/CosmocloudLogo.svg";
-import { HiOutlineMenuAlt3 } from "react-icons/hi";
-import Image from "next/image";
-import { IoCloseSharp } from "react-icons/io5";
 import Link from "next/link";
+import Image from "next/image";
+import { useState } from "react";
+import { MobileNavbar } from "./MobileNavbar";
+import { IoCloseSharp } from "react-icons/io5";
 import routes from "@/constants/Navbar/Routes";
 import { DesktopNavbar } from "./DesktopNavbar";
-import { MobileNavbar } from "./MobileNavbar";
+import { HiOutlineMenuAlt3 } from "react-icons/hi";
+import CosmocloudLogo from "@/assets/svg/CosmocloudLogo.svg";
 
 export const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -25,7 +25,7 @@ export const Navbar = () => {
           </Link>
         </div>
         <DesktopNavbar routes={routes} />
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <div onClick={() => setOpen(!open)}>
             {open ? (
               <IoCloseSharp className="text-[20px]" />
