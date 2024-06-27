@@ -76,14 +76,14 @@ const Page = () => {
         <div className="pt-[42px] pb-[42px] flex flex-col gap-[20px] border-b-2 border-solid border-gray-700">
           <h3 className="text-white text-[24px] font-[600]">Examples</h3>
 
-          {examples.map((example) => {
+          {examples.map((example,idx) => {
             return (
-              <>
+              <div key={idx}>
                 <h4 className="text-[16px] font-[400]">{example.title}</h4>
                 <p className="text-[16px] font-[400] text-muted">
                   {example.content}
                 </p>
-              </>
+              </div>
             );
           })}
         </div>

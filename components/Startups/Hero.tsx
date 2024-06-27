@@ -31,7 +31,7 @@ const Hero = ({
           : "py-8 md:py-12"
       }`}
     >
-      <div className="container grid items-center gap-10 px-4 md:px-6 lg:grid-cols-2 lg:gap-24">
+      <div className="grid items-center gap-4 md:gap-8 px-4 md:px-6 lg:grid-cols-2 lg:gap-12">
         <div className={`space-y-4 order-${order}`}>
           {badge && (
             <div className="inline-block rounded-full tracking-tight button-gradient font-medium px-4 py-2 text-md">

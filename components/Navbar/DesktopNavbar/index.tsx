@@ -21,7 +21,7 @@ export const DesktopNavbar = ({ routes }: DesktopNavbarProps) => {
       <NavigationMenuList>
         {routes.map((route, idx) => {
           return (
-            <NavigationMenuItem>
+            <NavigationMenuItem key={idx}>
               {!!route.children ? (
                 <>
                   <NavigationMenuTrigger className="text-[16px]">
@@ -60,7 +60,7 @@ export const DesktopNavbar = ({ routes }: DesktopNavbarProps) => {
                   </NavigationMenuContent>
                 </>
               ) : (
-                <Link href={route.path} legacyBehavior passHref>
+                <Link href={route.path} key={idx} legacyBehavior passHref>
                   <NavigationMenuLink className="md:p-4 lg:p-6">
                     {route.label}
                   </NavigationMenuLink>

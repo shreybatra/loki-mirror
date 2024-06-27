@@ -49,7 +49,7 @@ const page = () => {
       />
       <Features />
       <Pointers
-        title="Why startups choose MongoDB Atlas"
+        title="Why startups choose Cosmocloud"
         pointers={WhyStartupsChooseCosmocloud}
       />
 
@@ -64,18 +64,25 @@ const page = () => {
         title="Why VCs and accelerators partner with Cosmocloud for Startups"
         pointers={WhyIncubatorsChooseCosmocloud}
       />
-      <div className="flex flex-col justify-center gap-6 py-28 items-center bg-black rounded-xl">
-        <h1 className="text-3xl  sm:text-4xl md:text-5xl font-bold tracking-tight">
-          Ready to get started?
-        </h1>
-        <div className="flex min-w-fit mt-12">
-          <Link href={"linkUrl"}>
-            <button className="button-dark border-background px-[18px] py-[9px]  md:py-[12px] md:px-[24px]">
-              Apply Now
-            </button>
-          </Link>
+      {/*banner */}
+      <section className="w-full my-16 py-12 md:py-24 lg:py-32 background-gradient rounded-2xl">
+        <div className="container px-4 md:px-6 text-center">
+          <div className="max-w-2xl mx-auto space-y-4">
+            <h2 className="text-3xl font-bold tracking-tighter text-[#fff] md:text-4xl/tight">
+              Ready to take your business to the next level?
+            </h2>
+            <p className="text-[#fcfcfc] md:text-xl/relaxed">
+              Sign up today and unlock the power of our platform. Get started
+              with a free trial.
+            </p>
+            <Link href={"linkUrl"}>
+              <button className="button-dark border-background mt-4 px-[18px] py-[9px]  md:py-[12px] md:px-[24px]">
+                Apply Now
+              </button>
+            </Link>
+          </div>
         </div>
-      </div>
+      </section>
       <FAQs />
     </div>
   );
