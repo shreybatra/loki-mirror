@@ -1,9 +1,11 @@
+"use client"
+
+import axios from "axios";
+import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import Dropdown from "@/blocks/Dropdown/DropDown";
-import { useState } from "react";
-import axios from "axios";
 
-const SchedulingForm = ({ closeModal }: { closeModal: () => void }) => {
+const SchedulingForm = () => {
   const JobFunctionMenu = [
     "Software Engineer",
     "Product Manager",
@@ -70,7 +72,6 @@ const SchedulingForm = ({ closeModal }: { closeModal: () => void }) => {
       );
       if (response.status === 200) {
         alert("Message sent successfully!");
-        closeModal();
         resetInputs();
       } else {
         alert("An error occured. Please try again later.");
@@ -91,10 +92,10 @@ const SchedulingForm = ({ closeModal }: { closeModal: () => void }) => {
     setSelect(null);
   };
   return (
-    <div className="flex flex-col justify-between h-full p-4 gap-5">
-      <div className="flex flex-col">
-        <h3 className="text-primary-pink text-start tracking-tight text-3xl font-medium">
-          Book a demo
+    <div className="flex flex-col h-full p-4">
+      <div className="flex flex-col py-9">
+        <h3 className="text-primary-pink tracking-tight text-2xl font-medium">
+          Schedule a call
         </h3>
       </div>
       <div className="grid grid-cols-2 gap-4 md:gap-7 md:grid-cols-1 justify-end items-end">
@@ -124,7 +125,7 @@ const SchedulingForm = ({ closeModal }: { closeModal: () => void }) => {
           />
         </div>
       </div>
-      <div className="flex  justify-center items-start">
+      <div className="flex mt-9 items-start">
         <button
           disabled={disabled}
           className="text-white button-gradient px-6 py-2 md:py-2 md:px-6"

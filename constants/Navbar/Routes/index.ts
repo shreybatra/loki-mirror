@@ -1,4 +1,6 @@
 import { IoChatboxSharp, IoLayers } from "react-icons/io5";
+import ResourceBanner from "@/assets/jpg/Website banner- Resources.jpg";
+import AboutBanner from "@/assets/jpg/Website banner- About.jpg";
 
 const routes: routesType = [
   {
@@ -17,6 +19,7 @@ const routes: routesType = [
     path: "/",
     label: "About",
     icon: IoChatboxSharp,
+    banner: AboutBanner,
     children: [
       {
         label: "About the company",
@@ -30,7 +33,7 @@ const routes: routesType = [
       },
       {
         label: "Careers",
-        path: "/careers",
+        path: "https://www.linkedin.com/company/cosmocloud/jobs/",
         description: "Join our team",
       },
     ],
@@ -38,6 +41,7 @@ const routes: routesType = [
   {
     path: "",
     label: "Resources",
+    banner : ResourceBanner ,
     icon: IoLayers,
     children: [
       {
@@ -63,6 +67,7 @@ export type routeType = {
   path: string;
   label: string;
   children?: routeType[];
+  banner?: any;
   description?: string;
   icon?: any;
 };
