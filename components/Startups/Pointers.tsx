@@ -22,8 +22,8 @@ const Pointers = ({ title, pointers }: IPointersProps) => {
         </div>
       </div>
       <div className="grid grid-cols-1 my-8 sm:grid-cols-2 gap-6 md:gap-8 px-4 md:px-6">
-        {pointers.map((pointer) => (
-          <div className="p-4 border-background">
+        {pointers.map((pointer, idx) => (
+          <div className="p-4 border-background" key={idx}>
             <div className="flex gap-2 md:gap-4 items-center">
               <div className="flex justify-center items-center w-12 background-gradient h-12 rounded-lg">
                 <pointer.icon className="flex-shrink-0 w-6 h-6 text-[#fff]" />
