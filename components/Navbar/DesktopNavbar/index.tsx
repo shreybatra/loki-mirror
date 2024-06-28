@@ -33,13 +33,13 @@ export const DesktopNavbar = ({ routes }: DesktopNavbarProps) => {
                     <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                       <li className="row-span-3">
                         <NavigationMenuLink asChild>
-                            <AspectRatio ratio={9 / 9}>
-                              <Image
-                                src={route.banner}
-                                alt="Image"
-                                className="rounded-md object-cover"
-                              />
-                            </AspectRatio>
+                          <AspectRatio ratio={9 / 9}>
+                            <Image
+                              src={route.banner}
+                              alt="Image"
+                              className="rounded-md object-cover"
+                            />
+                          </AspectRatio>
                         </NavigationMenuLink>
                       </li>
                       {route.children.map((child, idx) => {
@@ -48,6 +48,7 @@ export const DesktopNavbar = ({ routes }: DesktopNavbarProps) => {
                             key={idx}
                             href={child.path}
                             title={child.label}
+                            target={child?.target ? `_blank` : ""}
                           >
                             {child.description}
                           </ListItem>
@@ -57,7 +58,13 @@ export const DesktopNavbar = ({ routes }: DesktopNavbarProps) => {
                   </NavigationMenuContent>
                 </>
               ) : (
-                <Link href={route.path} key={idx} legacyBehavior passHref>
+                <Link
+                  href={route.path}
+                  key={idx}
+                  legacyBehavior
+                  passHref
+                  target={route?.target ? `_blank` : ""}
+                >
                   <NavigationMenuLink className="md:p-4 lg:p-6">
                     {route.label}
                   </NavigationMenuLink>

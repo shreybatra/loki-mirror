@@ -30,18 +30,15 @@ export const Home = () => {
       </div>
       <div className="flex justify-center gap-[16px]">
         <button
-          className="button-dark border-background px-[18px] py-[9px]  md:py-[12px] md:px-[24px]"
+          className="button-gradient px-[18px] py-[9px]  md:py-[12px] md:px-[24px]"
           onClick={() =>
             (window.location.href = "https://dashboard.cosmocloud.io/sign-up")
           }
         >
           Let&apos;s get started
         </button>
-        {/* <Link href={"/contact"}> */}
-        {/* <button className="">
-        Book a demo
-        </button> */}
-        <SchedulingModal className="button-dark border-background px-[18px] py-[9px] md:py-[12px] md:px-[24px]" />
+
+        <SchedulingModal cName="button-dark border-background px-[18px] py-[9px] md:py-[12px] md:px-[24px]" />
         {/* </Link> */}
       </div>
       <div className="relative h-full w-full">

@@ -11,7 +11,7 @@ type MobileNavItemProps = {
 };
 
 export const MobileNavItem = ({ route, setOpen }: MobileNavItemProps) => {
-  const path = usePathname(); 
+  const path = usePathname();
   const [showChildren, setShowChildren] = useState(false);
   const ifChildren = route.children;
 
@@ -34,14 +34,22 @@ export const MobileNavItem = ({ route, setOpen }: MobileNavItemProps) => {
           </div>
         </div>
         {showChildren && (
-          <ChildContainer toggleOpen={setOpen} mobile={true} routes={route.children} />
+          <ChildContainer
+            toggleOpen={setOpen}
+            mobile={true}
+            routes={route.children}
+          />
         )}
       </>
     );
   }
 
   return (
-    <Link key={route.path} href={route.path}>
+    <Link
+      key={route.path}
+      href={route.path}
+      target={route.target ? "_blank" : ""}
+    >
       <div className="flex items-center relative">
         <div
           className={`mobile-link  ${path === route.path ? "active" : ""}`}

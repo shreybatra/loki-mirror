@@ -17,26 +17,9 @@ export const GetStarted = () => {
         <h2 className="text-[16px] md:text-[32px] lg:text-[44px] font-[700] text-center">
           Start turning your ideas into reality
         </h2>
-        {/* <h4 className="text-[12px]  md:text-[20px] font-semibold text-center">
-          No-Code, Backend-as-a-Service (BaaS) platform
-        </h4> */}
       </div>
       <div className="flex flex-col items-center w-full md:w-[250px]">
-        {/* <Link href="https://dashboard.cosmocloud.io/sign-up"> */}
-        {/* <div className="button-gradient text-[16px] px-[24px] py-[12px] md:py-[16px] w-full"> */}
-        <SchedulingModal className="button-gradient text-[16px] px-[24px] py-[12px] md:py-[16px] w-full" />
-        {/* </div> */}
-        {/* </Link> */}
-        {/* <div className="cursor-pointer text-muted flex flex-col gap-2 items-center p-[16px] w-full">
-          <Link href={"/contact"}>
-            <p className="flex felx-col items-center">
-              Book a demo{" "}
-              <span>
-                <MdChevronRight />
-              </span>{" "}
-            </p>
-          </Link>
-        </div> */}
+        <SchedulingModal cName="button-gradient text-[16px] px-[24px] py-[12px] md:py-[16px] w-full" />
       </div>
     </div>
   );

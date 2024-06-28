@@ -18,14 +18,16 @@ const DropDown = ({ tag, Menu, className, setSelect }: IDropdownProps) => {
       <SelectTrigger className={className}>
         <SelectValue placeholder={tag}></SelectValue>
       </SelectTrigger>
-      <SelectContent className="bg-slate-50">
+      <SelectContent
+        className="bg-[var(--bg-black-light)]"
+        style={{ border: "1px solid var(--contact-form-border)" }}
+      >
         {Menu.map((item, index) => {
           return (
             <SelectItem
               className={`${
-                index !== Menu.length - 1 &&
-                "border-b-[1px] border-spacing-4 border-slate-400"
-              }  text-black`}
+                index !== Menu.length - 1 && "border-b-[1px] border-spacing-4 "
+              } text-gray-300`}
               value={item}
               key={index}
             >

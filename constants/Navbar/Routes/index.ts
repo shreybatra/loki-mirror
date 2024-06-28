@@ -15,6 +15,33 @@ const routes: routesType = [
   //   path: "/build",
   //   label: "Build",
   // },
+
+  {
+    path: "",
+    label: "Resources",
+    banner: ResourceBanner,
+    icon: IoLayers,
+    children: [
+      {
+        path: "https://docs.cosmocloud.io",
+        label: "Documentation",
+        description: "Learn how to use Cosmocloud.",
+        target: true,
+      },
+      {
+        path: "https://docs.cosmocloud.io/cosmocloud-documentation/help-and-support",
+        label: "Help & Support",
+        description: "Get help from the community.",
+        target: true,
+      },
+      {
+        path: "https://discord.gg/M8gqTVpRYE",
+        label: "Discord Community",
+        description: "Join our Discord community.",
+        target: true,
+      },
+    ],
+  },
   {
     path: "/",
     label: "About",
@@ -35,29 +62,7 @@ const routes: routesType = [
         label: "Careers",
         path: "https://www.linkedin.com/company/cosmocloud/jobs/",
         description: "Join our team",
-      },
-    ],
-  },
-  {
-    path: "",
-    label: "Resources",
-    banner : ResourceBanner ,
-    icon: IoLayers,
-    children: [
-      {
-        path: "https://docs.cosmocloud.io",
-        label: "Documentation",
-        description: "Learn how to use Cosmocloud.",
-      },
-      {
-        path: "https://docs.cosmocloud.io/cosmocloud-documentation/help-and-support",
-        label: "Help & Support",
-        description: "Get help from the community.",
-      },
-      {
-        path: "https://discord.gg/M8gqTVpRYE",
-        label: "Discord Community",
-        description: "Join our Discord community.",
+        target: true,
       },
     ],
   },
@@ -70,6 +75,7 @@ export type routeType = {
   banner?: any;
   description?: string;
   icon?: any;
+  target?: boolean;
 };
 
 export type routesType = routeType[];

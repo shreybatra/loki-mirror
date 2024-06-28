@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import axios from "axios";
 import { useState } from "react";
@@ -98,7 +98,7 @@ const SchedulingForm = () => {
           Schedule a call
         </h3>
       </div>
-      <div className="grid grid-cols-2 gap-4 md:gap-7 md:grid-cols-1 justify-end items-end">
+      <div className="grid grid-cols-1 gap-4 md:gap-7 md:grid-cols-1 justify-end items-end">
         {inputs.map((input, index) => (
           <div key={index}>
             <Input
@@ -131,7 +131,7 @@ const SchedulingForm = () => {
           className="text-white button-gradient px-6 py-2 md:py-2 md:px-6"
           onClick={handleSubmit}
         >
-          Book call
+          Book a call
         </button>
       </div>
     </div>

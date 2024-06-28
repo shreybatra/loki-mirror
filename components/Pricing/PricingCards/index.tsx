@@ -7,7 +7,7 @@ const PricingCards = () => {
     {
       heading: "Starter Plan",
       price: "₹10000",
-      tagLine: "(For small startups)",
+      tagLine: "(For small scale projects)",
       features: [
         {
           desc: <p>1 Project</p>,
@@ -57,7 +57,7 @@ const PricingCards = () => {
       heading: "Professional Plan",
       price: "₹45000",
       color: "text-blue-300",
-      tagLine: "(For medium companies)",
+      tagLine: "(For medium scale projects)",
       features: [
         {
           desc: <p>1 Project</p>,
@@ -123,7 +123,7 @@ const PricingCards = () => {
       price: "Contact sales for pricing",
       isMontly: true,
       custom: true,
-      tagLine: "(For large companies)",
+      tagLine: "(Unlimited scale)",
       features: [
         {
           desc: "Multiple projects",

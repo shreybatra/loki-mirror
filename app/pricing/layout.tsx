@@ -38,7 +38,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             label="Get started with"
             span="Free Tier"
             description="Start for free to build your personal projects."
-            buttonLabel={"Sign up now"}
+            buttonLabel={"Start for free"}
             linkUrl="https://dashboard.cosmocloud.io/sign-up"
           />
 

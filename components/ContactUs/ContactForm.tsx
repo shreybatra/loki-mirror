@@ -80,20 +80,20 @@ const ContactForm = () => {
                 name="name"
                 id=""
                 value={detail.name}
-                placeholder="Enter here"
+                placeholder="Enter your full name"
                 onChange={(e) => {
                   handleChange(e);
                 }}
               />
             </div>
             <div className="grid  gap-[4px]  md:mb-[32px] ">
-              <label className="text-[14px]">Email ID</label>
+              <label className="text-[14px]">Work Email</label>
               <input
                 autoComplete="off"
                 type="text"
                 name="email"
                 id=""
-                placeholder="Enter Here"
+                placeholder="Your email address"
                 value={detail.email}
                 onChange={(e) => {
                   handleChange(e);
@@ -110,14 +110,14 @@ const ContactForm = () => {
                 name="companyName"
                 id=""
                 value={detail.companyName}
-                placeholder="Enter here"
+                placeholder="Your company name"
                 onChange={(e) => {
                   handleChange(e);
                 }}
               />
             </div>
             <div className="grid  gap-[4px] mb-[20px] md:mb-[32px] ">
-              <label className="text-[14px]">Phone number</label>
+              <label className="text-[14px]">Phone Number</label>
               <input
                 autoComplete="off"
                 type="tel"
@@ -127,7 +127,7 @@ const ContactForm = () => {
                 id=""
                 required
                 value={detail.phone}
-                placeholder="Enter Here"
+                placeholder="Where can we reach you out?"
                 onChange={(e) => {
                   handleChange(e);
                 }}
@@ -135,12 +135,19 @@ const ContactForm = () => {
             </div>
           </div>
         </div>
-        <div className="">
+        <div className="grid gap-[4px]">
+          <label className="text-[14px]">Subject</label>
           <DropDown
             setSelect={handleSelect}
-            className="button-dark mb-[20px] md:mb-[32px] !border-[1px] !border-[var(--contact-form-border)]"
-            Menu={["x", "y", "z"]}
-            tag="Subject"
+            className="button-dark mb-[20px] md:mb-[32px] !border-[1px] !border-[var(--contact-form-border)] text-gray-400 text-md"
+            Menu={[
+              "I want to book a demo call",
+              "I have some questions around the platform",
+              "I want to submit some feedback around the Cosmocloud platform",
+              "I am looking for job opportunities at Cosmocloud",
+              "Something else...",
+            ]}
+            tag="How can we help?"
           />
         </div>
         <div className="">
@@ -151,7 +158,7 @@ const ContactForm = () => {
             </label>
             <textarea
               autoComplete="off"
-              placeholder="Message"
+              placeholder="Any requirements you want to share with us?"
               name="message"
               value={detail.message}
               onChange={(e) => {
