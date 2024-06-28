@@ -11,8 +11,6 @@ import { VerticalNavbar } from "@/components/VerticalNavbar";
 import { VerticalNavbar2 } from "@/components/VerticalNavbar2";
 import PricingCards from "@/components/Pricing/PricingCards";
 
-
-
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -23,11 +21,15 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Check } from "lucide-react";
+import Link from "next/link";
 
 enum PopularPlan {
   NO = 0,
   YES = 1,
 }
+
+const tierDocLink =
+  "https://docs.cosmocloud.io/concepts-and-in-depth/resources/environments/environment-tier-types";
 
 interface PlanProps {
   title: string;
@@ -35,7 +37,7 @@ interface PlanProps {
   price: number;
   description: React.ReactNode;
   buttonText: string;
-  benefitList: string[];
+  benefitList: React.ReactNode[];
 }
 
 const plans: PlanProps[] = [
@@ -48,7 +50,13 @@ const plans: PlanProps[] = [
     buttonText: "Contact Sales",
     benefitList: [
       "1 Project",
-      "1 Production Env (Shared-2)",
+      <span>
+        1 Production Env (
+        <Link href={tierDocLink} className="underline" target="_blank">
+          Shared-2
+        </Link>
+        )
+      </span>,
       "1 Development Env",
       "Unlimited API calls",
       "Upto 10 team members",
@@ -59,17 +67,28 @@ const plans: PlanProps[] = [
     title: "Professional",
     popular: 1,
     price: 45,
-    description:
-      "For medium teams working on project with higher traffic.",
+    description: "For medium teams working on project with higher traffic.",
     buttonText: "Contact Sales",
     benefitList: [
       "1 Project",
-      "1 Production Env (Low-1)",
-      "1 Staging Env (Shared-1)",
+      <span>
+        1 Production Env (
+        <Link href={tierDocLink} className="underline" target="_blank">
+          Low-1
+        </Link>
+        )
+      </span>,
+      <span>
+        1 Staging Env (
+        <Link href={tierDocLink} className="underline" target="_blank">
+          Shared-1
+        </Link>
+        )
+      </span>,
       "1 Development Env",
       "Unlimited API calls",
       "Upto 25 team members",
-      "Dedicated support"
+      "Dedicated support",
     ],
   },
   {
@@ -86,7 +105,7 @@ const plans: PlanProps[] = [
       "Unlimited team members",
       "Unlimited scaling",
       "High availability",
-      "Priority support"
+      "Priority support",
     ],
   },
 ];
@@ -130,10 +149,7 @@ export const PricingSection = () => {
               </CardContent>
 
               <CardFooter>
-                <Button
-                  variant="default"
-                  className="w-full"
-                >
+                <Button variant="default" className="w-full">
                   {buttonText}
                 </Button>
               </CardFooter>
@@ -168,7 +184,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 
       <div className="flex justify-center">
         <div className="flex flex-col max-w-screen-2xl px-[6vw] justify-center items-center">
-        <PricingHorizontalCards
+          <PricingHorizontalCards
             label="Get started with"
             span="Free Tier"
             description="Start for free to build your personal projects."
