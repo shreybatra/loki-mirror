@@ -14,7 +14,7 @@ export default function Page() {
     <main className="flex flex-col items-center gap-[120px] md:gap-[190px]">
       <div className="flex flex-col items-center gap-[90px] w-[90%] md:gap-[190px]">
         <div className="flex items-center flex-col mt-6 gap-[45px]">
-          <AnnouncementBanner />
+          {/* <AnnouncementBanner /> */}
           <Home />
         </div>
         {/* Flagged off till data is not present. */}
