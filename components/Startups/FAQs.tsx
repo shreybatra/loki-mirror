@@ -1,37 +1,12 @@
 import Link from "next/link";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
-const FAQContent = [
-  {
-    question: "What are the eligibility requirements for MongoDB for Startups?",
-    answer:
-      "We work closely with VCs, accelerators, and incubators. Please ask your VC or accelerator partner to refer you. If your VC or accelerator partner is not part of the MongoDB for Startups program, please ask them to apply.If you are not involved with a VC, accelerator, or incubator, please apply above on this page.",
-  },
-  {
-    question:
-      "What are the eligibility requirements for MongoDB for Startups1?",
-    answer:
-      "We work closely with VCs, accelerators, and incubators. Please ask your VC or accelerator partner to refer you. If your VC or accelerator partner is not part of the MongoDB for Startups program, please ask them to apply.If you are not involved with a VC, accelerator, or incubator, please apply above on this page.",
-  },
-  {
-    question:
-      "What are the eligibility requirements for MongoDB for Startups2?",
-    answer:
-      "We work closely with VCs, accelerators, and incubators. Please ask your VC or accelerator partner to refer you. If your VC or accelerator partner is not part of the MongoDB for Startups program, please ask them to apply.If you are not involved with a VC, accelerator, or incubator, please apply above on this page.",
-  },
-  {
-    question:
-      "What are the eligibility requirements for MongoDB for Startups3?",
-    answer:
-      "We work closely with VCs, accelerators, and incubators. Please ask your VC or accelerator partner to refer you. If your VC or accelerator partner is not part of the MongoDB for Startups program, please ask them to apply.If you are not involved with a VC, accelerator, or incubator, please apply above on this page.",
-  },
-  {
-    question:
-      "What are the eligibility requirements for MongoDB for Startups4?",
-    answer:
-      "We work closely with VCs, accelerators, and incubators. Please ask your VC or accelerator partner to refer you. If your VC or accelerator partner is not part of the MongoDB for Startups program, please ask them to apply.If you are not involved with a VC, accelerator, or incubator, please apply above on this page.",
-  },
-];
+const FAQContent: any[] = [];
 
 const FAQs = () => {
   return (
@@ -42,7 +17,7 @@ const FAQs = () => {
         </h3>
         <div className="flex flex-col gap-[12px] items-center">
           <h2 className="font-[700] text-[20px] md:text-[32px] text-center">
-            Frequently Asked Questions 
+            Frequently Asked Questions
           </h2>
         </div>
         <p className="text-neutral-300 tracking-tight mt-4 md:text-base text-center">
@@ -58,14 +33,16 @@ const FAQs = () => {
       </div>
 
       <Accordion type="single" collapsible className="w-full md:w-[80%]">
-        {
-          FAQContent.map((content, index) => (
-            <AccordionItem key={content.question} value={`item-${index}`}>
-              <AccordionTrigger className="text-lg">{content.question}</AccordionTrigger>
-              <AccordionContent className="text-md">{content.answer}</AccordionContent>
-            </AccordionItem>
-          ))
-        }
+        {FAQContent.map((content, index) => (
+          <AccordionItem key={content.question} value={`item-${index}`}>
+            <AccordionTrigger className="text-lg">
+              {content.question}
+            </AccordionTrigger>
+            <AccordionContent className="text-md">
+              {content.answer}
+            </AccordionContent>
+          </AccordionItem>
+        ))}
       </Accordion>
     </div>
   );

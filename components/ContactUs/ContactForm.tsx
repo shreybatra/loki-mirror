@@ -1,7 +1,8 @@
 "use client";
 
+import DropDown from "@/blocks/Dropdown/DropDown";
 import axios from "axios";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const ContactForm = () => {
   const initialValues = {
@@ -9,13 +10,22 @@ const ContactForm = () => {
     email: "",
     subject: "",
     message: "",
-    designation: "",
     companyName: "",
+    phone: "",
   };
   const [detail, setDetail] = useState(initialValues);
   const handleChange = (e: any) => {
     setDetail({ ...detail, [e.target.name]: e.target.value });
   };
+  const [select, setSelect] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (select) setDetail({ ...detail, subject: select });
+  }, [select]);
+  const handleSelect = (value: string) => {
+    setSelect(value);
+  };
+
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
   const sendData = async () => {
@@ -45,10 +55,10 @@ const ContactForm = () => {
     if (
       !detail.name ||
       !detail.email ||
-      !detail.message ||
-      !detail.subject ||
-      !detail.designation ||
-      !detail.companyName
+      // !detail.message ||
+      // !detail.subject ||
+      !detail.companyName ||
+      !detail.phone
     ) {
       setError("Please fill in all required fields.");
       return;
@@ -93,13 +103,13 @@ const ContactForm = () => {
           </div>
           <div className="">
             <div className="grid  gap-[4px] mb-[20px] md:mb-[32px] ">
-              <label className="text-[14px]">Designation</label>
+              <label className="text-[14px]">Company</label>
               <input
                 autoComplete="off"
                 type="text"
-                name="designation"
+                name="companyName"
                 id=""
-                value={detail.designation}
+                value={detail.companyName}
                 placeholder="Enter here"
                 onChange={(e) => {
                   handleChange(e);
@@ -107,13 +117,16 @@ const ContactForm = () => {
               />
             </div>
             <div className="grid  gap-[4px] mb-[20px] md:mb-[32px] ">
-              <label className="text-[14px]">Company Name</label>
+              <label className="text-[14px]">Phone number</label>
               <input
                 autoComplete="off"
-                type="text"
-                name="companyName"
+                type="tel"
+                pattern="[0-9]{3} [0-9]{3} [0-9]{4}"
+                maxLength={12}
+                name="phone"
                 id=""
-                value={detail.companyName}
+                required
+                value={detail.phone}
                 placeholder="Enter Here"
                 onChange={(e) => {
                   handleChange(e);
@@ -123,24 +136,19 @@ const ContactForm = () => {
           </div>
         </div>
         <div className="">
-          <div className="grid  gap-[4px] mb-[20px] md:mb-[32px]">
-            <label className="text-[14px]">Subject</label>
-            <input
-              autoComplete="off"
-              type="text"
-              name="subject"
-              id=""
-              value={detail.subject}
-              placeholder="Enter Here"
-              onChange={(e) => {
-                handleChange(e);
-              }}
-            />
-          </div>
+          <DropDown
+            setSelect={handleSelect}
+            className="button-dark mb-[20px] md:mb-[32px] !border-[1px] !border-[var(--contact-form-border)]"
+            Menu={["x", "y", "z"]}
+            tag="Subject"
+          />
         </div>
         <div className="">
           <div className="grid gap-[4px] mb-[20px] md:mb-[32px]">
-            <label className="text-[14px]">Message</label>
+            <label className="text-[14px]">
+              Message{" "}
+              <span className="text-muted-foreground text-xs">(optional)</span>
+            </label>
             <textarea
               autoComplete="off"
               placeholder="Message"

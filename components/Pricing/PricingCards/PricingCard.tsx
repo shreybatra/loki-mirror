@@ -1,3 +1,4 @@
+import SchedulingModal from "@/components/Scheduling/SchedulingModal";
 import Link from "next/link";
 import { IoRocketOutline } from "react-icons/io5";
 
@@ -53,7 +54,7 @@ const PricingCard = ({
           <div className="my-1 text-gray-400">{tagLine}</div>
         </div>
         <div className="text-center mb-3">
-          <Link href="/contact">
+          {/* <Link href="/contact">
             <button
               className={`${
                 custom
@@ -61,9 +62,16 @@ const PricingCard = ({
                   : "button-dark text-gradient border-background"
               } px-[18px] py-[9px] md:py-[12px] md:px-[24px]`}
             >
-              Contact sales
+              Book a demo
             </button>
-          </Link>
+          </Link> */}
+          <SchedulingModal
+            className={`${
+              custom
+                ? "button-gradient"
+                : "button-dark text-gradient border-background"
+            } px-[18px] py-[9px] md:py-[12px] md:px-[24px]`}
+          />
         </div>
         <ul>
           {features.map((feature, index) => (

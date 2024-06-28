@@ -5,18 +5,18 @@ const routes: routesType = [
     path: "/pricing",
     label: "Pricing",
   },
-  {
-    path: "/startups",
-    label: "Startups",
-  },
-  {
-    path: "/build",
-    label: "Build",
-  },
+  // {
+  //   path: "/startups",
+  //   label: "Startups",
+  // },
+  // {
+  //   path: "/build",
+  //   label: "Build",
+  // },
   {
     path: "/",
     label: "About",
-    icon:IoChatboxSharp ,
+    icon: IoChatboxSharp,
     children: [
       {
         label: "About the company",

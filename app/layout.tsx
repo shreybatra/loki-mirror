@@ -10,7 +10,6 @@ import type { Metadata } from "next";
 import { Navbar } from "@/components/Navbar";
 import { Analytics } from "@vercel/analytics/react";
 import { GoogleAnalytics } from "@next/third-parties/google";
-
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {

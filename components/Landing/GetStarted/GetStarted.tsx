@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { MdChevronRight } from "react-icons/md";
 import React from "react";
+import SchedulingModal from "@/components/Scheduling/SchedulingModal";
 
 export const GetStarted = () => {
   return (
@@ -21,12 +22,12 @@ export const GetStarted = () => {
         </h4> */}
       </div>
       <div className="flex flex-col items-center w-full md:w-[250px]">
-        <Link href="https://dashboard.cosmocloud.io/sign-up">
-          <div className="button-gradient text-[16px] px-[24px] py-[12px] md:py-[16px] w-full">
-            Let&apos;s get started
-          </div>
-        </Link>
-        <div className="cursor-pointer text-muted flex flex-col gap-2 items-center p-[16px] w-full">
+        {/* <Link href="https://dashboard.cosmocloud.io/sign-up"> */}
+        {/* <div className="button-gradient text-[16px] px-[24px] py-[12px] md:py-[16px] w-full"> */}
+        <SchedulingModal className="button-gradient text-[16px] px-[24px] py-[12px] md:py-[16px] w-full" />
+        {/* </div> */}
+        {/* </Link> */}
+        {/* <div className="cursor-pointer text-muted flex flex-col gap-2 items-center p-[16px] w-full">
           <Link href={"/contact"}>
             <p className="flex felx-col items-center">
               Book a demo{" "}
@@ -35,7 +36,7 @@ export const GetStarted = () => {
               </span>{" "}
             </p>
           </Link>
-        </div>
+        </div> */}
       </div>
     </div>
   );

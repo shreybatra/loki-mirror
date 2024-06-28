@@ -3,6 +3,7 @@
 import Frame1Img from "@/assets/svg/frame1.svg";
 import Frame2Img from "@/assets/svg/frame2.svg";
 import Frame3Img from "@/assets/svg/frame3.svg";
+import SchedulingModal from "@/components/Scheduling/SchedulingModal";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -36,11 +37,12 @@ export const Home = () => {
         >
           Let&apos;s get started
         </button>
-        <Link href={"/contact"}>
-          <button className="button-dark border-background px-[18px] py-[9px] md:py-[12px] md:px-[24px]">
-            Book a demo
-          </button>
-        </Link>
+        {/* <Link href={"/contact"}> */}
+        {/* <button className="">
+        Book a demo
+        </button> */}
+        <SchedulingModal className="button-dark border-background px-[18px] py-[9px] md:py-[12px] md:px-[24px]" />
+        {/* </Link> */}
       </div>
       <div className="relative h-full w-full">
         <div className="absolute right-[-3%] md:right-[-5%] lg:right-[-15%] top-[-7%] aspect-[242/440] w-[36%]">

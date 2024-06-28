@@ -1,3 +1,4 @@
+import SchedulingModal from "@/components/Scheduling/SchedulingModal";
 import Link from "next/link";
 
 export const PricingHeader = () => {
@@ -17,11 +18,12 @@ export const PricingHeader = () => {
         project
       </p>
       <div className="flex flex-col items-center gap-[12px] md:flex-row   text-center md:justify-center    mt-[56px]">
-        <Link href="/contact">
+        {/* <Link href="/contact">
           <div className="button-dark border-background md:mr-[16px] text-[16px] px-[24px] py-[12px] md:py-[16px] w-48">
-            Talk to sales
+            Book a demo
           </div>
-        </Link>
+        </Link> */}
+        <SchedulingModal className="button-dark border-background md:mr-[16px] text-[16px] px-[24px] py-[12px] md:py-[16px] w-48" />
         <button
           className="button-gradient text-[16px] px-[24px] py-[12px] md:py-[16px] w-48"
           onClick={() =>
