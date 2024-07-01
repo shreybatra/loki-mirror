@@ -26,7 +26,7 @@ export const DesktopNavbar = ({ routes }: DesktopNavbarProps) => {
             <NavigationMenuItem key={idx}>
               {!!route.children ? (
                 <>
-                  <NavigationMenuTrigger className="text-[16px]">
+                  <NavigationMenuTrigger className="text-[16px] bg-transparent">
                     {route.label}
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>

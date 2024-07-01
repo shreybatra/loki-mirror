@@ -7,9 +7,6 @@ import { PricingHorizontalCards } from "@/components/PricingDataTemplate/Pricing
 import { PricingHeader } from "@/components/Pricing/PricingHeader/PricingHeader";
 import { PricingTitle } from "@/components/Pricing/PricingTitle/PricingTitle";
 import { ReactNode, useEffect } from "react";
-import { VerticalNavbar } from "@/components/VerticalNavbar";
-import { VerticalNavbar2 } from "@/components/VerticalNavbar2";
-import PricingCards from "@/components/Pricing/PricingCards";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -140,7 +137,7 @@ export const PricingSection = () => {
               <CardContent className="flex">
                 <div className="space-y-4">
                   {benefitList.map((benefit) => (
-                    <span key={benefit} className="flex">
+                    <span className="flex">
                       <Check className="text-primary mr-2" />
                       <h3>{benefit}</h3>
                     </span>
