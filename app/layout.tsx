@@ -10,6 +10,7 @@ import type { Metadata } from "next";
 import { Navbar } from "@/components/Navbar";
 import { Analytics } from "@vercel/analytics/react";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { Toaster } from "@/components/ui/toaster";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -45,6 +46,7 @@ export default function RootLayout({
         </div>
         <Footer />
         <Analytics />
+        <Toaster />
       </body>
       <GoogleAnalytics gaId="G-DKTWR39RSJ" />
     </html>

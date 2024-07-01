@@ -4,25 +4,34 @@ import axios from "axios";
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import Dropdown from "@/blocks/Dropdown/DropDown";
+import { useToast } from "@/components/ui/use-toast";
+import { Button } from "@/components/ui/button";
+
+const JobFunctionMenu = [
+  "IT EXECUTIVE",
+  "BUSINESS EXECUTIVE",
+  "SOFTWARE ARCHITECT",
+  "BUSINESS DEVELOPMENT MANAGER",
+  "DBA",
+  "TECHNICAL OPERATIONS",
+  "DIRECTOR DEVELOPMENT MANAGER",
+  "PRODUCT PROGRAM MANAGER",
+  "SOFTWARE DEVELOPER",
+  "BUSINESS ANALYST",
+  "DATA SCIENTIST",
+  "STUDENT",
+  "OTHER",
+];
+interface IInput {
+  name: string;
+  email: string;
+  phone: string;
+  companyName: string;
+  designation: string;
+  subject: string;
+}
 
 const SchedulingForm = () => {
-  const JobFunctionMenu = [
-    "Software Engineer",
-    "Product Manager",
-    "Designer",
-    "Data Scientist",
-    "DevOps",
-    "Other",
-  ];
-  interface IInput {
-    name: string;
-    email: string;
-    phone: string;
-    companyName: string;
-    designation: string;
-    subject: string;
-  }
-
   const [inputs, setInputs] = useState([
     { name: "name", value: "", placeholder: "Full Name", type: "text" },
     { name: "email", value: "", placeholder: "Work Email", type: "email" },
@@ -31,6 +40,7 @@ const SchedulingForm = () => {
   ]);
 
   const [select, setSelect] = useState<string | null>(null);
+  const { toast } = useToast();
 
   const handleSelect = (value: string) => {
     setSelect(value);
@@ -48,16 +58,20 @@ const SchedulingForm = () => {
     setDisabled(true);
     inputs.map((i: any) => {
       if (i.value == "") {
-        alert("Please fill all the fields");
-        resetInputs();
+        toast({
+          variant: "destructive",
+          description: "Please enter all the fields",
+        });
         setDisabled(false);
         return;
       }
       data[i.name as keyof IInput] = i.value;
     });
     if (select == null) {
-      alert("Please fill all the fields");
-      resetInputs();
+      toast({
+        variant: "destructive",
+        description: "Please enter all the fields",
+      });
       setDisabled(false);
       return;
     }
@@ -71,15 +85,24 @@ const SchedulingForm = () => {
         data
       );
       if (response.status === 200) {
-        alert("Message sent successfully!");
+        toast({
+          title: "Message Sent",
+          description: "We will get back to you soon",
+        });
         resetInputs();
       } else {
-        alert("An error occured. Please try again later.");
-        resetInputs();
+        toast({
+          variant: "destructive",
+          description: "An error occured. Please try again later.",
+        });
+        setDisabled(false)
       }
     } catch (error) {
-      alert("An error occured. Please try again later.");
-      resetInputs();
+      toast({
+        variant: "destructive",
+        description: "An error occured. Please try again later.",
+      });
+      setDisabled(false)
     }
   };
 
@@ -126,13 +149,9 @@ const SchedulingForm = () => {
         </div>
       </div>
       <div className="flex mt-9 items-start">
-        <button
-          disabled={disabled}
-          className="text-white button-gradient px-6 py-2 md:py-2 md:px-6"
-          onClick={handleSubmit}
-        >
+        <Button disabled={disabled} onClick={handleSubmit}>
           Book a call
-        </button>
+        </Button>
       </div>
     </div>
   );
