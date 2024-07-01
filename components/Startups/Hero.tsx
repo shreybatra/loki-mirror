@@ -1,27 +1,59 @@
 import { StaticImageData } from "next/image";
 import Link from "next/link";
 import Image from "next/image";
+import { cva } from "class-variance-authority";
+import { cn } from "@/lib/utils";
 
 export interface IHeroProps {
   badge?: string;
-  image_src?: string | StaticImageData | undefined;
+  image?: string | StaticImageData | undefined;
   heading?: React.ReactNode;
   desc?: string;
   cta?: string;
   bg?: boolean;
-  order?: "1" | "2";
-  isFirst?: boolean;
+  variant?: "left" | "right";
+  main?: boolean;
 }
+
+const heroBannerVariant = cva(
+  "aspect-square overflow-hidden rounded-xl object-contain sm:w-full",
+  {
+    variants: {
+      variant: {
+        default: "",
+        main: "scale-[1.5] md:scale-[1.5]",
+      },
+    },
+    defaultVariants: {
+      variant: "default",
+    },
+  }
+);
+
+const containerVariant = cva(
+  "flex items-center flex-col-reverse space-between gap-4 md:gap-8 px-4 md:px-6 lg:grid-cols-2 lg:gap-12",
+  {
+    variants: {
+      variant: {
+        left: "md:flex-row",
+        right: "md:flex-row-reverse",
+      },
+    },
+    defaultVariants: {
+      variant: "left",
+    },
+  }
+);
 
 const Hero = ({
   badge,
-  image_src = "",
+  image = "",
   heading,
   desc,
   cta,
-  isFirst = false,
+  main = false,
   bg = false,
-  order = "1",
+  variant = "left",
 }: IHeroProps) => {
   return (
     <section
@@ -31,8 +63,12 @@ const Hero = ({
           : "py-8 md:py-12"
       }`}
     >
-      <div className="grid items-center gap-4 md:gap-8 px-4 md:px-6 lg:grid-cols-2 lg:gap-12">
-        <div className={`space-y-4 order-${order}`}>
+      <div
+        className={cn(
+          containerVariant({ variant: variant })
+        )}
+      >
+        <div className={`space-y-4 md:w-1/2`}>
           {badge && (
             <div className="inline-block rounded-full tracking-tight button-gradient font-medium px-4 py-2 text-md">
               {badge}
@@ -40,7 +76,7 @@ const Hero = ({
           )}
           <h1
             className={`${
-              isFirst
+              main
                 ? "text-[22px] md:text-[32px] lg:text-[48px] font-[700] "
                 : "text-[22px] md:text-[32px] lg:text-[48px] font-[600]"
             } tracking-tight`}
@@ -58,13 +94,15 @@ const Hero = ({
             </Link>
           </div>
         </div>
-        <div className="flex items-center justify-center">
+        <div className={`flex items-center md:w-1/2 justify-center`}>
           <Image
-            src={image_src}
+            src={image}
             width={695}
             height={550}
             alt="Hero"
-            className="aspect-square overflow-hidden rounded-xl object-contain sm:w-full"
+            className={cn(
+              heroBannerVariant({ variant: main ? "main" : "default" })
+            )}
           />
         </div>
       </div>
