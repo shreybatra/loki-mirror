@@ -16,12 +16,12 @@ export interface IHeroProps {
 }
 
 const heroBannerVariant = cva(
-  "aspect-square overflow-hidden rounded-xl object-contain sm:w-full",
+  "aspect-square overflow-hidden rounded-md object-contain sm:w-full",
   {
     variants: {
       variant: {
         default: "",
-        main: "scale-[1.5] md:scale-[1.5]",
+        main: "hidden md:block md:left-2 z-[-200] absolute",
       },
     },
     defaultVariants: {
@@ -31,13 +31,13 @@ const heroBannerVariant = cva(
 );
 
 const containerVariant = cva(
-  "flex items-center flex-col-reverse space-between gap-4 md:gap-8 px-4 md:px-6 lg:grid-cols-2 lg:gap-12",
+  "flex relative items-center flex-col-reverse space-between gap-4 md:gap-8 px-4 md:px-6 lg:grid-cols-2 lg:gap-12",
   {
     variants: {
       variant: {
         left: "md:flex-row",
         right: "md:flex-row-reverse",
-      },
+      }
     },
     defaultVariants: {
       variant: "left",
@@ -51,21 +51,15 @@ const Hero = ({
   heading,
   desc,
   cta,
-  main = false,
-  bg = false,
   variant = "left",
 }: IHeroProps) => {
   return (
-    <section
-      className={`w-full ${
-        bg
-          ? "background-gradient rounded-2xl px-4 md:px-8 py-8 md:py-10"
-          : "py-8 md:py-12"
-      }`}
-    >
+    <section className={`w-full py-8 md:py-12 `}>
       <div
         className={cn(
-          containerVariant({ variant: variant })
+          containerVariant({
+            variant: variant,
+          })
         )}
       >
         <div className={`space-y-4 md:w-1/2`}>
@@ -75,20 +69,16 @@ const Hero = ({
             </div>
           )}
           <h1
-            className={`${
-              main
-                ? "text-[22px] md:text-[32px] lg:text-[48px] font-[700] "
-                : "text-[22px] md:text-[32px] lg:text-[48px] font-[600]"
-            } tracking-tight`}
+            className={`text-[22px] md:text-[32px] lg:text-[48px] font-[600] tracking-tight`}
           >
             {heading}
           </h1>
-          <p className="text-neutral-300 tracking-tight text-[18px] md:text-[22px] py-4">
+          <p className="text-muted-foreground tracking-tight md:text-[22px] py-2 md:py-4">
             {desc}
           </p>
           <div className="flex min-w-fit">
             <Link href={"linkUrl"}>
-              <button className="button-dark border-background px-[18px] py-[9px]  md:py-[12px] md:px-[24px]">
+              <button className="button-dark border-background px-[18px] py-2 md:py-4 md:px-[24px]">
                 {cta}
               </button>
             </Link>
@@ -101,7 +91,7 @@ const Hero = ({
             height={550}
             alt="Hero"
             className={cn(
-              heroBannerVariant({ variant: main ? "main" : "default" })
+              heroBannerVariant({ variant: "default" })
             )}
           />
         </div>

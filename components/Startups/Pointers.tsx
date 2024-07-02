@@ -11,7 +11,7 @@ interface IPointersProps {
 const Pointers = ({ title, pointers }: IPointersProps) => {
   return (
     <div className="flex my-16 flex-col gap-6 md:gap-12 items-center">
-      <div className="flex flex-col gap-4 items-center md:gap-[12px]">
+      <div className="flex flex-col gap-1 items-center md:gap-[12px]">
         <h3 className="text-primary-pink uppercase tracking-[2px] text-[12px] md:text-[16px] font-medium">
           Loved by Companies
         </h3>
@@ -28,9 +28,9 @@ const Pointers = ({ title, pointers }: IPointersProps) => {
               <div className="flex justify-center items-center w-12 background-gradient h-12 rounded-lg">
                 <pointer.icon className="flex-shrink-0 w-6 h-6 text-[#fff]" />
               </div>
-              <h3 className="text-lg font-semibold line-clamp-1">{pointer.title}</h3>
+              <h3 className="text-lg font-semibold line-clamp-2">{pointer.title}</h3>
             </div>
-            <p className="mt-3 text-muted-foreground line-clamp-2">{pointer.description}</p>
+            <p className="mt-3 text-muted-foreground line-clamp-4">{pointer.description}</p>
           </div>
         ))}
       </div>

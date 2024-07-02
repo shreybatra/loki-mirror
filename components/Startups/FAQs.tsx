@@ -6,12 +6,19 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const FAQContent: any[] = [];
+const FAQContent: any[] = [
+
+  {
+    question: "What is Cosmocloud?",
+    answer:
+      "Cosmocloud is a cloud-based platform that enables developers to build, deploy, and scale applications. It provides a wide range of services that can be used to build and run applications in the cloud.",
+  }
+];
 
 const FAQs = () => {
   return (
-    <div className="flex flex-col items-center mt-16">
-      <div className="flex flex-col gap-4 items-center mb-16 md:gap-[12px]">
+    <div className="flex flex-col items-center my-16">
+      <div className="flex flex-col gap-1 items-center mb-8 md:gap-[12px]">
         <h3 className="text-primary-pink uppercase tracking-[2px] text-[12px] md:text-[16px] font-medium">
           Have any Queries?
         </h3>
@@ -20,25 +27,25 @@ const FAQs = () => {
             Frequently Asked Questions
           </h2>
         </div>
-        <p className="text-neutral-300 tracking-tight mt-4 md:text-base text-center">
+        <p className="text-muted-foreground tracking-tight mt-1 mb-3 text-sm md:text-base text-center">
           Don’t see an answer to your question here?
         </p>
         <div className="flex min-w-fit">
           <Link href={"linkUrl"}>
             <button className="button-dark border-background mt-2 px-[18px] py-[9px]  md:py-[12px] md:px-[24px]">
-              Contact US
+              Contact Us
             </button>
           </Link>
         </div>
       </div>
 
-      <Accordion type="single" collapsible className="w-full md:w-[80%]">
+      <Accordion type="single" collapsible className="container w-full md:w-[80%]">
         {FAQContent.map((content, index) => (
           <AccordionItem key={content.question} value={`item-${index}`}>
-            <AccordionTrigger className="text-lg">
+            <AccordionTrigger className="text-md lg:text-lg xl:text-xl hover:no-underline ">
               {content.question}
             </AccordionTrigger>
-            <AccordionContent className="text-md">
+            <AccordionContent className="text-sm lg:text-md xl:text-lg text-muted-foreground">
               {content.answer}
             </AccordionContent>
           </AccordionItem>
