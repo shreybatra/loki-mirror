@@ -29,7 +29,7 @@ const routes: routesType = [
         target: true,
       },
       {
-        path: "https://docs.cosmocloud.io/cosmocloud-documentation/help-and-support",
+        path: "https://docs.cosmocloud.io/help-and-support",
         label: "Help & Support",
         description: "Get help from the community.",
         target: true,
