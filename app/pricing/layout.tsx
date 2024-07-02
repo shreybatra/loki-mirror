@@ -47,7 +47,7 @@ const plans: PlanProps[] = [
     buttonText: "Contact Sales",
     benefitList: [
       "1 Project",
-      <span>
+      <span key={1}>
         1 Production Env (
         <Link href={tierDocLink} className="underline" target="_blank">
           Shared-2
@@ -68,14 +68,14 @@ const plans: PlanProps[] = [
     buttonText: "Contact Sales",
     benefitList: [
       "1 Project",
-      <span>
+      <span key={2}>
         1 Production Env (
         <Link href={tierDocLink} className="underline" target="_blank">
           Low-1
         </Link>
         )
       </span>,
-      <span>
+      <span key={3}>
         1 Staging Env (
         <Link href={tierDocLink} className="underline" target="_blank">
           Shared-1
@@ -136,8 +136,8 @@ export const PricingSection = () => {
 
               <CardContent className="flex">
                 <div className="space-y-4">
-                  {benefitList.map((benefit) => (
-                    <span className="flex">
+                  {benefitList.map((benefit,idx) => (
+                    <span className="flex" key={idx} >
                       <Check className="text-primary mr-2" />
                       <h3>{benefit}</h3>
                     </span>
