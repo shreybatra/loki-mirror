@@ -9,8 +9,8 @@ import { Inter } from "next/font/google";
 import type { Metadata } from "next";
 import { Navbar } from "@/components/Navbar";
 import { Analytics } from "@vercel/analytics/react";
-import { GoogleAnalytics } from "@next/third-parties/google";
 import { Toaster } from "@/components/ui/toaster";
+import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -49,6 +49,7 @@ export default function RootLayout({
         <Toaster />
       </body>
       <GoogleAnalytics gaId="G-DKTWR39RSJ" />
+      <GoogleTagManager gtmId="AW-16526381160" />
     </html>
   );
 }

@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import Dropdown from "@/blocks/Dropdown/DropDown";
 import { useToast } from "@/components/ui/use-toast";
 import { Button } from "@/components/ui/button";
+import { sendGTMEvent } from "@next/third-parties/google";
 
 const JobFunctionMenu = [
   "IT EXECUTIVE",
@@ -89,20 +90,21 @@ const SchedulingForm = () => {
           title: "Message Sent",
           description: "We will get back to you soon",
         });
+        sendGTMEvent({ event: "salesLead", value: 1 });
         resetInputs();
       } else {
         toast({
           variant: "destructive",
           description: "An error occured. Please try again later.",
         });
-        setDisabled(false)
+        setDisabled(false);
       }
     } catch (error) {
       toast({
         variant: "destructive",
         description: "An error occured. Please try again later.",
       });
-      setDisabled(false)
+      setDisabled(false);
     }
   };
 
