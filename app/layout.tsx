@@ -48,8 +48,13 @@ export default function RootLayout({
         <Analytics />
         <Toaster />
       </body>
-      <GoogleAnalytics gaId="G-DKTWR39RSJ" />
-      <GoogleTagManager gtmId="AW-16526381160" />
+      
+      {
+        process.env.NEXT_GA_ID && (<GoogleAnalytics gaId={process.env.NEXT_GA_ID} />)
+      }
+      {
+        process.env.NEXT_GTM_ID && (<GoogleTagManager gtmId={process.env.NEXT_GTM_ID} />)
+      }
     </html>
   );
 }

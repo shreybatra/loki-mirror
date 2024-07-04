@@ -20,7 +20,7 @@ const FAQContent: any[] = [
   {
     question: "How to apply for Cosmocloud for Startups?",
     answer:
-      "We work closesly with VCs, Accelerators, and Incubators. You can ask your partner VC or Accellerator to refer you. If they are not a part of our program please apply on the link aboove. If you are not involced with a VC, incubator or accellerator, please apply above on this page.",
+      <span>We work closesly with VCs, Accelerators, and Incubators. You can ask your partner VC or Accellerator to refer you. If they are not a part of our program please apply on the link aboove. If you are not involced with a VC, incubator or accellerator, you can <Link href={"/"} className="text-primary underline">apply here</Link>.</span>,
   },
   {
     question: "Can I apply if I am already using Cosmocloud?",
@@ -30,7 +30,7 @@ const FAQContent: any[] = [
   {
     question: "What if I've applied but have not heard back?",
     answer:
-      "If you haven't heard back from us after 7 business days please contact us in link above",
+      <span>If you haven't heard back from us after 7 business days please <Link href={"/"} className="text-primary underline">contact us</Link> in given link.</span>,
   },
   {
     question: "How will I recieve my promo code?",
@@ -47,7 +47,7 @@ const FAQs = () => {
           Have any Queries?
         </h3>
         <div className="flex flex-col gap-[12px] items-center">
-          <h2 className="font-[700] text-[20px] md:text-[32px] text-center">
+          <h2 className="font-semibold text-[20px] md:text-[32px] text-center">
             Frequently Asked Questions
           </h2>
         </div>

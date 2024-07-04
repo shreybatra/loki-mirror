@@ -36,14 +36,14 @@ const page = () => {
         heading="Scale your startup from Ideation to Growth stage"
         desc="This program is meant for early stage startups currently at Series B or earlier, helping them build their product and multiple microservices to boost their feature development productivity."
         cta="Join Us"
-        image={NextGenDeveloperBanner}
+        image={GrowthBanner}
       />
       <Hero
         heading="Supporting next-gen founders"
         desc="Cosmocloud for Startups supports founders with the right set of resources, from getting started upto all the way to your IPO."
-        cta="Apply for free"
+        cta="Apply Now"
         variant="right"
-        image={GrowthBanner}
+        image={NextGenDeveloperBanner}
       />
       
       <Features />
@@ -53,10 +53,10 @@ const page = () => {
       />
 
       <Hero
-        heading="Are you a startup, or incubator?"
+        heading="Are you a Startup Accelerator, Incubator or VC?"
         desc="Make sure your founders have access to the best data platform, connections, and education for their rapidly scaling ventures."
         variant="right"
-        cta="Get in touch"
+        cta="Apply Now"
         image={IncubatorBanner}
       />
       {/* <Pointers
@@ -65,12 +65,11 @@ const page = () => {
       /> */}
       {/*banner */}
       <section
-        style={{ background: `url(${getStarted.src})` }}
-        className={`w-full my-20 py-12 md:py-24 lg:py-32  brightness-125 contrast-125 rounded-xl`}
+        className={`mx-4 my-20 py-12 md:py-24 lg:py-32 background-gradient rounded`}
       >
         <div className="container px-4 md:px-6 text-center">
           <div className="max-w-2xl mx-auto space-y-4">
-            <h2 className="text-3xl font-bold tracking-tighter text-[#fff] md:text-4xl/tight">
+            <h2 className="text-2xl font-semibold text-[#fff] md:text-4xl/tight">
               Ready to take your business to the next level?
             </h2>
             <p className="text-[#fcfcfc] md:text-xl/relaxed">

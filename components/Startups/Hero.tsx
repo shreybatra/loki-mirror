@@ -16,31 +16,15 @@ export interface IHeroProps {
 }
 
 const heroBannerVariant = cva(
-  "aspect-square overflow-hidden scale-[0.7] rounded-md object-contain sm:w-full",
+  "aspect-square overflow-hidden rounded scale-[0.8] object-contain sm:w-full",
   {
     variants: {
       variant: {
         default: "",
-        main: "hidden md:block md:left-2 z-[-200] absolute",
       },
     },
     defaultVariants: {
       variant: "default",
-    },
-  }
-);
-
-const containerVariant = cva(
-  "flex relative items-center flex-col-reverse space-between gap-4 md:gap-8 px-4 md:px-6 lg:grid-cols-2 lg:gap-12",
-  {
-    variants: {
-      variant: {
-        left: "md:flex-row",
-        right: "md:flex-row-reverse",
-      }
-    },
-    defaultVariants: {
-      variant: "left",
     },
   }
 );
@@ -54,47 +38,57 @@ const Hero = ({
   variant = "left",
 }: IHeroProps) => {
   return (
-    <section className={`w-full py-8 md:py-12 `}>
-      <div
-        className={cn(
-          containerVariant({
-            variant: variant,
-          })
-        )}
-      >
-        <div className={`space-y-4 md:w-1/2`}>
-          {badge && (
-            <div className="inline-block rounded-full tracking-tight button-gradient font-medium px-4 py-2 text-md">
-              {badge}
+    <section className="w-full mb-8">
+      <div className="grid gap-8 px-4 md:px-6">
+        {variant === "left" && (
+          <div className="grid gap-0 md:grid-cols-2 md:gap-8 lg:gap-12">
+            <Image
+              src={image}
+              width="550"
+              height="310"
+              alt="Feature 1"
+              className={cn(heroBannerVariant({ variant: "default" }))}
+            />
+            <div className="flex flex-col justify-center space-y-4">
+              <div className="space-y-4">
+                <h2 className="text-2xl h font-bold md:text-3xl">{heading}</h2>
+                <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  {desc}
+                </p>
+              </div>
+              <Link href={"linkUrl"}>
+                <button className="button-dark border-background px-[18px] py-2 md:py-4 md:px-[24px]">
+                  {cta}
+                </button>
+              </Link>
             </div>
-          )}
-          <h1
-            className={`font-[700] text-[20px] md:text-[32px] tracking-tight`}
-          >
-            {heading}
-          </h1>
-          <p className="text-gray-300 tracking-tight md:text-[22px] py-2 md:py-4">
-            {desc}
-          </p>
-          <div className="flex min-w-fit">
-            <Link href={"linkUrl"}>
-              <button className="button-dark border-background px-[18px] py-2 md:py-4 md:px-[24px]">
-                {cta}
-              </button>
-            </Link>
           </div>
-        </div>
-        <div className={`flex items-center rounded background-gradient md:w-1/2 justify-center`}>
-          <Image
-            src={image}
-            width={695}
-            height={550}
-            alt="Hero"
-            className={cn(
-              heroBannerVariant({ variant: "default" })
-            )}
-          />
-        </div>
+        )}
+
+        {variant === "right" && (
+          <div className="grid gap-4 md:grid-cols-2 md:gap-8 lg:gap-12">
+            <div className="order-last md:order-first flex flex-col justify-center space-y-4">
+              <div className="space-y-2">
+                <h2 className="text-2xl font-bold md:text-3xl">{heading}</h2>
+                <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  {desc}
+                </p>
+              </div>
+              <Link href={"linkUrl"}>
+                <button className="button-dark border-background px-[18px] py-2 md:py-4 md:px-[24px]">
+                  {cta}
+                </button>
+              </Link>
+            </div>
+            <Image
+              src={image}
+              width="550"
+              height="310"
+              alt="Feature 2"
+              className={cn(heroBannerVariant({ variant: "default" }))}
+            />
+          </div>
+        )}
       </div>
     </section>
   );

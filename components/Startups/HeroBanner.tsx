@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image, { StaticImageData } from "next/image";
+import { Badge } from "@/components/ui/badge";
 
 export interface IBannerProps {
   badge: string;
