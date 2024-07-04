@@ -3,9 +3,10 @@ import Features from "@/components/Startups/StartupFeatures";
 import React from "react";
 import accel from "@/assets/png/accel.png";
 import startups from "@/assets/png/startups-slalom.png";
-import StartUpBanner from  "@/assets/svg/startup/Cosmocloud for startup right 1.svg"
-import StartUpBannerSmallScreen from  "@/assets/svg/startup/Cosmocloud for startup Center 1.svg"
+import StartUpBanner from "@/assets/svg/startup/Cosmocloud for startup right 1.svg";
+import StartUpBannerSmallScreen from "@/assets/svg/startup/Cosmocloud for startup Center 1.svg";
 import Pointers from "@/components/Startups/Pointers";
+import getStarted from "@/assets/jpg/getStarted.jpg";
 import {
   WhyIncubatorsChooseCosmocloud,
   WhyStartupsChooseCosmocloud,
@@ -17,8 +18,6 @@ import HeroBanner from "@/components/Startups/HeroBanner";
 const page = () => {
   return (
     <div className="md:px-20 px-2">
-
-
       <HeroBanner
         heading={
           <span>
@@ -63,7 +62,10 @@ const page = () => {
         pointers={WhyIncubatorsChooseCosmocloud}
       /> */}
       {/*banner */}
-      <section className="w-full my-16 py-12 md:py-24 lg:py-32 background-gradient rounded-2xl">
+      <section
+        style={{ background: `url(${getStarted.src})` }}
+        className={`w-full my-16 py-12 md:py-24 lg:py-32  brightness-125 contrast-125 rounded-xl`}
+      >
         <div className="container px-4 md:px-6 text-center">
           <div className="max-w-2xl mx-auto space-y-4">
             <h2 className="text-3xl font-bold tracking-tighter text-[#fff] md:text-4xl/tight">

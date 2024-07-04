@@ -5,24 +5,11 @@ import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import Dropdown from "@/blocks/Dropdown/DropDown";
 import { useToast } from "@/components/ui/use-toast";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"; 
+import { JobFunctionMenu } from "@/constants/Scheduling/index";
+
 import { sendGTMEvent } from "@next/third-parties/google";
 
-const JobFunctionMenu = [
-  "IT EXECUTIVE",
-  "BUSINESS EXECUTIVE",
-  "SOFTWARE ARCHITECT",
-  "BUSINESS DEVELOPMENT MANAGER",
-  "DBA",
-  "TECHNICAL OPERATIONS",
-  "DIRECTOR DEVELOPMENT MANAGER",
-  "PRODUCT PROGRAM MANAGER",
-  "SOFTWARE DEVELOPER",
-  "BUSINESS ANALYST",
-  "DATA SCIENTIST",
-  "STUDENT",
-  "OTHER",
-];
 interface IInput {
   name: string;
   email: string;
@@ -145,7 +132,7 @@ const SchedulingForm = () => {
           <Dropdown
             className="text-sm text-black  py-2  w-full placeholder:text-slate-500 bg-slate-50"
             tag="Chose your job role"
-            Menu={JobFunctionMenu}
+            option={JobFunctionMenu}
             setSelect={handleSelect}
           />
         </div>
