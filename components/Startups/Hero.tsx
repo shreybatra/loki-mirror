@@ -16,7 +16,7 @@ export interface IHeroProps {
 }
 
 const heroBannerVariant = cva(
-  "aspect-square overflow-hidden rounded-md object-contain sm:w-full",
+  "aspect-square overflow-hidden scale-[0.7] rounded-md object-contain sm:w-full",
   {
     variants: {
       variant: {
@@ -69,11 +69,11 @@ const Hero = ({
             </div>
           )}
           <h1
-            className={`text-[22px] md:text-[32px] lg:text-[48px] font-[600] tracking-tight`}
+            className={`font-[700] text-[20px] md:text-[32px] tracking-tight`}
           >
             {heading}
           </h1>
-          <p className="text-muted-foreground tracking-tight md:text-[22px] py-2 md:py-4">
+          <p className="text-gray-300 tracking-tight md:text-[22px] py-2 md:py-4">
             {desc}
           </p>
           <div className="flex min-w-fit">
@@ -84,7 +84,7 @@ const Hero = ({
             </Link>
           </div>
         </div>
-        <div className={`flex items-center md:w-1/2 justify-center`}>
+        <div className={`flex items-center rounded background-gradient md:w-1/2 justify-center`}>
           <Image
             src={image}
             width={695}

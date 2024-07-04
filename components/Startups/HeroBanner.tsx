@@ -20,7 +20,7 @@ const HeroBanner = ({
   bannerLargeScreen,
 }: IBannerProps) => {
   return (
-    <div className="flex relative py-10 md:py-20 items-start flex-col-reverse space-between gap-4 md:gap-8 px-4 md:px-6 lg:grid-cols-2 lg:gap-12">
+    <div className="flex relative py-10 mb-20 md:py-20 items-start flex-col-reverse space-between gap-4 md:gap-8 px-4 md:px-6 lg:grid-cols-2 lg:gap-12">
       <div className={`space-y-4 md:w-1/2`}>
         <div className="inline-block rounded-full tracking-tight button-gradient font-medium px-4 py-2 text-md">
           {badge}

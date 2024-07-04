@@ -1,14 +1,15 @@
 import Hero from "@/components/Startups/Hero";
 import Features from "@/components/Startups/StartupFeatures";
 import React from "react";
-import accel from "@/assets/png/accel.png";
-import startups from "@/assets/png/startups-slalom.png";
 import StartUpBanner from "@/assets/svg/startup/Cosmocloud for startup right 1.svg";
 import StartUpBannerSmallScreen from "@/assets/svg/startup/Cosmocloud for startup Center 1.svg";
 import Pointers from "@/components/Startups/Pointers";
 import getStarted from "@/assets/jpg/getStarted.jpg";
+import ScaleYourStartupBanner from "@/assets/svg/startup/scale-your-startup.svg"
+import GrowthBanner from "@/assets/svg/startup/Growth.svg";
+import IncubatorBanner from "@/assets/svg/startup/Incubator.svg"
+import NextGenDeveloperBanner from '@/assets/svg/startup/Next Gen Developer.svg';
 import {
-  WhyIncubatorsChooseCosmocloud,
   WhyStartupsChooseCosmocloud,
 } from "@/components/Startups/constants";
 import FAQs from "@/components/Startups/FAQs";
@@ -35,15 +36,16 @@ const page = () => {
         heading="Scale your startup from Ideation to Growth stage"
         desc="This program is meant for early stage startups currently at Series B or earlier, helping them build their product and multiple microservices to boost their feature development productivity."
         cta="Join Us"
-        variant="right"
-        image="https://assets-global.website-files.com/5ee2a460548fc323155ffd49/60349d2b5d61ccc7463945a6_Pair%20Programming%20with%20CoScreen%20(1).svg"
+        image={NextGenDeveloperBanner}
       />
       <Hero
         heading="Supporting next-gen founders"
         desc="Cosmocloud for Startups supports founders with the right set of resources, from getting started upto all the way to your IPO."
         cta="Apply for free"
-        image={startups}
+        variant="right"
+        image={GrowthBanner}
       />
+      
       <Features />
       <Pointers
         title="Why startups choose Cosmocloud"
@@ -55,7 +57,7 @@ const page = () => {
         desc="Make sure your founders have access to the best data platform, connections, and education for their rapidly scaling ventures."
         variant="right"
         cta="Get in touch"
-        image={accel}
+        image={IncubatorBanner}
       />
       {/* <Pointers
         title="Why VCs and accelerators partner with Cosmocloud for Startups"
@@ -64,7 +66,7 @@ const page = () => {
       {/*banner */}
       <section
         style={{ background: `url(${getStarted.src})` }}
-        className={`w-full my-16 py-12 md:py-24 lg:py-32  brightness-125 contrast-125 rounded-xl`}
+        className={`w-full my-20 py-12 md:py-24 lg:py-32  brightness-125 contrast-125 rounded-xl`}
       >
         <div className="container px-4 md:px-6 text-center">
           <div className="max-w-2xl mx-auto space-y-4">
