@@ -41,7 +41,7 @@ const FAQContent: any[] = [
     question: "What if I've applied but have not heard back?",
     answer: (
       <span>
-        If you haven't heard back from us after 7 business days please{" "}
+        If you haven&apos;t heard back from us after 7 business days please{" "}
         <Link href={"/"} className="text-primary underline">
           contact us
         </Link>{" "}
