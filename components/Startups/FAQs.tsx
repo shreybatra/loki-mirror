@@ -19,8 +19,18 @@ const FAQContent: any[] = [
   },
   {
     question: "How to apply for Cosmocloud for Startups?",
-    answer:
-      <span>We work closesly with VCs, Accelerators, and Incubators. You can ask your partner VC or Accellerator to refer you. If they are not a part of our program please apply on the link aboove. If you are not involced with a VC, incubator or accellerator, you can <Link href={"/"} className="text-primary underline">apply here</Link>.</span>,
+    answer: (
+      <span>
+        We work closesly with VCs, Accelerators, and Incubators. You can ask
+        your partner VC or Accellerator to refer you. If they are not a part of
+        our program please apply on the link aboove. If you are not involced
+        with a VC, incubator or accellerator, you can{" "}
+        <Link href={"/"} className="text-primary underline">
+          apply here
+        </Link>
+        .
+      </span>
+    ),
   },
   {
     question: "Can I apply if I am already using Cosmocloud?",
@@ -29,8 +39,15 @@ const FAQContent: any[] = [
   },
   {
     question: "What if I've applied but have not heard back?",
-    answer:
-      <span>If you haven't heard back from us after 7 business days please <Link href={"/"} className="text-primary underline">contact us</Link> in given link.</span>,
+    answer: (
+      <span>
+        If you haven't heard back from us after 7 business days please{" "}
+        <Link href={"/"} className="text-primary underline">
+          contact us
+        </Link>{" "}
+        in given link.
+      </span>
+    ),
   },
   {
     question: "How will I recieve my promo code?",
@@ -51,11 +68,11 @@ const FAQs = () => {
             Frequently Asked Questions
           </h2>
         </div>
-        <p className="text-muted-foreground tracking-tight mt-1 mb-3 text-sm md:text-base text-center">
+        <p className="text-muted-foreground mt-1 mb-3 text-sm md:text-base text-center">
           Don’t see an answer to your question here?
         </p>
         <div className="flex min-w-fit">
-          <Link href={"linkUrl"}>
+          <Link href="/contact" target="_blank">
             <button className="button-dark border-background mt-2 px-[18px] py-[9px]  md:py-[12px] md:px-[24px]">
               Contact Us
             </button>

@@ -140,12 +140,33 @@ const ContactForm = () => {
           <DropDown
             setSelect={handleSelect}
             className="button-dark mb-[20px] md:mb-[32px] !border-[1px] !border-[var(--contact-form-border)] text-gray-400 text-md"
-            Menu={[
-              "I want to book a demo call",
-              "I have some questions around the platform",
-              "I want to submit some feedback around the Cosmocloud platform",
-              "I am looking for job opportunities at Cosmocloud",
-              "Something else...",
+            option={[
+              {
+                label: "I want to book a demo call",
+                value: "I want to book a demo call",
+              },
+              {
+                label: "I have some questions around the platform",
+                value: "I have some questions around the platform",
+              },
+              {
+                label:
+                  "I want to submit some feedback around the Cosmocloud platform",
+                value:
+                  "I want to submit some feedback around the Cosmocloud platform",
+              },
+              {
+                label: "I want to know more about Cosmocloud for Startups",
+                value: "I want to know more about Cosmocloud for Startups",
+              },
+              {
+                label: "I am looking for job opportunities at Cosmocloud",
+                value: "I am looking for job opportunities at Cosmocloud",
+              },
+              {
+                label: "Other queries (I'll write my own)",
+                value: "Other queries",
+              },
             ]}
             tag="How can we help?"
           />

@@ -5,7 +5,7 @@ import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import Dropdown from "@/blocks/Dropdown/DropDown";
 import { useToast } from "@/components/ui/use-toast";
-import { Button } from "@/components/ui/button"; 
+import { Button } from "@/components/ui/button";
 import { JobFunctionMenu } from "@/constants/Scheduling/index";
 
 import { sendGTMEvent } from "@next/third-parties/google";
@@ -106,7 +106,7 @@ const SchedulingForm = () => {
   return (
     <div className="flex flex-col h-full p-4">
       <div className="flex flex-col py-9">
-        <h3 className="text-primary-pink tracking-tight text-2xl font-medium">
+        <h3 className="text-primary-pink text-2xl font-medium">
           Schedule a call
         </h3>
       </div>

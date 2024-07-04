@@ -56,7 +56,11 @@ const Hero = ({
                   {desc}
                 </p>
               </div>
-              <Link href={"linkUrl"}>
+              <Link
+                href="https://forms.gle/hiN5rSM8KCFUfceH8"
+                target="_blank"
+                className="w-fit"
+              >
                 <button className="button-dark border-background px-[18px] py-2 md:py-4 md:px-[24px]">
                   {cta}
                 </button>
@@ -74,7 +78,11 @@ const Hero = ({
                   {desc}
                 </p>
               </div>
-              <Link href={"linkUrl"}>
+              <Link
+                href="https://forms.gle/hiN5rSM8KCFUfceH8"
+                target="_blank"
+                className="w-fit"
+              >
                 <button className="button-dark border-background px-[18px] py-2 md:py-4 md:px-[24px]">
                   {cta}
                 </button>

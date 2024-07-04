@@ -5,7 +5,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Option } from "lucide-react";
 interface IDropdownProps {
   tag: string;
   className?: string;

@@ -7,10 +7,10 @@ const routes: routesType = [
     path: "/pricing",
     label: "Pricing",
   },
-  // {
-  //   path: "/startups",
-  //   label: "Startups",
-  // },
+  {
+    path: "/startups",
+    label: "Startups",
+  },
   // {
   //   path: "/build",
   //   label: "Build",

@@ -12,7 +12,7 @@ const TestimonialCarousel = () => {
   return (
     <div className=" flex flex-col justify-center md:py-12 items-center gap-5">
       <div className="flex flex-col border-b-[1px] border-spacing-7 border-gray-600">
-        <h3 className="text-primary-pink text-center tracking-tight text-lg font-medium">
+        <h3 className="text-primary-pink text-center text-lg font-medium">
           What our clients say
         </h3>
         <Carousel
@@ -43,7 +43,7 @@ const TestimonialCarousel = () => {
         </Carousel>
       </div>
       <div className="flex flex-col gap-4 ">
-        <h3 className="text-primary-pink text-center tracking-tight text-lg font-medium">
+        <h3 className="text-primary-pink text-center text-lg font-medium">
           Rated by the best
         </h3>
         <div className="flex flex-wrap gap-x-5 gap-y-5 items-center justify-center">

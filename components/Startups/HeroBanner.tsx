@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import Image, { StaticImageData } from "next/image";
-import { Badge } from "@/components/ui/badge";
 
 export interface IBannerProps {
   badge: string;
@@ -23,17 +22,15 @@ const HeroBanner = ({
   return (
     <div className="flex relative py-10 mb-20 md:py-20 items-start flex-col-reverse space-between gap-4 md:gap-8 px-4 md:px-6 lg:grid-cols-2 lg:gap-12">
       <div className={`space-y-4 md:w-1/2`}>
-        <div className="inline-block rounded-full tracking-tight button-gradient font-medium px-4 py-2 text-md">
+        <div className="inline-block rounded-full button-gradient font-medium px-4 py-2 text-md">
           {badge}
         </div>
         <h1 className={"text-[22px] md:text-[32px] lg:text-[48px] font-[700] "}>
           {heading}
         </h1>
-        <p className="text-neutral-300 tracking-tight md:text-[22px] py-2 md:py-4">
-          {desc}
-        </p>
+        <p className="text-neutral-300 md:text-[22px] py-2 md:py-4">{desc}</p>
         <div className="flex min-w-fit">
-          <Link href={"linkUrl"}>
+          <Link href="https://forms.gle/hiN5rSM8KCFUfceH8" target="_blank">
             <button className="button-dark border-background px-[18px] py-2 md:py-4 md:px-[24px]">
               {cta}
             </button>
@@ -55,9 +52,7 @@ const HeroBanner = ({
           width={695}
           height={550}
           alt="Hero"
-          className={
-            "hidden"
-          }
+          className={"hidden"}
         />
       </div>
     </div>
