@@ -27,18 +27,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/* <head>
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-DKTWR39RSJ" />
-        <Script id="google-analytics">
-          {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
- 
-          gtag('config', 'G-DKTWR39RSJ');
-        `}
-        </Script>
-      </head> */}
       <body className={inter.className}>
         <div className="flex flex-col gap-[32px] md:gap-0">
           <Navbar />
@@ -48,13 +36,13 @@ export default function RootLayout({
         <Analytics />
         <Toaster />
       </body>
-      
-      {
-        process.env.NEXT_GA_ID && (<GoogleAnalytics gaId={process.env.NEXT_GA_ID} />)
-      }
-      {
-        process.env.NEXT_GTM_ID && (<GoogleTagManager gtmId={process.env.NEXT_GTM_ID} />)
-      }
+
+      {process.env.NEXT_GA_ID && (
+        <GoogleAnalytics gaId={process.env.NEXT_GA_ID} />
+      )}
+      {process.env.NEXT_GTM_ID && (
+        <GoogleTagManager gtmId={process.env.NEXT_GTM_ID} />
+      )}
     </html>
   );
 }
