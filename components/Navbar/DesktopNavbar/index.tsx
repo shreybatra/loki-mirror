@@ -12,6 +12,7 @@ import {
 import React from "react";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import Image from "next/image";
+import { updateWebAnalytics } from "@/functions/WebAnalytics";
 
 type DesktopNavbarProps = {
   routes: routesType;
@@ -88,7 +89,15 @@ const ListItem = React.forwardRef<
   React.ComponentPropsWithoutRef<"a">
 >(({ className, title, children, ...props }, ref) => {
   return (
-    <li>
+    <li
+      onClick={() => {
+        if (props.target === "_blank")
+          updateWebAnalytics({
+            type: "PAGE_VIEW",
+            eventId: `${props.href}`,
+          });
+      }}
+    >
       <NavigationMenuLink asChild>
         <a
           ref={ref}

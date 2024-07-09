@@ -1,6 +1,7 @@
 "use client";
 
 import DropDown from "@/blocks/Dropdown/DropDown";
+import { updateWebAnalytics } from "@/functions/WebAnalytics";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
@@ -37,6 +38,10 @@ const ContactForm = () => {
 
       if (response.status === 200) {
         setSuccess("Message sent successfully!");
+        updateWebAnalytics({
+          type: "CLICK_EVENT",
+          eventId: "contact_us_filled",
+        });
         setDetail(initialValues);
         setTimeout(() => {
           setSuccess("");

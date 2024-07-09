@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { JobFunctionMenu } from "@/constants/Scheduling/index";
 
 import { sendGTMEvent } from "@next/third-parties/google";
+import { updateWebAnalytics } from "@/functions/WebAnalytics";
 
 interface IInput {
   name: string;
@@ -76,6 +77,10 @@ const SchedulingForm = () => {
         toast({
           title: "Message Sent",
           description: "We will get back to you soon",
+        });
+        updateWebAnalytics({
+          type: "CLICK_EVENT",
+          eventId: "book_schedule_call",
         });
         sendGTMEvent({ event: "salesLead", value: 1 });
         resetInputs();

@@ -3,6 +3,7 @@ import { useState } from "react";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { ChildContainer } from "../../ChildContainer";
 import { routeType } from "@/constants/Navbar/Routes";
+import { updateWebAnalytics } from "@/functions/WebAnalytics";
 
 type NavItemProps = {
   route: routeType;
@@ -47,14 +48,28 @@ export const NavItem = ({
               </div>
             )}
           </div>
-          {showChildren && <ChildContainer toggleOpen={setShowChildren}  routes={route.children} />}
+          {showChildren && (
+            <ChildContainer
+              toggleOpen={setShowChildren}
+              routes={route.children}
+            />
+          )}
         </div>
       </>
     );
   }
 
   return (
-    <div className="flex items-center relative">
+    <div
+      className="flex items-center relative"
+      onClick={() => {
+        if (targetVal === "_blank")
+          updateWebAnalytics({
+            type: "PAGE_VIEW",
+            eventId: `${route.path}`,
+          });
+      }}
+    >
       <Link href={route.path} key={route.path} target={targetVal}>
         <div className={cssclassString}>{route.label}</div>
       </Link>
