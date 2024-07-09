@@ -11,6 +11,7 @@ import { Navbar } from "@/components/Navbar";
 import { Analytics } from "@vercel/analytics/react";
 import { Toaster } from "@/components/ui/toaster";
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
+import WebAnalytics from "@/components/WebAnalytics";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -33,6 +34,7 @@ export default function RootLayout({
           {children}
         </div>
         <Footer />
+        <WebAnalytics />
         <Analytics />
         <Toaster />
       </body>
