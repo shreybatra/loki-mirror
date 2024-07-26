@@ -40,6 +40,20 @@ const routes: routesType = [
         description: "Join our Discord community.",
         target: true,
       },
+      {
+        path: "https://tutorials.cosmocloud.io",
+        label: "Tutorials",
+        description: "Tutorials on how to use Cosmocloud.",
+        target: true,
+      },
+      {
+        path: "https://www.linkedin.com/newsletters/7196754231448555520/",
+        label: "Newsletter",
+        description: "Get the latest updates on Cosmocloud.",
+        target: true,
+      },
+      
+      
     ],
   },
   {
@@ -60,7 +74,7 @@ const routes: routesType = [
       },
       {
         label: "Careers",
-        path: "https://www.linkedin.com/company/cosmocloud/jobs/",
+        path: "https://careers.cosmocloud.io",
         description: "Join our team",
         target: true,
       },
