@@ -3,6 +3,7 @@ import type { NextRequest } from "next/server";
 
 export async function middleware(request: NextRequest) {
   const eventId = request.nextUrl.searchParams.get("event_id");
+  const source = request.nextUrl.searchParams.get("source");
   const redirectUrl =
     request.nextUrl.searchParams.get("redirect_url") ||
     "https://comsocloud.io/";
@@ -11,6 +12,7 @@ export async function middleware(request: NextRequest) {
     body: JSON.stringify({
       type: "CLICK_EVENT",
       eventId: eventId,
+      source: source,
     }),
     headers: {
       "Content-Type": "application/json",
