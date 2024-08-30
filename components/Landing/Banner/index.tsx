@@ -29,7 +29,7 @@ const AnnouncementBanner = () => {
           >
             Cosmocloud Low-Code Hackathon
           </Link>{" "}
-          and get a chance to win upto $14,0000 in prizes!
+          and get a chance to win upto $14,000 in prizes!
         </span>
       </div>
       <IoClose
