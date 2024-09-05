@@ -17,7 +17,7 @@ export default function Page() {
         <Motto />
         <About />
         <Leaders />
-        <Ideation />
+        {/* <Ideation /> */}
         <WorkCulture />
         {/* <Investors /> */}
         <AngelInvestors />

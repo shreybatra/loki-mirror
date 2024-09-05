@@ -21,7 +21,7 @@ export const Client = () => {
           </p> */}
         </div>
       </div>
-      <div className="flex flex-wrap gap-4 md:gap-10 items-center justify-center">
+      <div className="flex flex-wrap gap-4 md:gap-10 items-center justify-center w-4/5">
         {ClientLogos.map((client) => {
           return (
             <div
