@@ -61,25 +61,25 @@ export const OutOfTheBox = () => {
       </div>
       <div className="flex flex-col gap-[16px] md:gap-[42px]">
         <div className="flex flex-col w-full gap-[12px]">
-          <h3 className="text-[16px] font-[700]">Out of the box</h3>
+          <h3 className="text-[16px] font-[700]">Sneak peak into Cosmocloud</h3>
           <h2
             className="text-gradient text-[20px] font-[700] md:text-[32px]"
             style={{ backgroundColor: "red" }}
           >
-            Flexibility, Scalability, Security
+            Building APIs in just 5 minutes
           </h2>
         </div>
         <div className="flex flex-col gap-[4px] text-muted text-[18px]">
           <p className="mb-4">
-            Cosmocloud is the next-gen no-code Backend-as-a-Service (BaaS)
-            platform which lets you build and deploy your applications in a
-            matter of minutes.
+            Cosmocloud is a developer platform, which lets your developers build
+            APIs in just few minutes. All the way from Scratch to deploying on
+            Production.
           </p>
           <p className="mb-4">
-            From signing up to deploying your first application with a set of
-            APIs, everything is possible in just 5 minutes.
+            Now build complex APIs, add custom logic, authentication, and scale,
+            all in minutes!
           </p>
-          <p className="text-gradient">Checkout the teaser!</p>
+          <p className="text-gradient">Checkout the demo now!</p>
         </div>
       </div>
     </div>

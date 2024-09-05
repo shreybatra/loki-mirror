@@ -8,15 +8,15 @@ import SecurityFeatureIcon from "@/assets/svg/security_feature.svg";
 export const FeaturesCollection = [
   [
     {
-      name: "Complex & Customisable APIs",
+      name: "Complex & customisable APIs",
       description:
-        "Build the most complex API use cases, not limited to just CRUD with 100% customisable APIs.",
+        "Build the most complex API use cases, not limited to just CRUD, with 100% customisable APIs.",
       icon: ComplexApisFeatureIcon,
     },
     {
-      name: "Full text search, kafka, etc.",
+      name: "Inbuilt full text search (FTS)",
       description:
-        "Whether FTS Search, Kafka/Queues, or Caches and CDN, everything is provided on one platform.",
+        "Create Full Text Search in just a few clicks, without the need of data pipelines or sync jobs or anything else.",
       icon: FullTextSearchFeatureIcon,
     },
   ],
@@ -24,27 +24,27 @@ export const FeaturesCollection = [
     {
       name: "100% managed infrastructure",
       description:
-        "Fully managed infrastructure, no DevOps, with built-in instant deployments at any scale.",
+        "Fully managed infrastructure, no devops needed, with built-in Instant Deployments at any scale, be it a startup or a large enterprise.",
       icon: SecurityFeatureIcon,
     },
     {
       name: "Elastic scalability",
       description:
-        "Scale as per your needs, from 100 users daily to millions of API calls per second.",
+        "Scale as per your needs. You can start from 100 daily users, all the way to millions of API calls per minute. Backed by industry-grade Kubernetes clusters.",
       icon: ElasticScalabilityFeatureIcon,
     },
   ],
   [
     {
-      name: "Pay as per usage",
+      name: "Does not burn a hole in your pocket",
       description:
-        "No hassles of complicated pricing. You pay only for the resources your scale requires.",
+        "No hassles of complicated or super-expensive pricing. Your pay only for what resources you use, and nothing more.",
       icon: SubscriptionFeatureIcon,
     },
     {
-      name: "Ultra Performance",
+      name: "Introducing vector search and AI capabilities",
       description:
-        "No compromises on the performance of your application, and it also features concurrency and multi-threading.",
+        "Build your AI based features for Production, with our Vector Database and Vector Search capabilities. Integrate with any LLM in just a single click.",
       icon: PerformanceFeatureIcon,
     },
   ],

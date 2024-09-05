@@ -45,7 +45,7 @@ export const AngelInvestorCard = ({
           {position}
         </h6>
         {company && (
-          <h6 className="text-muted text-[8px] font-bold italic md:text-[12px]">
+          <h6 className="text-gradient-2 text-[8px] font-bold italic md:text-[12px]">
             {company}
           </h6>
         )}

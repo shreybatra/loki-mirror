@@ -18,7 +18,7 @@ export const Features = () => {
         </h3>
         <div className="flex flex-row gap-[12px] justify-between items-center md:flex-col">
           <h2 className="font-[700] w-[250px] text-[20px] text-start md:text-[32px] md:w-[100vw] md:text-center">
-            Unlocking your potential with our capabilities
+            A Backend-as-a-Service (BaaS) platform that scales!
           </h2>
           <div className="cursor-pointer flex gap-2 items-center text-muted">
             {/* Disabled */}

@@ -22,10 +22,10 @@ export const Home = () => {
           </h1>
         </div>
         <p className="text-muted text-center">
+          Make your developers{" "}
+          <span className="text-gradient font-bold">10x</span> more productive.
           Build your app&apos;s backend{" "}
-          <span className="text-gradient font-bold">in minutes</span>. Make your
-          developers <span className="text-gradient font-bold">10x</span> more
-          productive.
+          <span className="text-gradient font-bold">in minutes</span>.
         </p>
       </div>
       <div className="flex justify-center gap-[16px]">

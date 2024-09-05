@@ -13,8 +13,8 @@ export const Partners = () => {
         </h3>
         <div className="flex flex-col gap-[12px] items-center">
           <h2 className="font-[700] text-[20px] md:text-[32px] text-center">
-            Partners backing our <span className="text-gradient">no-code</span>{" "}
-            platform
+            Partners backing our{" "}
+            <span className="text-gradient">backend development</span> platform
           </h2>
           <p className="text-muted text-[14px] md:text-[16px] text-center">
             Our partners are integral to our success. Together, we drive
