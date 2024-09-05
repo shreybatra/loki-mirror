@@ -15,7 +15,7 @@ import WebAnalytics from "@/components/WebAnalytics";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Cosmocloud: No-Code, Backend-as-a-Service",
+  title: "Cosmocloud - No-Code Backend Developer Platform",
   description:
     "Build your next pluggable backend microservice, fully no-code. From complex APIs to background jobs to search, everything in one single platform.",
   metadataBase: new URL("https://cosmocloud.io"),
