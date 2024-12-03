@@ -7,16 +7,16 @@ const routes: routesType = [
     path: "/pricing",
     label: "Pricing",
   },
-  {
-    path: "/startups",
-    label: "Startups",
-  },
-  {
-    path: "https://cosmocloud.io/redirect?event_id=cosmocloud_landing_hackathon_redirect&redirect_url=https://hackathon.cosmocloud.io",
-    label: "Hackathon",
-    description: "Join Cosmocloud hackathon",
-    target: true,
-  },
+  // {
+  //   path: "/startups",
+  //   label: "Startups",
+  // },
+  // {
+  //   path: "https://cosmocloud.io/redirect?event_id=cosmocloud_landing_hackathon_redirect&redirect_url=https://hackathon.cosmocloud.io",
+  //   label: "Hackathon",
+  //   description: "Join Cosmocloud hackathon",
+  //   target: true,
+  // },
   // {
   //   path: "/build",
   //   label: "Build",
