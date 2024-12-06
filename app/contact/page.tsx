@@ -41,12 +41,11 @@ export default function Page() {
           info={"Address"}
           data={"Wework Berger Delhi One, Sector 16B, Noida, U.P - 201301"}
         />
-        <ContactCard
+        {/* <ContactCard
           imageIcon={<IoIosCall className="text-[32px] text-muted" />}
           info={"Contact Us"}
-          data={"+91 9818444464"}
-        />
-        
+          data={"+91 xxxxxxxxxxx"}
+        /> */}
       </div>
       <div className="flex flex-col items-center gap-[100px] w-[90%] md:gap-[190px]">
         <GetStarted />
