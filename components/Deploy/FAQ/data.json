@@ -1,0 +1,80 @@
+{
+  "faqs": [
+    {
+      "heading": "For small/medium scale",
+      "data": [
+        {
+          "title": "Manually deploy on EC2 / Virtual Machines",
+          "options": [
+            "Manual setup - networking, storage",
+            "Need to SSH to debug anything",
+            "Some Jenkins / Ansible / Chef for CI/CD"
+          ]
+        },
+        {
+          "title": "Manually deploy on EC2 / Virtual Machines",
+          "options": [
+            "Manual setup - networking, storage",
+            "Need to SSH to debug anything",
+            "Some Jenkins / Ansible / Chef for CI/CD"
+          ]
+        },
+        {
+          "title": "Manually deploy on EC2 / Virtual Machines",
+          "options": [
+            "Manual setup - networking, storage",
+            "Need to SSH to debug anything",
+            "Some Jenkins / Ansible / Chef for CI/CD"
+          ]
+        },
+        {
+          "title": "Manually deploy on EC2 / Virtual Machines",
+          "options": [
+            "Manual setup - networking, storage",
+            "Need to SSH to debug anything",
+            "Some Jenkins / Ansible / Chef for CI/CD"
+          ]
+        }
+      ],
+      "image": "first"
+    },
+    {
+      "heading": "For enterprise scale",
+      "data": [
+        {
+          "title": "Automated deployment pipelines",
+          "options": [
+            "Comprehensive CI/CD setup",
+            "Infrastructure as Code with Terraform or CloudFormation",
+            "Monitoring and logging with centralized dashboards"
+          ]
+        },
+        {
+          "title": "Kubernetes-based deployments",
+          "options": [
+            "Container orchestration with Kubernetes",
+            "Automatic scaling and self-healing applications",
+            "Service mesh for inter-service communication"
+          ]
+        },
+        {
+          "title": "Serverless architectures",
+          "options": [
+            "Use of AWS Lambda, Azure Functions, or Google Cloud Functions",
+            "Cost-efficient scaling for unpredictable workloads",
+            "Built-in high availability and fault tolerance"
+          ]
+        },
+        {
+          "title": "Multi-cloud strategies",
+          "options": [
+            "Avoid vendor lock-in",
+            "Deploy services across AWS, Azure, and GCP",
+            "Centralized management and observability tools"
+          ]
+        }
+      ],
+      "image": "second"
+    }
+  ]
+}

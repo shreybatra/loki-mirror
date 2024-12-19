@@ -1,6 +1,4 @@
 import SchedulingModal from "@/components/Scheduling/SchedulingModal";
-import Link from "next/link";
-
 export const PricingHeader = () => {
   return (
     <div className="text-center w-[90%] mb-[107px] mt-[92px] ml-[auto] mr-[auto]">
