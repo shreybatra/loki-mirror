@@ -1,9 +1,9 @@
 import React from "react";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "../ui/tabs";
 import CosmoBased from "./pricing-tabs/CosmoBased";
-import "@/app/pricing/pricing.css";
+import "@/app/build/pricing/pricing.css";
 import { PricingHorizontalCards } from "../PricingDataTemplate/PricingHorizontalCards";
-import { Button } from "../ui/button";
+
 import { Coins } from "lucide-react";
 const Pricing = () => {
   return (

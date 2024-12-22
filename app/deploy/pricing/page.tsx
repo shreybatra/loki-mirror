@@ -1,7 +1,6 @@
 import ComputeCost from "@/components/DeployPricing/ComputeCost";
 import Header from "@/components/DeployPricing/Header";
 import Pricing from "@/components/DeployPricing/Pricing";
-import { PricingHorizontalCards } from "@/components/PricingDataTemplate/PricingHorizontalCards";
 import React from "react";
 
 const Page = () => {
