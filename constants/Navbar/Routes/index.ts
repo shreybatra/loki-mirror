@@ -4,7 +4,7 @@ import AboutBanner from "@/assets/jpg/Website banner- About.jpg";
 
 const routes: routesType = [
   {
-    path: "/pricing",
+    path: "build/pricing",
     label: "Pricing",
   },
   // {

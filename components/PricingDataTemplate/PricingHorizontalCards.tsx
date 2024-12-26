@@ -4,7 +4,7 @@ interface PricingFooterProps {
   label: string;
   label2?: string;
   span?: string;
-  description: string;
+  description: string | React.ReactNode;
   buttonLabel: string;
   linkUrl: string;
 }

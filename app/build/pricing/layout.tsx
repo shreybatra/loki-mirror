@@ -136,8 +136,8 @@ export const PricingSection = () => {
 
               <CardContent className="flex">
                 <div className="space-y-4">
-                  {benefitList.map((benefit,idx) => (
-                    <span className="flex" key={idx} >
+                  {benefitList.map((benefit, idx) => (
+                    <span className="flex" key={idx}>
                       <Check className="text-primary mr-2" />
                       <h3>{benefit}</h3>
                     </span>
