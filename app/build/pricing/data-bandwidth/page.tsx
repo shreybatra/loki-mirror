@@ -1,11 +1,10 @@
 "use client";
 
-import "@/components/PricingDataTemplate/pricingDataTemplate.css";
-import PlanDropdown from "@/components/PricingDataTemplate/PlanDropdown";
-import { PlanInfoHighlight } from "@/components/PricingDataTemplate/PlanInfoHighlight";
+import PlanDropdown from "@/components/oldComponents/PricingDataTemplate/PlanDropdown";
+import { PlanInfoHighlight } from "@/components/oldComponents/PricingDataTemplate/PlanInfoHighlight";
 import { dataBandwidthPricingData } from "@/constants/Pricing";
 import { useState } from "react";
-import { PricingPlans } from "@/components/Pricing/PricingPlans.tsx/PricingPlans";
+import { PricingPlans } from "@/components/oldComponents/Pricing/PricingPlans.tsx/PricingPlans";
 
 const Page = () => {
   // const { plan, setPlan } = useContext(PlanContext);
@@ -76,7 +75,7 @@ const Page = () => {
         <div className="pt-[42px] pb-[42px] flex flex-col gap-[20px] border-b-2 border-solid border-gray-700">
           <h3 className="text-white text-[24px] font-[600]">Examples</h3>
 
-          {examples.map((example,idx) => {
+          {examples.map((example, idx) => {
             return (
               <div key={idx}>
                 <h4 className="text-[16px] font-[400]">{example.title}</h4>

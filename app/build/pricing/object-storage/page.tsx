@@ -1,12 +1,10 @@
 "use client";
 
-import "@/components/PricingDataTemplate/pricingDataTemplate.css";
-
-import PlanDropdown from "@/components/PricingDataTemplate/PlanDropdown";
-import { PlanInfoHighlight } from "@/components/PricingDataTemplate/PlanInfoHighlight";
+import PlanDropdown from "@/components/oldComponents/PricingDataTemplate/PlanDropdown";
+import { PlanInfoHighlight } from "@/components/oldComponents/PricingDataTemplate/PlanInfoHighlight";
 import { storagePricingData } from "@/constants/Pricing/index";
 import { useState } from "react";
-import { PricingPlans } from "@/components/Pricing/PricingPlans.tsx/PricingPlans";
+import { PricingPlans } from "@/components/oldComponents/Pricing/PricingPlans.tsx/PricingPlans";
 
 const Page = () => {
   // const { plan, setPlan } = useContext(PlanContext);
@@ -38,8 +36,8 @@ const Page = () => {
 
         <PricingPlans planName={"Free Plan"}>
           <p className="text-[12px] mb-[12px] md:text-[14px] text-muted">
-            On the Free Plan, you will get 1 Object Storage Bucket already created,
-            with a 512MB cap size allocated to you.
+            On the Free Plan, you will get 1 Object Storage Bucket already
+            created, with a 512MB cap size allocated to you.
           </p>
           <div className="mt-[16px]">
             <PlanInfoHighlight text={"You can upload any file."} />

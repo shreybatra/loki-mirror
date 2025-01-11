@@ -3,7 +3,7 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import remarkGfm from "remark-gfm";
 import { coldarkDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import Image from "next/image";
-import { BlogsSpecs } from "@/components/Blogs/BlogSpecs/BlogSpecs";
+import { BlogsSpecs } from "@/components/oldComponents/Blogs/BlogSpecs/BlogSpecs";
 async function getData(name: any) {
   const res = await fetch(`${process.env.NEXT_PUBLIC_BLOG_URL}/blogs/${name}`, {
     cache: "no-store",

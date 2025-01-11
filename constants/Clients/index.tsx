@@ -10,6 +10,22 @@ import shree_maruti from "@/assets/png/logo/shree-maruti.png";
 import quiro from "@/assets/png/logo/quiro.png";
 export const ClientLogos = [
   {
+    image_src: shree_maruti,
+    name: "Shree Maruti Courier",
+  },
+  {
+    image_src: hrone,
+    name: "Hrone",
+  },
+  {
+    image_src: whereyouelevate,
+    name: "Where You Elevate",
+  },
+  {
+    image_src: quiro,
+    name: "Quiro",
+  },
+  {
     image_src: credease,
     name: "Credease",
   },
@@ -17,24 +33,9 @@ export const ClientLogos = [
     image_src: delcaper,
     name: "Delcaper",
   },
-  {
-    image_src: hrone,
-    name: "Hrone",
-  },
+
   {
     image_src: moneyvest,
     name: "Moneyvest",
-  },
-  {
-    image_src: whereyouelevate,
-    name: "Where You Elevate",
-  },
-  {
-    image_src: shree_maruti,
-    name: "Shree Maruti Courier",
-  },
-  {
-    image_src: quiro,
-    name: "Quiro",
   },
 ];

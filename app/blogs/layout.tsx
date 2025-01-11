@@ -2,8 +2,8 @@
 
 import "./blogs.css";
 
-import { BlogsHeader } from "@/components/Blogs/BlogsHeader/BlogsHeader";
-import { BlogsNavbar } from "@/components/Blogs/BlogsNavbar/BlogsNavbar";
+import { BlogsHeader } from "@/components/oldComponents/Blogs/BlogsHeader/BlogsHeader";
+import { BlogsNavbar } from "@/components/oldComponents/Blogs/BlogsNavbar/BlogsNavbar";
 import Image from "next/image";
 import BlogsBg from "@/assets/svg/blogsBg.svg";
 

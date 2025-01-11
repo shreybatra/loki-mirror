@@ -1,8 +1,8 @@
 "use client";
-import FeaturedBlog from "@/components/Blogs/FeaturedBlog/FeaturedBlog";
-import RecentPost from "@/components/Blogs/RecentPost/RecentPost";
-import { BlogsHeader } from "@/components/Blogs/BlogsHeader/BlogsHeader";
-import { BlogsNavbar } from "@/components/Blogs/BlogsNavbar/BlogsNavbar";
+import FeaturedBlog from "@/components/oldComponents/Blogs/FeaturedBlog/FeaturedBlog";
+import RecentPost from "@/components/oldComponents/Blogs/RecentPost/RecentPost";
+import { BlogsHeader } from "@/components/oldComponents/Blogs/BlogsHeader/BlogsHeader";
+import { BlogsNavbar } from "@/components/oldComponents/Blogs/BlogsNavbar/BlogsNavbar";
 import { useEffect, useState } from "react";
 
 const Page = () => {
@@ -50,7 +50,7 @@ const Page = () => {
         setRecentBlogs(res.blogsData.data);
       } else {
         setRecentBlogs((prevBlogs) => [...prevBlogs, ...res.blogsData.data]);
-        setBlogs((prevVal:any) => {
+        setBlogs((prevVal: any) => {
           return { ...prevVal, blogsData: { data: [...recentBlog] } };
         });
       }
@@ -85,7 +85,7 @@ const Page = () => {
         {recentBlog && <RecentPost title={postType} blogs={recentBlog} />}
       </div>
 
-      { blogs &&  blogs.blogsData?.page?.total > offset && (
+      {blogs && blogs.blogsData?.page?.total > offset && (
         <div className="w-full  flex justify-center mt-[26px] mb-[132px]">
           <div
             className={`w-fit items-center px-6 py-3.5 border-[#717171] cursor-pointer background-slate rounded-lg`}

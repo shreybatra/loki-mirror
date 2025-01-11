@@ -6,9 +6,9 @@ import {
   Leaders,
   Motto,
   WorkCulture,
-} from "@/components/About";
+} from "@/components/oldComponents/About";
 
-import { GetStarted } from "@/components/Landing";
+import { GetStarted } from "@/components/oldComponents/Landing";
 
 export default function Page() {
   return (

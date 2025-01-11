@@ -1,8 +1,8 @@
-import ContactCard from "@/components/ContactUs/ContactCard";
-import ContactForm from "@/components/ContactUs/ContactForm";
-import { GetStarted } from "@/components/Landing";
+import ContactCard from "@/components/oldComponents/ContactUs/ContactCard";
+import ContactForm from "@/components/oldComponents/ContactUs/ContactForm";
+import { GetStarted } from "@/components/oldComponents/Landing";
 import ContactBg from "@/assets/svg/contact-bg.svg";
-import ContactUsHeader from "@/components/ContactUs/ContactUsHeader";
+import ContactUsHeader from "@/components/oldComponents/ContactUs/ContactUsHeader";
 import { FaEnvelope } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoIosCall } from "react-icons/io";
@@ -10,13 +10,13 @@ import Image from "next/image";
 
 export default function Page() {
   return (
-    <main className="flex flex-col items-center md:block">
+    <main className="flex flex-col items-center md:block mt-20">
       <div className="sm:none bg-contact">
         <Image src={ContactBg} alt="contact-bg" />
       </div>
       <ContactUsHeader />
       <ContactForm />
-      <div className="flex flex-col gap-[24px] w-[90%] items-center justify-center items-center">
+      <div className="flex flex-col gap-[24px] w-[90%] items-center justify-center">
         <h3 className="text-primary-pink uppercase tracking-[5px] text-start text-[12px] md:text-[16px] md:text-center">
           GET IN TOUCH
         </h3>
@@ -41,11 +41,6 @@ export default function Page() {
           info={"Address"}
           data={"Wework Berger Delhi One, Sector 16B, Noida, U.P - 201301"}
         />
-        {/* <ContactCard
-          imageIcon={<IoIosCall className="text-[32px] text-muted" />}
-          info={"Contact Us"}
-          data={"+91 xxxxxxxxxxx"}
-        /> */}
       </div>
       <div className="flex flex-col items-center gap-[100px] w-[90%] md:gap-[190px]">
         <GetStarted />

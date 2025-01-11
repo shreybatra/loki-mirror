@@ -1,3 +1,4 @@
+import { DefaultPage } from "@/components/DefaultPage";
 import "./about.css";
 
 export default function RootLayout({
@@ -5,5 +6,9 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <div className="">{children}</div>;
+  return (
+    <DefaultPage>
+      <div className="">{children}</div>
+    </DefaultPage>
+  );
 }

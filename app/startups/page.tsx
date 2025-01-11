@@ -1,16 +1,16 @@
-import Hero from "@/components/Startups/Hero";
-import Features from "@/components/Startups/StartupFeatures";
+import Hero from "@/components/oldComponents/Startups/Hero";
+import Features from "@/components/oldComponents/Startups/StartupFeatures";
 import React from "react";
 import StartUpBanner from "@/assets/svg/startup/Cosmocloud for startup right 1.svg";
 import StartUpBannerSmallScreen from "@/assets/svg/startup/Cosmocloud for startup Center 1.svg";
-import Pointers from "@/components/Startups/Pointers";
+import Pointers from "@/components/oldComponents/Startups/Pointers";
 import GrowthBanner from "@/assets/svg/startup/Growth.svg";
 import IncubatorBanner from "@/assets/svg/startup/Incubator.svg";
 import NextGenDeveloperBanner from "@/assets/svg/startup/Next Gen Developer.svg";
-import { WhyStartupsChooseCosmocloud } from "@/components/Startups/constants";
-import FAQs from "@/components/Startups/FAQs";
+import { WhyStartupsChooseCosmocloud } from "@/components/oldComponents/Startups/constants";
+import FAQs from "@/components/oldComponents/Startups/FAQs";
 import Link from "next/link";
-import HeroBanner from "@/components/Startups/HeroBanner";
+import HeroBanner from "@/components/oldComponents/Startups/HeroBanner";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

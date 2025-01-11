@@ -4,15 +4,9 @@ import "./text.css";
 import "./border.css";
 import "./components.css";
 
-import { Footer } from "@/components/Footer";
-import { Inter } from "next/font/google";
 import type { Metadata } from "next";
-import { Navbar } from "@/components/Navbar";
-import { Analytics } from "@vercel/analytics/react";
-import { Toaster } from "@/components/ui/toaster";
+
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
-import WebAnalytics from "@/components/WebAnalytics";
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Cosmocloud",
@@ -28,17 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <div className="flex flex-col gap-[32px] md:gap-0">
-          <Navbar />
-          {children}
-        </div>
-        <Footer />
-        <WebAnalytics />
-        <Analytics />
-        <Toaster />
-      </body>
-
+      {children}
       {process.env.NEXT_GA_ID && (
         <GoogleAnalytics gaId={process.env.NEXT_GA_ID} />
       )}

@@ -1,11 +1,10 @@
 "use client";
 
-import "@/components/PricingDataTemplate/pricingDataTemplate.css";
-import PlanDropdown from "@/components/PricingDataTemplate/PlanDropdown";
-import { PlanInfoHighlight } from "@/components/PricingDataTemplate/PlanInfoHighlight";
+import PlanDropdown from "@/components/oldComponents/PricingDataTemplate/PlanDropdown";
+import { PlanInfoHighlight } from "@/components/oldComponents/PricingDataTemplate/PlanInfoHighlight";
 import { logsPricingData } from "@/constants/Pricing/index";
 import { useState } from "react";
-import { PricingPlans } from "@/components/Pricing/PricingPlans.tsx/PricingPlans";
+import { PricingPlans } from "@/components/oldComponents/Pricing/PricingPlans.tsx/PricingPlans";
 
 const Page = () => {
   // const { plan, setPlan } = useContext(PlanContext);
