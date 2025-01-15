@@ -8,10 +8,17 @@ import type { Metadata } from "next";
 
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 
+// export const metadata: Metadata = {
+//   title: "Cosmocloud",
+//   description:
+//     "Build your next pluggable backend microservice, fully no-code. From complex APIs to background jobs to search, everything in one single platform.",
+//   metadataBase: new URL("https://cosmocloud.io"),
+// };
+
 export const metadata: Metadata = {
   title: "Cosmocloud",
   description:
-    "Build your next pluggable backend microservice, fully no-code. From complex APIs to background jobs to search, everything in one single platform.",
+    "Build, Deploy and Scale your applications with Cosmocloud. Deploy your applications with Cosmocloud Deploy superfast, with managed Devops and Deployments.",
   metadataBase: new URL("https://cosmocloud.io"),
 };
 
