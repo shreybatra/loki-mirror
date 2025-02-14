@@ -13,6 +13,7 @@ import { ComputePricing } from "@/components/newComponents/Deploy/ComputePricing
 import SchedulingModal from "@/components/oldComponents/Scheduling/SchedulingModal";
 import { VideoComponent } from "@/components/newComponents/Deploy/VideoComponent";
 import { NewDefaultPage } from "@/components/NewDefaultPage";
+import Client from "@/components/newComponents/Deploy/Clients";
 
 export default function Page() {
   return (
@@ -40,6 +41,7 @@ export default function Page() {
         <DevopsCostly />
         <Pointers />
         <FeaturesGrid />
+        <Client />
 
         <VideoComponent />
         <DeployPricingPlans />
