@@ -12,7 +12,7 @@ import { DeployPricingPlans } from "@/components/newComponents/Deploy/Pricing Pl
 import { ComputePricing } from "@/components/newComponents/Deploy/ComputePricing";
 import SchedulingModal from "@/components/oldComponents/Scheduling/SchedulingModal";
 import { VideoComponent } from "@/components/newComponents/Deploy/VideoComponent";
-
+import Client from "@/components/newComponents/Deploy/Clients";
 const Page = () => {
   return (
     <div className="flex flex-col items-center gap-[120px] md:gap-[190px] z-10">
@@ -37,8 +37,10 @@ const Page = () => {
       <Carousal />
       <DevopsCostly />
       <Pointers />
+
       <FeaturesGrid />
 
+      <Client />
       <VideoComponent />
       <DeployPricingPlans />
       <ComputePricing />
