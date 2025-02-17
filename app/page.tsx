@@ -37,11 +37,11 @@ export default function Page() {
           />
         </div>
 
+        <Client />
         <Carousal />
         <DevopsCostly />
         <Pointers />
         <FeaturesGrid />
-        <Client />
 
         <VideoComponent />
         <DeployPricingPlans />
