@@ -40,7 +40,7 @@ const items = [
     heading: "Enterprises and large scale companies",
     points: [
       {
-        heading: "Managed Kubernetes like AWS EKS, Azure ASk, GKE, etc",
+        heading: "Managed Kubernetes like AWS EKS, Azure AKS, GKE, etc",
         content:
           "When you use managed Kubernetes, you need to pay for additional resources and services, which can be costly.",
       },
